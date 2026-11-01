@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Immersive Engineering मार्गदर्शिका",
+  "ieponder.command.requires_world": "मार्गदर्शिका खोलने के लिए किसी दुनिया में प्रवेश करें",
+  "ieponder.command.unknown": "अज्ञात अध्याय, पाठ या वस्तु: %s",
+  "ieponder.tooltip.hold_for_description": "विवरण देखने के लिए [%s] दबाए रखें",
+  "ieponder.ponder.tag.start": "1. शुरुआत",
+  "ieponder.ponder.tag.start.description": "बुनियादी सामग्री और शुरुआती मशीनें",
+  "ieponder.ponder.tag.power": "2. विद्युत",
+  "ieponder.ponder.tag.power.description": "बिजली उत्पादन, भंडारण और वायरिंग की मूल बातें",
+  "ieponder.ponder.tag.metallurgy": "3. धातुकर्म",
+  "ieponder.ponder.tag.metallurgy.description": "अयस्क प्रसंस्करण और धातुकार्य",
+  "ieponder.ponder.tag.logistics": "4. रसद",
+  "ieponder.ponder.tag.logistics.description": "वस्तुओं और तरलों का परिवहन",
+  "ieponder.ponder.tag.processing": "5. प्रसंस्करण",
+  "ieponder.ponder.tag.processing.description": "मल्टीब्लॉक मशीनों से प्रसंस्करण",
+  "ieponder.ponder.tag.troubleshooting": "6. समस्या निवारण",
+  "ieponder.ponder.tag.troubleshooting.description": "बिजली, स्थापना, इनपुट और आउटपुट की जाँच"
+}

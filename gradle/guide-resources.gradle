@@ -1,0 +1,195 @@
+// Japanese/English originals are canonical; reviewed content and navigation cover all 22 locales.
+def destination = layout.buildDirectory.dir('generated/guideResources')
+def guideResources = tasks.register('generateGuideResources') {
+    inputs.dir('src/main/resources/assets/ieponder/guide')
+    inputs.dir('src/main/templates/lang')
+    inputs.dir('src/main/translations/navigation')
+    inputs.dir('src/main/translations/content')
+    inputs.file('src/main/translations/navigation-review.json')
+    inputs.file('src/main/translations/content-review.json')
+    inputs.dir('src/main/translations/native-ui')
+    inputs.file('src/main/translations/native-ui-source.json')
+    inputs.file('src/main/translations/native-ui-review.json')
+    inputs.files(configurations.compileClasspath.filter { it.name.startsWith('ponder-neoforge-') })
+            .withPropertyName('nativeUiDependency')
+    inputs.file('src/main/translations/languages.json')
+    if (file('../docs/languages.json').isFile()) inputs.file('../docs/languages.json')
+    outputs.dir(destination)
+    doLast {
+        def json = new groovy.json.JsonSlurper()
+        def root = file('src/main/resources/assets/ieponder/guide')
+        def lessons = ['lessons.json', 'processing.json'].collectMany { json.parse(new File(root, it), 'UTF-8') }
+        def descriptions = json.parse(new File(root, 'item_descriptions.json'), 'UTF-8')
+        def chapters = ['start', 'power', 'metallurgy', 'logistics', 'processing', 'troubleshooting']
+        def resourceId = { id -> assert id instanceof String && id ==~ /[a-z0-9_.-]+:[a-z0-9_\/.\-]+/ : "Invalid resource: ${id}" }
+        def localized = { text -> assert text?.ja?.trim() && text?.en?.trim() : "Missing Japanese/English: ${text}" }
+        assert lessons && lessons*.id.toSet().size() == lessons.size() : 'Duplicate/empty catalogue'
+        assert lessons*.chapter.toSet() == chapters.toSet() : 'Missing or invalid chapter'
+        lessons.each { lesson ->
+            assert lesson.id ==~ /[a-z0-9_]+/
+            localized(lesson.title); localized(lesson.summary)
+            resourceId(lesson.icon)
+            assert lesson.components && lesson.steps.size() >= 5 : "Incomplete ${lesson.id}"
+            lesson.components.each(resourceId)
+            if (lesson.structure) {
+                assert lesson.structure.template ==~ /[a-z0-9_]+/
+                assert lesson.structure.origin.size() == 3 && lesson.structure.origin.every { it instanceof Integer }
+            } else assert lesson.nodes : "No model: ${lesson.id}"
+            def nodes = lesson.nodes ?: []
+            assert nodes*.id.toSet().size() == nodes.size() : "Duplicate node: ${lesson.id}"
+            assert nodes*.pos.toSet().size() == nodes.size() : "Overlapping node: ${lesson.id}"
+            nodes.each { node ->
+                resourceId(node.block)
+                assert node.pos.size() == 3 && node.pos.every { it instanceof Integer }
+                assert node.pos[0] in 0..8 && node.pos[1] in 1..6 && node.pos[2] in 0..8
+            }
+            def ids = nodes*.id.toSet()
+            def validRef = { ref -> ref in ids || (lesson.structure && (ref ==~ /mb_\d+_\d+_\d+/ || ref ==~ /@layer\d+/ || ref == '@all')) }
+            lesson.steps.each { step ->
+                localized(step.text)
+                def refs = (step.show ?: []) + (step.focus ?: []) + (step.hide ?: []) + (step.nbt ?: [:]).keySet() + (step.callouts ?: [])*.anchor
+                if (step.flow) refs += [step.flow.from, step.flow.to]
+                assert refs.every(validRef) : "Unknown node in ${lesson.id}: ${refs}"
+                assert (step.callouts ?: []).size() <= 3
+                (step.callouts ?: []).each { callout ->
+                    resourceId(callout.item)
+                    assert !callout.action || callout.action in ['none','right_click','left_click','scroll']
+                    assert !callout.pointing || callout.pointing in ['up','down','left','right']
+                    assert !callout.sneak || callout.action in ['right_click','left_click','scroll']
+                }
+                if (step.flow) resourceId(step.flow.item)
+            }
+            assert lesson.steps.any { it.callouts } : "No item callouts: ${lesson.id}"
+        }
+        assert descriptions*.id.toSet().size() == descriptions.size()
+        def described = [] as Set
+        descriptions.each { entry ->
+            assert entry.id ==~ /[a-z0-9_]+/
+            localized(entry.text)
+            assert entry.items
+            entry.items.each { id -> resourceId(id); assert described.add(id) : "Duplicate description: ${id}" }
+        }
+        def templates = ['en_us','ja_jp'].collectEntries { locale ->
+            [(locale): json.parse(file("src/main/templates/lang/${locale}.json"), 'UTF-8')]
+        }
+        assert templates.en_us.keySet() == templates.ja_jp.keySet() : 'UI translation keys differ'
+        def sourceText = ['en_us', 'ja_jp'].collectMany { locale ->
+            templates[locale].keySet().sort().collect { key -> "${locale}\u0000${key}\u0000${templates[locale][key]}\u0000" }
+        }.join('')
+        def sourceHash = java.security.MessageDigest.getInstance('SHA-256')
+                .digest(sourceText.getBytes('UTF-8')).encodeHex().toString()
+        def locales = json.parse(file('src/main/translations/languages.json'), 'UTF-8').keySet()
+        if (file('../docs/languages.json').isFile())
+            assert locales == json.parse(file('../docs/languages.json'), 'UTF-8').keySet() : 'The series locale list changed'
+        def review = json.parse(file('src/main/translations/navigation-review.json'), 'UTF-8')
+        assert review.source_sha256 == sourceHash : 'Navigation originals changed: review every affected translation'
+        assert review.reviewed_locales.toSet() == locales : 'Navigation review must cover all 22 series locales'
+        locales.findAll { !(it in templates) }.each { locale ->
+            templates[locale] = json.parse(file("src/main/translations/navigation/${locale}.json"), 'UTF-8')
+        }
+        templates.each { locale, values ->
+            assert values.keySet() == templates.en_us.keySet() : "Navigation keys differ: ${locale}"
+            templates.en_us.each { key, value ->
+                assert value?.trim() && values[key]?.trim() : "Empty navigation text: ${locale}/${key}"
+                assert (value =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() ==
+                        (values[key] =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() : "Placeholder mismatch: ${locale}/${key}"
+            }
+        }
+        def originals = [:]
+        lessons.each { lesson ->
+            originals["ieponder.ponder.${lesson.id}.header".toString()] = lesson.title
+            originals["ieponder.lesson.${lesson.id}.summary".toString()] = lesson.summary
+            lesson.steps.eachWithIndex { step, index -> originals["ieponder.ponder.shared.${lesson.id}_${index}".toString()] = step.text }
+        }
+        descriptions.each { entry -> originals["ieponder.description.${entry.id}".toString()] = entry.text }
+        def contentSource = ['en', 'ja'].collectMany { language ->
+            originals.keySet().sort().collect { key -> "${language}\u0000${key}\u0000${originals[key][language]}\u0000" }
+        }.join('')
+        def contentHash = java.security.MessageDigest.getInstance('SHA-256')
+                .digest(contentSource.getBytes('UTF-8')).encodeHex().toString()
+        def contentReview = json.parse(file('src/main/translations/content-review.json'), 'UTF-8')
+        assert contentReview.source_sha256 == contentHash : 'Content originals changed: review affected translations'
+        assert contentReview.reviewed_locales.toSet() == locales : 'Content review must cover all 22 locales'
+        def textTones = json.parse(file('src/main/resources/assets/ieponder/guide/text_tones.json'), 'UTF-8')
+        assert textTones.keySet() == locales : 'Authored text tones must cover all 22 locales'
+        def toneKeys = originals.keySet().findAll {
+            it.startsWith('ieponder.ponder.shared.') || it.startsWith('ieponder.description.')
+        }.toSet()
+        templates.each { locale, values ->
+            def content
+            if (locale in ['ja_jp', 'en_us']) {
+                def language = locale == 'ja_jp' ? 'ja' : 'en'
+                content = originals.collectEntries { key, text -> [(key): text[language]] }
+            } else {
+                def contentFile = file("src/main/translations/content/${locale}.json")
+                def translatedHash = java.security.MessageDigest.getInstance('SHA-256')
+                        .digest(contentFile.bytes).encodeHex().toString()
+                assert contentReview.translation_sha256[locale] == translatedHash : "Unreviewed content change: ${locale}"
+                content = json.parse(contentFile, 'UTF-8')
+            }
+            assert content.keySet() == originals.keySet() : "Content keys differ: ${locale}"
+            content.each { key, text ->
+                assert text instanceof String && text.trim() : "Empty content: ${locale}/${key}"
+                assert (text =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() ==
+                        (originals[key].en =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() : "Content placeholder mismatch: ${locale}/${key}"
+                assert locale in ['ja_jp', 'en_us'] || originals[key].en.size() <= 40 || text != originals[key].en : "English copy: ${locale}/${key}"
+            }
+            assert textTones[locale].keySet() == toneKeys : "Authored tone keys differ: ${locale}"
+            textTones[locale].each { key, tones ->
+                def units = content[key].readLines()
+                assert units && units.every { it.trim() } : "Empty authored unit: ${locale}/${key}"
+                assert tones instanceof List && tones.size() == units.size() &&
+                        tones.every { it in ['NORMAL', 'WARNING', 'HINT'] } : "Tone/unit mismatch: ${locale}/${key}"
+            }
+            values.putAll(content)
+            def output = new File(destination.get().asFile, "assets/ieponder/lang/${locale}.json")
+            output.parentFile.mkdirs()
+            output.setText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(values)) + '\n', 'UTF-8')
+        }
+        // Supply only absent/untranslated native control labels. Existing upstream
+        // translations stay in Ponder's resource pack and are not copied here.
+        def nativeSource = json.parse(file('src/main/translations/native-ui-source.json'), 'UTF-8')
+        def nativeReview = json.parse(file('src/main/translations/native-ui-review.json'), 'UTF-8')
+        def nativeFingerprint = nativeSource.keySet().sort().collect { key -> "${key}\u0000${nativeSource[key]}\u0000" }.join('')
+        def nativeHash = java.security.MessageDigest.getInstance('SHA-256')
+                .digest(nativeFingerprint.getBytes('UTF-8')).encodeHex().toString()
+        assert nativeReview.source_sha256 == nativeHash : 'Native UI source review is stale'
+        assert nativeReview.reviewed_locales.toSet() == locales : 'Native UI review must cover all 22 locales'
+        def ponderJar = configurations.compileClasspath.files.find { it.name.startsWith('ponder-neoforge-') && it.name.endsWith('.jar') }
+        assert ponderJar : 'Ponder dependency JAR not found'
+        new java.util.zip.ZipFile(ponderJar).withCloseable { upstream ->
+            def readUpstream = { locale ->
+                def entry = upstream.getEntry("assets/ponder/lang/${locale}.json")
+                entry ? json.parse(upstream.getInputStream(entry), 'UTF-8') : [:]
+            }
+            def nativeEnglish = readUpstream('en_us')
+            assert nativeSource.every { key, text -> nativeEnglish[key] == text } : 'Upstream native UI originals changed'
+            locales.findAll { it != 'en_us' }.each { locale ->
+                def upstreamValues = readUpstream(locale)
+                def needed = nativeSource.findAll { key, text -> !upstreamValues.containsKey(key) ||
+                        (upstreamValues[key] == text && key != 'ponder.ponder.shared.ctrl_and') ||
+                        (upstreamValues.containsKey(key) &&
+                                (upstreamValues[key] =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() !=
+                                (text =~ /%(?:\d+\$)?[sd]/).collect { it }.sort()) }.keySet()
+                def translatedFile = file("src/main/translations/native-ui/${locale}.json")
+                def translatedHash = java.security.MessageDigest.getInstance('SHA-256')
+                        .digest(translatedFile.bytes).encodeHex().toString()
+                assert nativeReview.translation_sha256[locale] == translatedHash : "Unreviewed native UI: ${locale}"
+                def translated = json.parse(translatedFile, 'UTF-8')
+                assert translated.keySet() == needed : "Native UI supplement must cover only missing labels: ${locale}"
+                translated.each { key, text ->
+                    assert text?.trim() : "Empty native UI label: ${locale}/${key}"
+                    assert (text =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() ==
+                            (nativeSource[key] =~ /%(?:\d+\$)?[sd]/).collect { it }.sort() : "Native UI placeholder: ${locale}/${key}"
+                }
+                def output = new File(destination.get().asFile, "assets/ponder/lang/${locale}.json")
+                output.parentFile.mkdirs()
+                output.setText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(translated)) + '\n', 'UTF-8')
+            }
+        }
+        logger.lifecycle("Validated ${lessons.size()} lessons, ${lessons.sum { it.steps.size() }} steps; complete navigation and ${originals.size()} content keys in ${locales.size()} locales; native UI gaps supplemented")
+    }
+}
+sourceSets.main.resources.srcDir(destination)
+tasks.named('processResources') { dependsOn guideResources }
+tasks.named('check') { dependsOn guideResources }

@@ -1,0 +1,246 @@
+{
+  "source_sha256": "4f4600b7335305333a98e3283ac1b5c07026caabca91b832d053c4d099acad03",
+  "upstream": "Ponder1.0.87+mc1.21.1 (MIT), assets/ponder/lang/en_us.json; only native guide/navigation controls",
+  "reviewed_on": "2026-10-20",
+  "reviewed_locales": [
+    "ja_jp",
+    "en_us",
+    "hi_in",
+    "zh_hk",
+    "zh_tw",
+    "zh_cn",
+    "ru_ru",
+    "pt_br",
+    "pt_pt",
+    "es_es",
+    "fr_fr",
+    "de_de",
+    "cs_cz",
+    "pl_pl",
+    "ms_my",
+    "ro_ro",
+    "ar_sa",
+    "id_id",
+    "ko_kr",
+    "vi_vn",
+    "tr_tr",
+    "it_it"
+  ],
+  "supplement_keys": {
+    "ja_jp": [
+      "catnip.ui.go_back_button"
+    ],
+    "hi_in": [
+      "ponder.ui.hold_to_ponder",
+      "ponder.ui.subject",
+      "ponder.ui.pondering",
+      "ponder.ui.pondering_tag",
+      "ponder.ui.identify_mode",
+      "ponder.ui.associated",
+      "ponder.ui.close",
+      "ponder.ui.identify",
+      "ponder.ui.next",
+      "ponder.ui.next_up",
+      "ponder.ui.previous",
+      "ponder.ui.replay",
+      "ponder.ui.think_back",
+      "ponder.ui.slow_text",
+      "ponder.ui.exit",
+      "ponder.ui.welcome",
+      "ponder.ui.categories",
+      "ponder.ui.index_description",
+      "ponder.ui.index_title",
+      "ponder.ponder.shared.sneak_and",
+      "ponder.ponder.shared.ctrl_and",
+      "catnip.ui.go_back_button"
+    ],
+    "zh_hk": [
+      "ponder.ui.hold_to_ponder",
+      "ponder.ui.subject",
+      "ponder.ui.pondering",
+      "ponder.ui.pondering_tag",
+      "ponder.ui.identify_mode",
+      "ponder.ui.associated",
+      "ponder.ui.close",
+      "ponder.ui.identify",
+      "ponder.ui.next",
+      "ponder.ui.next_up",
+      "ponder.ui.previous",
+      "ponder.ui.replay",
+      "ponder.ui.think_back",
+      "ponder.ui.slow_text",
+      "ponder.ui.exit",
+      "ponder.ui.welcome",
+      "ponder.ui.categories",
+      "ponder.ui.index_description",
+      "ponder.ui.index_title",
+      "ponder.ponder.shared.sneak_and",
+      "ponder.ponder.shared.ctrl_and",
+      "catnip.ui.go_back_button"
+    ],
+    "zh_tw": [
+      "catnip.ui.go_back_button"
+    ],
+    "zh_cn": [
+      "catnip.ui.go_back_button"
+    ],
+    "ru_ru": [],
+    "pt_br": [
+      "catnip.ui.go_back_button"
+    ],
+    "pt_pt": [
+      "ponder.ui.hold_to_ponder",
+      "ponder.ui.subject",
+      "ponder.ui.pondering",
+      "ponder.ui.pondering_tag",
+      "ponder.ui.identify_mode",
+      "ponder.ui.associated",
+      "ponder.ui.close",
+      "ponder.ui.identify",
+      "ponder.ui.next",
+      "ponder.ui.next_up",
+      "ponder.ui.previous",
+      "ponder.ui.replay",
+      "ponder.ui.think_back",
+      "ponder.ui.slow_text",
+      "ponder.ui.exit",
+      "ponder.ui.welcome",
+      "ponder.ui.categories",
+      "ponder.ui.index_description",
+      "ponder.ui.index_title",
+      "ponder.ponder.shared.sneak_and",
+      "ponder.ponder.shared.ctrl_and",
+      "catnip.ui.go_back_button"
+    ],
+    "es_es": [
+      "catnip.ui.go_back_button",
+      "ponder.ui.categories"
+    ],
+    "fr_fr": [
+      "catnip.ui.go_back_button"
+    ],
+    "de_de": [
+      "catnip.ui.go_back_button"
+    ],
+    "cs_cz": [
+      "catnip.ui.go_back_button"
+    ],
+    "pl_pl": [
+      "catnip.ui.go_back_button"
+    ],
+    "ms_my": [
+      "ponder.ui.hold_to_ponder",
+      "ponder.ui.subject",
+      "ponder.ui.pondering",
+      "ponder.ui.pondering_tag",
+      "ponder.ui.identify_mode",
+      "ponder.ui.associated",
+      "ponder.ui.close",
+      "ponder.ui.identify",
+      "ponder.ui.next",
+      "ponder.ui.next_up",
+      "ponder.ui.previous",
+      "ponder.ui.replay",
+      "ponder.ui.think_back",
+      "ponder.ui.slow_text",
+      "ponder.ui.exit",
+      "ponder.ui.welcome",
+      "ponder.ui.categories",
+      "ponder.ui.index_description",
+      "ponder.ui.index_title",
+      "ponder.ponder.shared.sneak_and",
+      "ponder.ponder.shared.ctrl_and",
+      "catnip.ui.go_back_button"
+    ],
+    "ro_ro": [
+      "catnip.ui.go_back_button"
+    ],
+    "ar_sa": [
+      "ponder.ui.hold_to_ponder",
+      "ponder.ui.subject",
+      "ponder.ui.pondering",
+      "ponder.ui.pondering_tag",
+      "ponder.ui.identify_mode",
+      "ponder.ui.associated",
+      "ponder.ui.close",
+      "ponder.ui.identify",
+      "ponder.ui.next",
+      "ponder.ui.next_up",
+      "ponder.ui.previous",
+      "ponder.ui.replay",
+      "ponder.ui.think_back",
+      "ponder.ui.slow_text",
+      "ponder.ui.exit",
+      "ponder.ui.welcome",
+      "ponder.ui.categories",
+      "ponder.ui.index_description",
+      "ponder.ui.index_title",
+      "ponder.ponder.shared.sneak_and",
+      "ponder.ponder.shared.ctrl_and",
+      "catnip.ui.go_back_button"
+    ],
+    "id_id": [
+      "ponder.ui.hold_to_ponder",
+      "ponder.ui.pondering",
+      "ponder.ui.pondering_tag",
+      "ponder.ui.welcome",
+      "ponder.ui.categories",
+      "ponder.ui.index_description",
+      "ponder.ui.index_title",
+      "ponder.ponder.shared.sneak_and",
+      "catnip.ui.go_back_button"
+    ],
+    "ko_kr": [
+      "catnip.ui.go_back_button",
+      "ponder.ui.categories"
+    ],
+    "vi_vn": [
+      "ponder.ui.subject",
+      "ponder.ui.next",
+      "ponder.ui.next_up",
+      "ponder.ui.previous",
+      "ponder.ui.replay",
+      "ponder.ui.think_back",
+      "ponder.ui.slow_text",
+      "ponder.ui.welcome",
+      "ponder.ponder.shared.sneak_and",
+      "ponder.ponder.shared.ctrl_and",
+      "catnip.ui.go_back_button"
+    ],
+    "tr_tr": [
+      "catnip.ui.go_back_button"
+    ],
+    "it_it": [
+      "catnip.ui.go_back_button"
+    ]
+  },
+  "translation_sha256": {
+    "ja_jp": "265c17b2592077e1bb9019c7b300f2e257a75456a122871f7471c9408f7046c2",
+    "hi_in": "8a87fa190094a599a6da47fcdf88421ae6a3bfc7f8a465aba9514a31647327c7",
+    "zh_hk": "dcef91f08ae913a61b7ef83ab5a071b08b761985fb2a6a487b2dbd4ccc32fa70",
+    "zh_tw": "1530f80575d2ffd6d242f81a68d6e9b7c673cd6e504e8e4731ed37c230b594c0",
+    "zh_cn": "1530f80575d2ffd6d242f81a68d6e9b7c673cd6e504e8e4731ed37c230b594c0",
+    "ru_ru": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f",
+    "pt_br": "365ff16f7e0deea67abc4286e763525cec4d3da6d17cc28d1ec9493170910a20",
+    "pt_pt": "8a583141200584e3f31860ea83a5a1990c6795ff256de58041b27c23d1ad5b18",
+    "es_es": "ea0fccef2f17e3121b33163af4dd1309e5303c8cb1afd7a05a0763b237626848",
+    "fr_fr": "0d555f4e8f8d5b9dd998ff9ca58781b0bcd32f5fad690919800cda36f610fad0",
+    "de_de": "3bd30b6cd71e996fdeaedb1fc0f203199b35a3b22214cd0a88decfe12c9bede2",
+    "cs_cz": "f058af76e7d527470b1c036bcf98f619a3b94266d3152e467aaedcc96ebc22d7",
+    "pl_pl": "406e31ce1dbfc3f1799f5ecf3de57638d4e77503d0936ddcf55459cbba38007b",
+    "ms_my": "8c6a22aaacd56850944d0b910214e52f478cd2a696bde4090ac1f33b9a209ec7",
+    "ro_ro": "bbd58fb16b161af507eb74c2b589d856a2e806b4625500412ea041d7ad95ff90",
+    "ar_sa": "a21093be95053ffa7867e8032180b137ce8f511bff838b1eb1e039da16e9f4ba",
+    "id_id": "5ea02d10b08d8080ae6c104b1beb33dca3e3824537878470b607b82b0ac920eb",
+    "ko_kr": "b4483c922d432c7f868404b593d99cc386312dd3ac44eb08e7d01a62d3d6d386",
+    "vi_vn": "e2b45fed5d9a00e7c3af93c6c5ac3c2ef5ab931beabf5458c2ecf2883a0f72e7",
+    "tr_tr": "d2a167582329dd64eebb78074b659776ada719f059a728ae8856a06c38faf17a",
+    "it_it": "2cfdae6cd94be3dd16b31b3480887c5fd98fc1f80edab644a2f8c4241ce2ff3d"
+  },
+  "review_notes": [
+    "Only absent, unchanged-English or invalid-placeholder native controls are supplemented; other upstream translations are not copied. Ctrl + is a key name and may remain unchanged.",
+    "HI/HK/VI and AR/MS/ID labels reviewed by their assigned translation workers; primary reviewed Portuguese tu, generic Back labels and placeholders. Russian needs no supplemental keys.",
+    "Native UI supplements use the library-owned translation keys through ordinary resource merging; no text redirect or custom screen is introduced.",
+    "Corrected upstream Spanish categories text that omitted the mod-name placeholder and Korean text that hardcoded Create instead of preserving the placeholder."
+  ]
+}

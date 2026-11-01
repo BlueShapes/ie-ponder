@@ -1,0 +1,2204 @@
+{
+  "schema": 1,
+  "date": "2026-10-30",
+  "project": "ie-ponder",
+  "status": "passed_with_scoped_limitations",
+  "changedProduct": true,
+  "changedProductScope": [
+    "JA metal_press search summary",
+    "KO equivalent search summary",
+    "version metadata0.1.6",
+    "NFC normalization for temporary logical search strings"
+  ],
+  "changedTools": [
+    "metadata-based obsolete renamed/disabled archive discovery and safety tests",
+    "narrow approved summary repair in coverage guard"
+  ],
+  "maintainedLocales": [
+    "ja_jp",
+    "en_us",
+    "hi_in",
+    "zh_hk",
+    "zh_tw",
+    "zh_cn",
+    "ru_ru",
+    "pt_br",
+    "pt_pt",
+    "es_es",
+    "fr_fr",
+    "de_de",
+    "cs_cz",
+    "pl_pl",
+    "ms_my",
+    "ro_ro",
+    "ar_sa",
+    "id_id",
+    "ko_kr",
+    "vi_vn",
+    "tr_tr",
+    "it_it"
+  ],
+  "artifact": {
+    "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\libs\\immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+    "sha256": "6110d88ccf942eef90f46fb1efa4fd529967d56639595f7995f3caf447a8af54",
+    "version": "0.1.6"
+  },
+  "deployment": {
+    "source": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\libs\\immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+    "installed": "~\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1 mod creation test\\minecraft\\mods\\immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+    "sha256": "6110d88ccf942eef90f46fb1efa4fd529967d56639595f7995f3caf447a8af54",
+    "targetVersions": {
+      "org.lwjgl3": "3.3.3",
+      "net.minecraft": "1.21.1",
+      "net.neoforged": "21.1.262"
+    },
+    "removedOldGuideJars": [],
+    "removedObsoleteGuideArchives": [],
+    "obsoleteArchiveFindings": [
+      {
+        "name": "immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+        "status": "obsolete-own-guide"
+      }
+    ],
+    "addedMissingDependencies": [],
+    "protectedFilesBefore": {
+      "ae2-ponder-guide-0.1.0-beta2.jar": "c9a0f770cdb62264f27b379c21a22d05ebaa10c00784b89d766a8584dbf0bfa1",
+      "ae2-things-1.4.2-beta.jar": "9725dd363cc874601737b417ddfe675e4a5ae4a6428bdeb67ac408f775eb4241",
+      "AE2MEGAThings-1.21.1-2.0.4.jar": "97537207b4c68a417a15b5a029f82e55510e0fcaa22be3c97b199bf2c7c5f7b9",
+      "ae2omnicells-1.21.1-neoforge-1.1.6.jar": "9ced732d2140d103df8d675a1986940395c15c82dc1bfd14bf1f45e2c68a2fc1",
+      "appliedenergistics2-19.2.18.jar": "df15a07f86ca1ca93aa66373f9d5d84dd3d4586631fceb38f4fbc85dad591e39",
+      "applied_oritech-1.0.4+1.21.1.jar": "77b95af420e26becff181545a974e896dfbac9fb4a5e47cc2aa421600ca8d501",
+      "architectury-api-1IiqEQGl.jar": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb",
+      "athena-ctm-dJgL278E.jar": "43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5",
+      "bigger_ae2-1.21.1-1.4.9.jar": "dc39eb8dba0dd4ab714c5b926f5acef548a2bcf41207c3eb026be7869e3b88d1",
+      "create-1.21.1-6.0.10.jar": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "EdivadLib-1.21-3.0.0.jar": "daf3201364c5e9dbc7c0d99a9617cd82c40f203e489a4701b228daa765038d92",
+      "Emojiful-Neoforge-1.21.1-5.2.8.jar": "1568cc9308bf744e0c3fe4e141304cf1f1626578db56b72c41503a79d471d5b0",
+      "enderio-8.2.12-beta.jar": "5fe098153dddc2e7ccd9d38b0341dbc61f3072150958c916e5ef63f395e4eab1",
+      "enderio-ponder-guide-0.1.5.jar": "40d63db49c84708dce12de265769334e28338ac4607ea6bab80a60989cf81593",
+      "enderio_conduit_opt-1.1.6-1.21.1.jar": "57ff2fb51e222b91465fa68ea5ea12c5438b615e6d08080e0023bb3caca4a454",
+      "enderio_endergy-8.0.1-alpha.jar": "c0ad36135677ed01390c218501300e56a8f05dc26c414fec53310472db603911",
+      "enderio_evolution-3.1.5-NeoForge-1.21.1.jar": "f1af482dc6928a9d4c128549508454d9797fa6033a36d51907811a69a1f84fed",
+      "ExtraStorage-1.21.1-5.1.0.jar": "b5ee569705af27c94b9ad195ae72028122924ed295d9e4053f8a6d4393b990a5",
+      "flywheel-neoforge-1.21.1-1.0.4.jar": "1e715b19c4936b6766eb77762812e57135db1a542343d8afb9127cd7fe5a3e1e",
+      "geckolib-Grwn5rUB.jar": "20a1995e4074f387ff549e2c57ea79dd7d41ee83c6afb9dd6a6e840e592d1c47",
+      "guideme-21.1.19.jar": "2ce254edb931c3c3cf81d69abaf8f4ce5b871bf85e64984f366bf044173bd66a",
+      "heracles-neoforge-1.21.1-2.0.3-login.1.jar": "65f0c47af88dee958cd9cf3fc2aabb664be1720bf2a181a3b6e225335487df8d",
+      "ImmersiveEngineering-1.21.1-12.4.2-194.jar": "45942985a4a4aebf265b8e22a0c54a96208637471f36f2532ff5d4911322debc",
+      "industrial-foregoing-ponder-guide-0.1.5-neoforge-1.21.1.jar": "dd6ebd21f8cdf31b843b0f7db0fe0969d8ec245ffb57b249c96afc947b2d8a2e",
+      "industrial-foregoing-souls-1.21.1-1.10.4.jar": "57955ba464903be4c61de4b44018d6fd2f482ba0eadf9fed85383ae8e05d5ab0",
+      "industrialforegoing-1.21-3.6.38.jar": "e242dc05af2bc1e1316e1a8f7807ccc037b13e2594ce3967b77639a21deaf0a4",
+      "jei-1.21.1-neoforge-19.69.0.457.jar": "5f09d199dba1265e131ef1672597ea07857220e4cc2ff1dc754e8bd0e6378925",
+      "just-keep-my-defaults-0.9.0+mc1.21.1-neoforge.jar": "881939b5e587ee9daeb2f79f512b638feb8ad103cc4784a93aab9e7cc83c813d",
+      "kotlinforforge-5.12.0-all.jar": "2785a4dd6de5c6c56065fd8eb789c82771bd2ee773c30794c23160a3b2c39139",
+      "megacells-4.11.0.jar": "4a89663cc913f5bc8fd00f1a7146a2ad4b45bb4dd8bca245a445a636044d4762",
+      "Mekanism-1.21.1-10.7.19.85.jar": "004dbc9f3106f4d192aeaa1ee1190dd16ec9ca8059ed3d093b80034f4c574f43",
+      "mekanism-ponder-guide-0.1.5-neoforge-1.21.1.jar": "9ad4dc371c66f44645aaf5d462e16a214b76643cd2f567c155481fb3867652a5",
+      "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar": "182ad8ad757175b49d573512c8fac624ee526e8138e24b36f677b0f6466e20cb",
+      "mifa-neoforge-1.21.x-2.1.0.jar": "dab09f72c4df39efc5d7f8949e4ab02b7d5f74242ee17b8c26fb172c2761d49f",
+      "MTR-neoforge-4.1.0-beta.2+1.21.1.jar": "ff2b753d03f2bcc000d053a9014e4250c8ba720daa9b69b6899fe7dc26be1efa",
+      "mtr-ponder-guide-0.1.5-neoforge-1.21.1.jar": "86ee05dc6a4c0bd4ee0ba452e217a553359c76046de82d421a618dd527d48d5d",
+      "odysseymap-development.jar": "0f65960010e2c508b2ba992790aabec14702f92423b46ccea66819aed2135043",
+      "oritech-BR0KKypH.jar": "32600bf5b08fcf6d4a49e557f90ee45b238098170777872c8919d9fdb0a1b828",
+      "oritech-ponder-guide-0.3.1-neoforge-1.21.1.jar": "c9404742b824c14e34e8a0b327a1a60dcc370818c3c6aabc45c1d6a4268e218a",
+      "oritechthings-0.0.48.jar": "c81c7fd7074da2a76aec21fbad3f36c1a6c94cb76c2e4c213a2bc7f8717c2aaf",
+      "ponder-neoforge-1.0.87+mc1.21.1.jar": "d6b7fdf94359f73dc1fee730eded898d51b3bf0d626710753253becd8e4e6bef",
+      "refined-storage-lHHiI26k.jar": "e9c758dddcdfa9c02a7370ca3f4f972a285a1e38ca434bd1fc15cb223ffa06ab",
+      "refined-storage-ponder-0.1.5-neoforge-1.21.1.jar": "3827db6b4ead769009afa82c6452b5d2b22cc1332341f60a51205825f69a92a0",
+      "refinedstorage-quartz-arsenal-neoforge-1.0.8.jar": "c6f00a8dc5707726a6252aa57690d2b8d90fb350dd7f92817276efc16e8af186",
+      "resourcefullib-neoforge-1.21-3.0.11.jar": "accb96a55f7ce147bf57c32a0743dfcd8e868033d07c9679beb1a10c3f58d11a",
+      "titanium-1.21-4.0.34.jar": "a3c2ab6d4cc304150dba7463722c7aab51e936c0b46081b1c78159ab4b56ae64",
+      ".index\\ae2-mega-things.pw.toml": "fbdd7943c6296cdbd5747df6ea493d124ee88c3f99c41887fb2cf93d4b89622d",
+      ".index\\ae2-omni-cells.pw.toml": "e2d0851792d452901b831dde4625b1af15631c040d5f0212a5d3fb1bf4f1b9c2",
+      ".index\\ae2-things-forge.pw.toml": "00a56b9854c7ed33e29fed4cf8d8180669274e3dced2b03fdb32d166ba8b871b",
+      ".index\\ae2.pw.toml": "faa5d04b847ef9d7bc0bd3bb39fc4ef4b381a1cf897f2301ff1c17b0d0fdd91a",
+      ".index\\applied-oritech.pw.toml": "2c0865d6c84f451f6ee154127461185c36c69f385b3dda7ed34f43627d26e66c",
+      ".index\\architectury-api.pw.toml": "9e020359ad5738d4622ee6759c054a09bd3f22487a2d3568a171dfe03e67cf25",
+      ".index\\athena-ctm.pw.toml": "44782e0c2fa7e0eeefcdf75d2804a2adb205c6bb4b214f4dba451c8b3e1b9947",
+      ".index\\bigger-ae2.pw.toml": "00e2e6cf56d1f64a34080c89fb61d9da16d0a1e288d03b6eaec75fdbdd6d4b38",
+      ".index\\create.pw.toml": "d54c45b486976c4c6ffb74197f2f1f8d37130ab4208db229969b6397517e40e7",
+      ".index\\edivadlib.pw.toml": "055f5052b324d22d4811f82507722a83963df396033023c9772810ef0d223250",
+      ".index\\ender-io-conduit-optimizer.pw.toml": "a8698ff7315b546e73a6261d691123f32c61643cdc3e5754f2d2894254bb99a6",
+      ".index\\enderio-endergy.pw.toml": "d42aef3810821321d28627b9998a8da93afe52ce678a094fd2755417206204bd",
+      ".index\\enderio-evolution.pw.toml": "0f0b7c11b3dc38d73e85d7a0f06d6ecfed1a08aab8d466e308d5b91b024dc089",
+      ".index\\enderio.pw.toml": "90ca5f8c31b78dca88dbbc5c56598b312cb4079c56b77a1b1f04122ae3499096",
+      ".index\\extrastorage.pw.toml": "cd4fda7ef321ab48f8754911aebf0b6138e239f659aa2b7f3bddfa09a8de9a23",
+      ".index\\geckolib.pw.toml": "12b42030f3e1c6a65aeca871f5e5cda61e02426f3e2031118f42555fef6f9107",
+      ".index\\guideme.pw.toml": "49f1ec084a2cfc79dee4dcd7a7da4c3d86f3978223688913ab65453164d28ca5",
+      ".index\\immersiveengineering.pw.toml": "7cfa7761c0d990e77ebc18f2bb43722169567ec579fb7c57ff50e29b25b54856",
+      ".index\\industrial-foregoing-souls.pw.toml": "bfa82a8e21d77372eb00cad026ba883c3e5b64cd16c56378dfe1b2fad10dda0c",
+      ".index\\industrial-foregoing.pw.toml": "78042fad9114726ac82ca598aef715d55f1aa7fe752ac780c981e6facd3d8bdf",
+      ".index\\jei.pw.toml": "1fc46b4ca7d8f84008cc913912ef01f00ce4cdd6fcc41b20b1ee4788f72de960",
+      ".index\\kotlin-for-forge.pw.toml": "4fedfd04a64cbed1f16fde7a400cbb8aee1f7a0725cc4d5aa7fe7202905f5617",
+      ".index\\mega.pw.toml": "2aee3dc6c264f0cb4202f5fdc458b47c96367de6d6f524b7d847914634d83a05",
+      ".index\\mekanism.pw.toml": "c4d950927577bdee9c3fcb2baca7b4e44e87bfa537877eb96da436962dff9f9a",
+      ".index\\mezzconfig.pw.toml": "2a648ad6b17481e775faa9af1dc61f00c76688205c2c6ee645f852055cf9efc4",
+      ".index\\mifa.pw.toml": "572d59e613beff5199851a2e9f94c108926888df2c37ff5f8f9cd7f6d3fa5a17",
+      ".index\\minecraft-transit-railway.pw.toml": "49247cea0a3ace2279a5328223ccb9d4b3ec0ec5573b241d70910a93ab8dac70",
+      ".index\\oritech-things.pw.toml": "1af39c6d986aee2a73dddb8d9a08b342939df109fcf7b906ce25896ed2101289",
+      ".index\\oritech.pw.toml": "8e051f472875203e0813bedcb5fbf01f2a6da55d2ce53929551a190f2a3e0beb",
+      ".index\\refined-storage-quartz-arsenal.pw.toml": "bfe6b25144e246b5ea09a4107f99a3d4bb85f6b670aea2f4d13c260d3aba4aef",
+      ".index\\refined-storage.pw.toml": "f8aac1ded6c765fb70dfe3e16e1511fd5e6e97c3e724c148f353058064ae5ca8",
+      ".index\\titanium.pw.toml": "94c94566a4c4d0cbeea268df0bfe33ad50d6f0d8782464cc89f6f35b3e20bc1b"
+    },
+    "otherFilesChanged": {},
+    "protectedFileCount": 78,
+    "protectedIndexCount": 32,
+    "concurrentAdditions": [],
+    "priorDeploymentThisAudit": {
+      "source": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\libs\\immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+      "installed": "~\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1 mod creation test\\minecraft\\mods\\immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+      "sha256": "ac869690d7b73f1e1bedaccc304475811ea792cdc30ebad7f72481178671c5b8",
+      "targetVersions": {
+        "org.lwjgl3": "3.3.3",
+        "net.minecraft": "1.21.1",
+        "net.neoforged": "21.1.262"
+      },
+      "removedOldGuideJars": [
+        "immersive-engineering-ponder-guide-0.1.5-neoforge-1.21.1.jar"
+      ],
+      "removedObsoleteGuideArchives": [
+        "immersive-engineering-ponder-guide-0.1.5-neoforge-1.21.1.jar"
+      ],
+      "obsoleteArchiveFindings": [
+        {
+          "name": "immersive-engineering-ponder-guide-0.1.5-neoforge-1.21.1.jar",
+          "status": "obsolete-own-guide"
+        }
+      ],
+      "addedMissingDependencies": [],
+      "protectedFilesBefore": {
+        "ae2-ponder-guide-0.1.0-beta2.jar": "c9a0f770cdb62264f27b379c21a22d05ebaa10c00784b89d766a8584dbf0bfa1",
+        "ae2-things-1.4.2-beta.jar": "9725dd363cc874601737b417ddfe675e4a5ae4a6428bdeb67ac408f775eb4241",
+        "AE2MEGAThings-1.21.1-2.0.4.jar": "97537207b4c68a417a15b5a029f82e55510e0fcaa22be3c97b199bf2c7c5f7b9",
+        "ae2omnicells-1.21.1-neoforge-1.1.6.jar": "9ced732d2140d103df8d675a1986940395c15c82dc1bfd14bf1f45e2c68a2fc1",
+        "appliedenergistics2-19.2.18.jar": "df15a07f86ca1ca93aa66373f9d5d84dd3d4586631fceb38f4fbc85dad591e39",
+        "applied_oritech-1.0.4+1.21.1.jar": "77b95af420e26becff181545a974e896dfbac9fb4a5e47cc2aa421600ca8d501",
+        "architectury-api-1IiqEQGl.jar": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb",
+        "athena-ctm-dJgL278E.jar": "43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5",
+        "bigger_ae2-1.21.1-1.4.9.jar": "dc39eb8dba0dd4ab714c5b926f5acef548a2bcf41207c3eb026be7869e3b88d1",
+        "create-1.21.1-6.0.10.jar": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+        "EdivadLib-1.21-3.0.0.jar": "daf3201364c5e9dbc7c0d99a9617cd82c40f203e489a4701b228daa765038d92",
+        "Emojiful-Neoforge-1.21.1-5.2.8.jar": "1568cc9308bf744e0c3fe4e141304cf1f1626578db56b72c41503a79d471d5b0",
+        "enderio-8.2.12-beta.jar": "5fe098153dddc2e7ccd9d38b0341dbc61f3072150958c916e5ef63f395e4eab1",
+        "enderio-ponder-guide-0.1.4.jar": "ccd1bb93c3c34e2e4f3e522134543b38ae59710d84008b159454a59da6d3832d",
+        "enderio_conduit_opt-1.1.6-1.21.1.jar": "57ff2fb51e222b91465fa68ea5ea12c5438b615e6d08080e0023bb3caca4a454",
+        "enderio_endergy-8.0.1-alpha.jar": "c0ad36135677ed01390c218501300e56a8f05dc26c414fec53310472db603911",
+        "enderio_evolution-3.1.5-NeoForge-1.21.1.jar": "f1af482dc6928a9d4c128549508454d9797fa6033a36d51907811a69a1f84fed",
+        "ExtraStorage-1.21.1-5.1.0.jar": "b5ee569705af27c94b9ad195ae72028122924ed295d9e4053f8a6d4393b990a5",
+        "flywheel-neoforge-1.21.1-1.0.4.jar": "1e715b19c4936b6766eb77762812e57135db1a542343d8afb9127cd7fe5a3e1e",
+        "geckolib-Grwn5rUB.jar": "20a1995e4074f387ff549e2c57ea79dd7d41ee83c6afb9dd6a6e840e592d1c47",
+        "guideme-21.1.19.jar": "2ce254edb931c3c3cf81d69abaf8f4ce5b871bf85e64984f366bf044173bd66a",
+        "heracles-neoforge-1.21.1-2.0.3-login.1.jar": "65f0c47af88dee958cd9cf3fc2aabb664be1720bf2a181a3b6e225335487df8d",
+        "ImmersiveEngineering-1.21.1-12.4.2-194.jar": "45942985a4a4aebf265b8e22a0c54a96208637471f36f2532ff5d4911322debc",
+        "industrial-foregoing-ponder-guide-0.1.5-neoforge-1.21.1.jar": "dd6ebd21f8cdf31b843b0f7db0fe0969d8ec245ffb57b249c96afc947b2d8a2e",
+        "industrial-foregoing-souls-1.21.1-1.10.4.jar": "57955ba464903be4c61de4b44018d6fd2f482ba0eadf9fed85383ae8e05d5ab0",
+        "industrialforegoing-1.21-3.6.38.jar": "e242dc05af2bc1e1316e1a8f7807ccc037b13e2594ce3967b77639a21deaf0a4",
+        "jei-1.21.1-neoforge-19.69.0.457.jar": "5f09d199dba1265e131ef1672597ea07857220e4cc2ff1dc754e8bd0e6378925",
+        "just-keep-my-defaults-0.9.0+mc1.21.1-neoforge.jar": "881939b5e587ee9daeb2f79f512b638feb8ad103cc4784a93aab9e7cc83c813d",
+        "kotlinforforge-5.12.0-all.jar": "2785a4dd6de5c6c56065fd8eb789c82771bd2ee773c30794c23160a3b2c39139",
+        "megacells-4.11.0.jar": "4a89663cc913f5bc8fd00f1a7146a2ad4b45bb4dd8bca245a445a636044d4762",
+        "Mekanism-1.21.1-10.7.19.85.jar": "004dbc9f3106f4d192aeaa1ee1190dd16ec9ca8059ed3d093b80034f4c574f43",
+        "mekanism-ponder-guide-0.1.5-neoforge-1.21.1.jar": "9ad4dc371c66f44645aaf5d462e16a214b76643cd2f567c155481fb3867652a5",
+        "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar": "182ad8ad757175b49d573512c8fac624ee526e8138e24b36f677b0f6466e20cb",
+        "mifa-neoforge-1.21.x-2.1.0.jar": "dab09f72c4df39efc5d7f8949e4ab02b7d5f74242ee17b8c26fb172c2761d49f",
+        "MTR-neoforge-4.1.0-beta.2+1.21.1.jar": "ff2b753d03f2bcc000d053a9014e4250c8ba720daa9b69b6899fe7dc26be1efa",
+        "mtr-ponder-guide-0.1.5-neoforge-1.21.1.jar": "86ee05dc6a4c0bd4ee0ba452e217a553359c76046de82d421a618dd527d48d5d",
+        "odysseymap-development.jar": "d1c859594f4eaf6ae06bebd4d5fdc24da8c69d7b9965b3ebe581318bd93fd52e",
+        "oritech-BR0KKypH.jar": "32600bf5b08fcf6d4a49e557f90ee45b238098170777872c8919d9fdb0a1b828",
+        "oritech-ponder-guide-0.3.1-neoforge-1.21.1.jar": "c9404742b824c14e34e8a0b327a1a60dcc370818c3c6aabc45c1d6a4268e218a",
+        "oritechthings-0.0.48.jar": "c81c7fd7074da2a76aec21fbad3f36c1a6c94cb76c2e4c213a2bc7f8717c2aaf",
+        "ponder-neoforge-1.0.87+mc1.21.1.jar": "d6b7fdf94359f73dc1fee730eded898d51b3bf0d626710753253becd8e4e6bef",
+        "refined-storage-lHHiI26k.jar": "e9c758dddcdfa9c02a7370ca3f4f972a285a1e38ca434bd1fc15cb223ffa06ab",
+        "refined-storage-ponder-0.1.5-neoforge-1.21.1.jar": "3827db6b4ead769009afa82c6452b5d2b22cc1332341f60a51205825f69a92a0",
+        "refinedstorage-quartz-arsenal-neoforge-1.0.8.jar": "c6f00a8dc5707726a6252aa57690d2b8d90fb350dd7f92817276efc16e8af186",
+        "resourcefullib-neoforge-1.21-3.0.11.jar": "accb96a55f7ce147bf57c32a0743dfcd8e868033d07c9679beb1a10c3f58d11a",
+        "titanium-1.21-4.0.34.jar": "a3c2ab6d4cc304150dba7463722c7aab51e936c0b46081b1c78159ab4b56ae64",
+        ".index\\ae2-mega-things.pw.toml": "fbdd7943c6296cdbd5747df6ea493d124ee88c3f99c41887fb2cf93d4b89622d",
+        ".index\\ae2-omni-cells.pw.toml": "e2d0851792d452901b831dde4625b1af15631c040d5f0212a5d3fb1bf4f1b9c2",
+        ".index\\ae2-things-forge.pw.toml": "00a56b9854c7ed33e29fed4cf8d8180669274e3dced2b03fdb32d166ba8b871b",
+        ".index\\ae2.pw.toml": "faa5d04b847ef9d7bc0bd3bb39fc4ef4b381a1cf897f2301ff1c17b0d0fdd91a",
+        ".index\\applied-oritech.pw.toml": "2c0865d6c84f451f6ee154127461185c36c69f385b3dda7ed34f43627d26e66c",
+        ".index\\architectury-api.pw.toml": "9e020359ad5738d4622ee6759c054a09bd3f22487a2d3568a171dfe03e67cf25",
+        ".index\\athena-ctm.pw.toml": "44782e0c2fa7e0eeefcdf75d2804a2adb205c6bb4b214f4dba451c8b3e1b9947",
+        ".index\\bigger-ae2.pw.toml": "00e2e6cf56d1f64a34080c89fb61d9da16d0a1e288d03b6eaec75fdbdd6d4b38",
+        ".index\\create.pw.toml": "d54c45b486976c4c6ffb74197f2f1f8d37130ab4208db229969b6397517e40e7",
+        ".index\\edivadlib.pw.toml": "055f5052b324d22d4811f82507722a83963df396033023c9772810ef0d223250",
+        ".index\\ender-io-conduit-optimizer.pw.toml": "a8698ff7315b546e73a6261d691123f32c61643cdc3e5754f2d2894254bb99a6",
+        ".index\\enderio-endergy.pw.toml": "d42aef3810821321d28627b9998a8da93afe52ce678a094fd2755417206204bd",
+        ".index\\enderio-evolution.pw.toml": "0f0b7c11b3dc38d73e85d7a0f06d6ecfed1a08aab8d466e308d5b91b024dc089",
+        ".index\\enderio.pw.toml": "90ca5f8c31b78dca88dbbc5c56598b312cb4079c56b77a1b1f04122ae3499096",
+        ".index\\extrastorage.pw.toml": "cd4fda7ef321ab48f8754911aebf0b6138e239f659aa2b7f3bddfa09a8de9a23",
+        ".index\\geckolib.pw.toml": "12b42030f3e1c6a65aeca871f5e5cda61e02426f3e2031118f42555fef6f9107",
+        ".index\\guideme.pw.toml": "49f1ec084a2cfc79dee4dcd7a7da4c3d86f3978223688913ab65453164d28ca5",
+        ".index\\immersiveengineering.pw.toml": "7cfa7761c0d990e77ebc18f2bb43722169567ec579fb7c57ff50e29b25b54856",
+        ".index\\industrial-foregoing-souls.pw.toml": "bfa82a8e21d77372eb00cad026ba883c3e5b64cd16c56378dfe1b2fad10dda0c",
+        ".index\\industrial-foregoing.pw.toml": "78042fad9114726ac82ca598aef715d55f1aa7fe752ac780c981e6facd3d8bdf",
+        ".index\\jei.pw.toml": "1fc46b4ca7d8f84008cc913912ef01f00ce4cdd6fcc41b20b1ee4788f72de960",
+        ".index\\kotlin-for-forge.pw.toml": "4fedfd04a64cbed1f16fde7a400cbb8aee1f7a0725cc4d5aa7fe7202905f5617",
+        ".index\\mega.pw.toml": "2aee3dc6c264f0cb4202f5fdc458b47c96367de6d6f524b7d847914634d83a05",
+        ".index\\mekanism.pw.toml": "c4d950927577bdee9c3fcb2baca7b4e44e87bfa537877eb96da436962dff9f9a",
+        ".index\\mezzconfig.pw.toml": "2a648ad6b17481e775faa9af1dc61f00c76688205c2c6ee645f852055cf9efc4",
+        ".index\\mifa.pw.toml": "572d59e613beff5199851a2e9f94c108926888df2c37ff5f8f9cd7f6d3fa5a17",
+        ".index\\minecraft-transit-railway.pw.toml": "49247cea0a3ace2279a5328223ccb9d4b3ec0ec5573b241d70910a93ab8dac70",
+        ".index\\oritech-things.pw.toml": "1af39c6d986aee2a73dddb8d9a08b342939df109fcf7b906ce25896ed2101289",
+        ".index\\oritech.pw.toml": "8e051f472875203e0813bedcb5fbf01f2a6da55d2ce53929551a190f2a3e0beb",
+        ".index\\refined-storage-quartz-arsenal.pw.toml": "bfe6b25144e246b5ea09a4107f99a3d4bb85f6b670aea2f4d13c260d3aba4aef",
+        ".index\\refined-storage.pw.toml": "f8aac1ded6c765fb70dfe3e16e1511fd5e6e97c3e724c148f353058064ae5ca8",
+        ".index\\titanium.pw.toml": "94c94566a4c4d0cbeea268df0bfe33ad50d6f0d8782464cc89f6f35b3e20bc1b"
+      },
+      "otherFilesChanged": {},
+      "protectedFileCount": 78,
+      "protectedIndexCount": 32,
+      "concurrentAdditions": []
+    },
+    "installedOwnArchives": [
+      {
+        "path": "~\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1 mod creation test\\minecraft\\mods\\immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+        "sha256": "6110d88ccf942eef90f46fb1efa4fd529967d56639595f7995f3caf447a8af54",
+        "version": "0.1.6"
+      }
+    ],
+    "obsoleteOwnArchives": [],
+    "obsoleteRenamedOrDisabledCopies": 0,
+    "recursiveZipMetadataScan": true,
+    "developmentOwnArchives": {
+      "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\run": [],
+      "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\runs": [],
+      "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\validation-run": []
+    },
+    "baseline": {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\work\\jaen-compliance-20261030\\before.json",
+      "sha256": "ca98c862885bd774fd4470ff65cc9d7b3dee38ff510d5d521b9a289745abc1ca",
+      "fileCount": 79,
+      "directFileCount": 47,
+      "indexFileCount": 32
+    },
+    "currentFileCount": 79,
+    "newDependencies": [],
+    "dependenciesReused": {
+      "flywheel-neoforge-1.21.1-1.0.4.jar": {
+        "sha256": "1e715b19c4936b6766eb77762812e57135db1a542343d8afb9127cd7fe5a3e1e",
+        "mods": [
+          {
+            "modId": "flywheel",
+            "version": "1.0.4",
+            "displayName": "Flywheel",
+            "description": "An overhauled entity and block entity rendering API.",
+            "logoFile": "logo.png",
+            "authors": "Jozufozu, PepperCode1",
+            "displayURL": "https://github.com/Engine-Room/Flywheel",
+            "displayTest": "IGNORE_ALL_VERSION"
+          }
+        ],
+        "matchesAccepted": true
+      },
+      "ImmersiveEngineering-1.21.1-12.4.2-194.jar": {
+        "sha256": "45942985a4a4aebf265b8e22a0c54a96208637471f36f2532ff5d4911322debc",
+        "mods": [
+          {
+            "modId": "immersiveengineering",
+            "version": "12.4.2-194",
+            "displayName": "Immersive Engineering",
+            "description": "A tech based mod focused on realism.",
+            "authors": "BluSunrize and Damien A.W. Hazard",
+            "updateJSONURL": "https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/1.21.1/changelog.json",
+            "displayURL": "https://minecraft.curseforge.com/projects/immersive-engineering/",
+            "logoFile": "logo.png",
+            "credits": "All the great other Git Contributors, and the nerds on IRC!",
+            "enumExtensions": "immersiveengineering.enumextension.json"
+          }
+        ],
+        "matchesAccepted": true
+      },
+      "ponder-neoforge-1.0.87+mc1.21.1.jar": {
+        "sha256": "d6b7fdf94359f73dc1fee730eded898d51b3bf0d626710753253becd8e4e6bef",
+        "mods": [
+          {
+            "modId": "ponder",
+            "version": "1.0.87+mc1.21.1",
+            "displayName": "Ponder",
+            "displayURL": "https://github.com/Creators-of-Create/Ponder",
+            "logoFile": "logo.png",
+            "authors": "simibubi, Pepper, zelophed",
+            "credits": "Special Thanks to IThundxr, Jozufozu, Snownee, gamez7, tterrag and Grimmauld",
+            "description": "Visual in-Game Documentation"
+          }
+        ],
+        "matchesAccepted": true
+      }
+    },
+    "restartedMinecraft": false
+  },
+  "evidence": [
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\search-test.log",
+      "sha256": "d0820bb366abd915bab2381dd1b46eda553ae6cc7077372e2b1275769b338d08",
+      "scope": "13 pure search assertions;7040 actual22locale entries; Turkish decomposed/case tests and one explicit Arabic canonical-order temporary-search change"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\docs\\validation-0.1.5.json",
+      "sha256": "ba4668031755b356514225754b9ac75669d8d631602ab74744e0aa361ef3a2d3",
+      "scope": "Accepted0.1.5: all124 descriptions/22locales/4843units; registry642; W/Shift/component/tag/back/foreign ownership. Not a newly executed0.1.6 client"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\docs\\validation-0.1.4.json",
+      "sha256": "8e4aed880c0ed4179d1050a80f780da4524d62a8fe9a46886eea20e1ee896ba0",
+      "scope": "Unchanged140 captions/20titles×22locales: actual180px font/shaping, max3; compile20; render3 and45layouts/12screenshots"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\docs\\validation-0.1.3.json",
+      "sha256": "8cbc3e612c18f781b1720cad4301606fcbc90c943d3bbdd0a9fb5dc456c3f508",
+      "scope": "Native3body colors, no ordinary-screen guide button, native categories/history/foreign scope; targeted presentation only"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\docs\\item-coverage-0.1.5.json",
+      "sha256": "5dfe6d4aab14e856a94b0da555200bdfaee3b5a313e2b738bea3503e5e2fd276",
+      "scope": "Independent fixed-JAR manual408/21variantfamilies; real642 registry;20evidenced exclusions; not an expectation derived only from authored registrations"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\docs\\item-coverage-expectations.json",
+      "sha256": "42a4fbe8e2cda6104f8d60c5bee2f8abf63a1a18f5fbb665821d1c758f3f9a5b",
+      "scope": "Fixed IE JAR and independently sourced item/variant/component expectations"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\translations\\content-review.json",
+      "sha256": "8a004951fca2e76026f19f004ccce121e6f8727ff9a86b6c86e35b0a3753a9ad",
+      "scope": "Full previously reviewed corpus provenance, current source digest and20 raw locale hashes; JA/KO summary repair reviewed"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\translations\\navigation-review.json",
+      "sha256": "0c4562bb60bdf67d53c14fb9c50cd85e8d3dade855cb04e6ebf5027ee2186add",
+      "scope": "22locale navigation source/review fingerprints"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\translations\\native-ui-review.json",
+      "sha256": "390987aa7af683ce1946c48fc0e87658cabe3f0c87eb44aed937b777cd3d0685",
+      "scope": "Native label supplements and upstream resource-stack sources/review"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\inspection.json",
+      "sha256": "003a15903b18518f43b25401a163f637895462ee5a33d41902fd2521c91847bd",
+      "scope": "Current source→generated→JAR equality; perlocale counts; exact6 changed JAR entries;45class hashes and old caption-render input equality"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\semantic-review.md",
+      "sha256": "6b1ca48c32a3113cc909506159a77cae8a5d169ae11dfa6c99772c967a109e64",
+      "scope": "Independent JA/EN content review and initially found/fixed JA+KO summary ambiguity"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\architecture-review.md",
+      "sha256": "4a82a658c7ccd00115b7450d5f022742635cc790dc62eba77dcf1dffdb5ab94e",
+      "scope": "Read-only source audit for controls, virtual world, client/server boundary, scoped mixins, optional gates and limitations"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\final-build.log",
+      "sha256": "914143af8c3559d25c82625746b53abb8853663a83b4633f4833050754ebb730",
+      "scope": "Successful final jar after targeted compile/search test; no Minecraft launch"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\release.log",
+      "sha256": "694b33a4724b80c843cfe8b1bdd7f8b4e77771f1ce3e3f34d1a0794e4189e167",
+      "scope": "Completed0.1.6 release check:45Java21classes,22complete locales, licensing/development boundary"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\tools\\test_install_prism.py",
+      "sha256": "4520594a4b2bd8e1f587b0e849e4d7c7966e24c5b540fd7e441e84f377ebd299",
+      "scope": "Six filesystem-only regressions passed; compatible older minimum NeoForge range cleanup, suffix-independent own cleanup and copy/hash-failure preservation"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\tools\\install_prism.py",
+      "sha256": "cde94c7d592fb73324ed89ab1d055ca0444dce3b8e58912a7cea9ebbcfff7342",
+      "scope": "Current installer checks the actual target against both declared ranges; obsolete metadata need not have the same minimum version as the new artifact"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\install-tests.log",
+      "sha256": "da26029fe502de641a4c573275025301c16542dac89b16a1f8ce2ca2c2ef4a05",
+      "scope": "Six current installer regressions passed after the compatible older loader minimum fix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\resume-process-check.json",
+      "sha256": "633fcbc8321fefe91a0b9c2bea9cf90a54438f8eae366816a4ee8b58e0d85b39",
+      "scope": "Read-only restart audit found no IE Ponder validation/client/runner process; no process stopped or duplicate client started"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\deployment.json",
+      "sha256": "6c9118d68d57840c2f2408e15ad102fcb7a9dbadfea4bcb05ee5c9ff044f8a95",
+      "scope": "Verified0.1.6 installation; obsolete0.1.5 removed;78other files including32index unchanged"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\..\\docs\\mod-guide-authoring.md",
+      "sha256": "26df45c19af7cfdca9c4ab2283661017e3a464062f81032650f3b757757f1540",
+      "scope": "Current numbered requirements1-75, updated2026-10-30"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\..\\docs\\project-specific-requirements.md",
+      "sha256": "0b99d77a815ed32ac021f792231e172ce5d8042cbf83fe052745b131a075d132",
+      "scope": "Addon-extension requirements apply to other four projects; no IE addon extension requested"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\..\\work\\JAEN_COMPLIANCE_PLAN.md",
+      "sha256": "74d347a731fe01d0e6ca14bb7ce630dc031c22de4917eb84223f2593988cc899",
+      "scope": "Current audit scope, proof reuse and latest JAR cleanup instructions"
+    }
+  ],
+  "evidenceBinding": {
+    "acceptedProductCommit": "0a1c8ee20a1a30bd4d28b24b1c6db4213fb8b9ca",
+    "previousArtifactSha256": "e07a513fd56969bb5564c9345e3ef090f1a6d2eabc051c6340de89bffbcd3176",
+    "currentArtifactSha256": "6110d88ccf942eef90f46fb1efa4fd529967d56639595f7995f3caf447a8af54",
+    "changedJarEntries": [
+      "dev/ieponder/client/GuideNavigation.class",
+      "dev/ieponder/client/SearchText.class",
+      "assets/ieponder/guide/processing.json",
+      "assets/ieponder/lang/ja_jp.json",
+      "assets/ieponder/lang/ko_kr.json",
+      "META-INF/neoforge.mods.toml"
+    ],
+    "searchDataChecks": {
+      "ja_jp": {
+        "query": "ピストンと、搬送方向をそろえたコンベア",
+        "matchingKeys": [
+          "ieponder.lesson.metal_press.summary"
+        ],
+        "expectedLesson": "metal_press",
+        "runtimeExecuted": false
+      },
+      "ko_kr": {
+        "query": "피스톤과, 서로 같은 방향으로 움직이는 컨베이어",
+        "matchingKeys": [
+          "ieponder.lesson.metal_press.summary"
+        ],
+        "expectedLesson": "metal_press",
+        "runtimeExecuted": false
+      },
+      "en_us": {
+        "query": "A piston and aligned conveyors",
+        "matchingKeys": [
+          "ieponder.lesson.metal_press.summary"
+        ],
+        "expectedLesson": "metal_press",
+        "runtimeExecuted": false
+      }
+    },
+    "unchangedProductionClassCount": 43,
+    "productionClassCount": 45,
+    "searchNormalizationOnlyIntegration": {
+      "changedOutsideNormalizedReturn": false,
+      "oldSourceSha256": "e1860eb241dd2109ec1a50f9b2bd74418ee71d7b1b65b1246cfd367fefcca03c",
+      "currentSourceSha256": "6bfc74009026955dcbc295ea39610b793c8992578fdca598e1177c2c2660cbcd",
+      "helperSha256": "8de4e4a85a16cdf120ac1f1044176128958c717c5aa625d2821cd13dc711ff5e",
+      "method": "NFC before locale lowercase and NFC after; no visual reordering or original-text mutation"
+    },
+    "classSha256": {
+      "dev/ieponder/client/CaptionUnits.class": "8dbedfd0fe3b6ea6b7e247950e21bf328ab4691d660c4184caff7cc12518ad36",
+      "dev/ieponder/client/GuideBook$Actor.class": "95547b3fcfec5662a11321d3d7d59c2d9ca87d7c81387289bacd25150b4ecbe3",
+      "dev/ieponder/client/GuideBook$Callout.class": "a44c50245b788dd89e67884559b67febb346508c19834be8494692f0df6b83a4",
+      "dev/ieponder/client/GuideBook$Flow.class": "47885493f43fc94d30e25b21ef7e263096c1791b45bad724f4fb1f8355731dc1",
+      "dev/ieponder/client/GuideBook$Holder.class": "989143d1341fa2dc8e9e8878cedb6236c4cf0ca5e6a6ce248d96c3a475b5ac24",
+      "dev/ieponder/client/GuideBook$Lesson.class": "dbf5d12f3284702a3de6007f5c04238e878451dd761d8be596b6cb07ba0bb663",
+      "dev/ieponder/client/GuideBook$Localized.class": "c445519ffb7fde0561262084ea23d95cd8b08dc59620bb8a5d659eb85d97e828",
+      "dev/ieponder/client/GuideBook$Node.class": "f44dff599cad6f10d8dfb20f9cea51f79de1befd9d781d658df86badcf20889f",
+      "dev/ieponder/client/GuideBook$Step.class": "1a4ed66528c28260066f52bf3b0c091a5779c7160efbf6fb49b81e660a8d7e60",
+      "dev/ieponder/client/GuideBook$Structure.class": "1457452c4d0027d4a651b3dc21e45fc6c8bcc47db361c9d38b1f40a1e160f365",
+      "dev/ieponder/client/GuideBook.class": "55d3ee42d72c318a30b225d2fcdad7c317188aa2625de8b5c26334caeb8ae151",
+      "dev/ieponder/client/GuideCaptionElement.class": "0a02890c652be89479cff44b885d9b68675dd0a6c41e3bf9ac444fc23866f443",
+      "dev/ieponder/client/GuideCaptions.class": "ff65e856168f86ea47cbba42399d40b29fb62ed3d8010b5deb10e92551343136",
+      "dev/ieponder/client/GuideChapter.class": "f6aca891495cb636f7216eb6e80e178dc2a2163351941179244b1ebe2fd65a43",
+      "dev/ieponder/client/GuideClient.class": "77125197090d2f5c868a0cff76094c68b139f34874f32f7b83ec8cac2ffaf64b",
+      "dev/ieponder/client/GuideClientEvents.class": "51cd8071b0d3c3b7dd0ce6d59c7de7489514aa1125b864c34a2ca01bf2cba57e",
+      "dev/ieponder/client/GuideCommands.class": "a76d922ea3f43bb94aa0cbdd5047291f67141d1a082ca2c5fd38488e09d81d73",
+      "dev/ieponder/client/GuideItemDescriptions$Entry.class": "5b868209c4a40c08a24b2932c29693e9e3753fa0c3729340c8558749317c0c42",
+      "dev/ieponder/client/GuideItemDescriptions$Holder.class": "c4f763c50d93767f4de4f6e1a8aad4ddd9f0f79306ce7039b75bc08bba351fda",
+      "dev/ieponder/client/GuideItemDescriptions$Index.class": "a0029af630eff070e6ae91019ee52724b2cb0553a91cc1d7522a70f4bd91f254",
+      "dev/ieponder/client/GuideItemDescriptions.class": "6b4ddb864b703127e35f91fd7a26b00ce7527fa4a05e6985fe396321f0d34ad1",
+      "dev/ieponder/client/GuideNavigation.class": "7b9533051980296b48baaa7b76c43e3061fbcff78f63ac1c8bca53fb21101c50",
+      "dev/ieponder/client/GuidePlugin.class": "6bd1aa59010360786860bf5bb53d6ea3425e1af5a3a0eb532c1824bba2f91091",
+      "dev/ieponder/client/GuidePonderScreen.class": "0e04bb3583d95632ef7c76d8c7ca6220608210a772f415e2518b8c840a58995b",
+      "dev/ieponder/client/GuideProgress.class": "4e1282efccc5bcb1a4ff787e3eb90beb579299f7af4b9454c4ebfa8d820920c5",
+      "dev/ieponder/client/GuideScenes.class": "fd65be2cdde2858b4cb9b4ac44ccd72728bc962da4af2f4274eb544b251f90e3",
+      "dev/ieponder/client/GuideStructures$Expanded.class": "e256c478870ae9767c602bfd6bd8048705609b0bfd7296722262b97220117e00",
+      "dev/ieponder/client/GuideStructures.class": "e60b41b17380f50a3ecbbcbba1c3c53b078ea41c13a623e4560be24e12565eb3",
+      "dev/ieponder/client/GuideTextTones$1.class": "cf0baf4f47ef0382052e8a62ff42cf2b2ce1e21e1e19f4eb09cfa4dd760731b2",
+      "dev/ieponder/client/GuideTextTones$Holder.class": "ec9f96d19fd81017ba2d8e39d79ae064340e45f06cbd356fc5fb10e972241b8b",
+      "dev/ieponder/client/GuideTextTones$Tone.class": "fbaabd3375bc78aaab46f0303be573c03070da254f5eb9272d1a7282d65c06a1",
+      "dev/ieponder/client/GuideTextTones$Unit.class": "605107b62f48aa7450f829dbac31bee110f8617847f2deb001efaeb7b96304d1",
+      "dev/ieponder/client/GuideTextTones.class": "0b67a0c9e4b3932b26136d6b97b2c6ebb7c6b2c22f464669ae45dceb504691fa",
+      "dev/ieponder/client/NativePonderItemStackContext.class": "e385e95661c36a83647992c36a1df3f920f951132b945bcdfe9afac7f8d1c371",
+      "dev/ieponder/client/SearchText.class": "eca573b5bb3630ef58777c584ac6f02ae2492de387ee716c51755ab43032d7ee",
+      "dev/ieponder/GuideConstants.class": "5c1a177644347d9c14f65ea26f0ef091e503e20a2cf4db8e56da51e9a32da16b",
+      "dev/ieponder/GuideResources.class": "444ec39cd91a467de330e48df363b7b27b27b95cf7fce4311bf2a6c03abd174f",
+      "dev/ieponder/ImmersiveEngineeringPonder.class": "eb2d2b84ec795679243c336e7f37c72c8e760d4a26cda806fbd4a7fe33363336",
+      "dev/ieponder/mixin/IEVertexBufferMixin.class": "baef7129b41adc60438afd0454548db963a88b7b2471cc34e0c0571a84241317",
+      "dev/ieponder/mixin/PonderUIAccessor.class": "957114f59415c24a46c0cfea02362985109484a4aad5be6ea54b68c6c2bed503",
+      "dev/ieponder/mixin/PonderUIContextMixin.class": "1abb7ebc0c133c809ff79b11ebbfec6bb484aa4a3f9fcc4045315e14f04cdb44",
+      "dev/ieponder/mixin/PonderUIFactoryMixin.class": "0af1785f088bef632361cd148c37f82a769205095b974d1d674da658ac2d5937",
+      "dev/ieponder/mixin/SafeChunkUtilsMixin.class": "a0786190e8bcef28e8080c70baf089dc17aeba14f8cf559c9f860315d49ee6ac",
+      "dev/ieponder/mixin/TextWindowElementAccessor.class": "1152ad245a528cb548cd8f6f6a1cfdaa88bebab3ec987ee27d40aad9624d2805",
+      "dev/ieponder/Platform.class": "bc152c97cd56cb9cb39a4a3f4dc2a5fd63949fa8e461a96ed4fb5717ea21570f"
+    },
+    "captionRendering": {
+      "baselineJarSha256": "cb2757c6c7a3d1bbc399c42031affff1890870e2c939e4df54afef363ce5a091",
+      "equalRendererClasses": [
+        {
+          "entry": "dev/ieponder/client/GuideScenes.class",
+          "sha256": "fd65be2cdde2858b4cb9b4ac44ccd72728bc962da4af2f4274eb544b251f90e3"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideStructures.class",
+          "sha256": "e60b41b17380f50a3ecbbcbba1c3c53b078ea41c13a623e4560be24e12565eb3"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideCaptions.class",
+          "sha256": "ff65e856168f86ea47cbba42399d40b29fb62ed3d8010b5deb10e92551343136"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideCaptionElement.class",
+          "sha256": "0a02890c652be89479cff44b885d9b68675dd0a6c41e3bf9ac444fc23866f443"
+        },
+        {
+          "entry": "dev/ieponder/client/CaptionUnits.class",
+          "sha256": "8dbedfd0fe3b6ea6b7e247950e21bf328ab4691d660c4184caff7cc12518ad36"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideTextTones.class",
+          "sha256": "0b67a0c9e4b3932b26136d6b97b2c6ebb7c6b2c22f464669ae45dceb504691fa"
+        },
+        {
+          "entry": "dev/ieponder/client/GuidePonderScreen.class",
+          "sha256": "0e04bb3583d95632ef7c76d8c7ca6220608210a772f415e2518b8c840a58995b"
+        }
+      ],
+      "unchangedModelGeometryStepsTimingAndOrder": true,
+      "unchangedCaptionKeysPerLocale": 140,
+      "unchangedTitleKeysPerLocale": 20,
+      "locales": [
+        "ja_jp",
+        "en_us",
+        "hi_in",
+        "zh_hk",
+        "zh_tw",
+        "zh_cn",
+        "ru_ru",
+        "pt_br",
+        "pt_pt",
+        "es_es",
+        "fr_fr",
+        "de_de",
+        "cs_cz",
+        "pl_pl",
+        "ms_my",
+        "ro_ro",
+        "ar_sa",
+        "id_id",
+        "ko_kr",
+        "vi_vn",
+        "tr_tr",
+        "it_it"
+      ]
+    },
+    "paletteAndButtonBoundary": {
+      "baselineVersion": "0.1.3",
+      "equalClassSha256": [
+        {
+          "entry": "dev/ieponder/client/GuideTextTones.class",
+          "sha256": "0b67a0c9e4b3932b26136d6b97b2c6ebb7c6b2c22f464669ae45dceb504691fa"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideCaptionElement.class",
+          "sha256": "0a02890c652be89479cff44b885d9b68675dd0a6c41e3bf9ac444fc23866f443"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideClientEvents.class",
+          "sha256": "51cd8071b0d3c3b7dd0ce6d59c7de7489514aa1125b864c34a2ca01bf2cba57e"
+        },
+        {
+          "entry": "dev/ieponder/client/GuideClient.class",
+          "sha256": "77125197090d2f5c868a0cff76094c68b139f34874f32f7b83ec8cac2ffaf64b"
+        }
+      ]
+    },
+    "localeEntries": {
+      "ja_jp": {
+        "changedKeys": [
+          "ieponder.lesson.metal_press.summary"
+        ],
+        "oldEntrySha256": "eeb0acc5b33419b0753e81abf0f4ef22c1478bd774c48c2c62b9f86a0392a66e",
+        "currentEntrySha256": "b8658fe3f1c633035c7e076debc9ffaf49c6da268ecdea705e0a4185f4b657b3",
+        "generatedSha256": "b8658fe3f1c633035c7e076debc9ffaf49c6da268ecdea705e0a4185f4b657b3"
+      },
+      "en_us": {
+        "changedKeys": [],
+        "oldEntrySha256": "9ad659e4924ab8b233f6e29e3a3277a12ee36b51549530984c41baa6fe797bb9",
+        "currentEntrySha256": "9ad659e4924ab8b233f6e29e3a3277a12ee36b51549530984c41baa6fe797bb9",
+        "generatedSha256": "9ad659e4924ab8b233f6e29e3a3277a12ee36b51549530984c41baa6fe797bb9"
+      },
+      "hi_in": {
+        "changedKeys": [],
+        "oldEntrySha256": "5a76080ce7ede74bec562b9de7e94aefc31c798e0a4075fe882112c8509d5a1e",
+        "currentEntrySha256": "5a76080ce7ede74bec562b9de7e94aefc31c798e0a4075fe882112c8509d5a1e",
+        "generatedSha256": "5a76080ce7ede74bec562b9de7e94aefc31c798e0a4075fe882112c8509d5a1e"
+      },
+      "zh_hk": {
+        "changedKeys": [],
+        "oldEntrySha256": "d02a62514f6c6210d35c8e3e2cf635ac081f0ed7262f08d23559ed2aefcd8a42",
+        "currentEntrySha256": "d02a62514f6c6210d35c8e3e2cf635ac081f0ed7262f08d23559ed2aefcd8a42",
+        "generatedSha256": "d02a62514f6c6210d35c8e3e2cf635ac081f0ed7262f08d23559ed2aefcd8a42"
+      },
+      "zh_tw": {
+        "changedKeys": [],
+        "oldEntrySha256": "6641ec07bc0e05e4ad8de1f065eca67afbf2a1f09db23a69735992ebe0bd551d",
+        "currentEntrySha256": "6641ec07bc0e05e4ad8de1f065eca67afbf2a1f09db23a69735992ebe0bd551d",
+        "generatedSha256": "6641ec07bc0e05e4ad8de1f065eca67afbf2a1f09db23a69735992ebe0bd551d"
+      },
+      "zh_cn": {
+        "changedKeys": [],
+        "oldEntrySha256": "f4a5ab95596e6094ccc4148791d36fa16e10cafb71671d9e685a1a53757b5598",
+        "currentEntrySha256": "f4a5ab95596e6094ccc4148791d36fa16e10cafb71671d9e685a1a53757b5598",
+        "generatedSha256": "f4a5ab95596e6094ccc4148791d36fa16e10cafb71671d9e685a1a53757b5598"
+      },
+      "ru_ru": {
+        "changedKeys": [],
+        "oldEntrySha256": "fee5d8cead4abc2e9f8e34049d7885a23fe75ff03474927507d9fa756d3a65d0",
+        "currentEntrySha256": "fee5d8cead4abc2e9f8e34049d7885a23fe75ff03474927507d9fa756d3a65d0",
+        "generatedSha256": "fee5d8cead4abc2e9f8e34049d7885a23fe75ff03474927507d9fa756d3a65d0"
+      },
+      "pt_br": {
+        "changedKeys": [],
+        "oldEntrySha256": "78172018f0adb6a9e8d71edf7324a984c120980b475a5cae8ab370a12e37002c",
+        "currentEntrySha256": "78172018f0adb6a9e8d71edf7324a984c120980b475a5cae8ab370a12e37002c",
+        "generatedSha256": "78172018f0adb6a9e8d71edf7324a984c120980b475a5cae8ab370a12e37002c"
+      },
+      "pt_pt": {
+        "changedKeys": [],
+        "oldEntrySha256": "48ffb257f3fe19cd9da89b1dc19a1399809059b5e4a8ec080205228751169a73",
+        "currentEntrySha256": "48ffb257f3fe19cd9da89b1dc19a1399809059b5e4a8ec080205228751169a73",
+        "generatedSha256": "48ffb257f3fe19cd9da89b1dc19a1399809059b5e4a8ec080205228751169a73"
+      },
+      "es_es": {
+        "changedKeys": [],
+        "oldEntrySha256": "2b9007b5cb0cbab9b3720720f33f55a8607eb77b970fe107d4918d9c2541c1a8",
+        "currentEntrySha256": "2b9007b5cb0cbab9b3720720f33f55a8607eb77b970fe107d4918d9c2541c1a8",
+        "generatedSha256": "2b9007b5cb0cbab9b3720720f33f55a8607eb77b970fe107d4918d9c2541c1a8"
+      },
+      "fr_fr": {
+        "changedKeys": [],
+        "oldEntrySha256": "6ee10ecbbf336ccc7eeea0e26b82f660ec86f3c8b9dd40b4ca28cd83493b622f",
+        "currentEntrySha256": "6ee10ecbbf336ccc7eeea0e26b82f660ec86f3c8b9dd40b4ca28cd83493b622f",
+        "generatedSha256": "6ee10ecbbf336ccc7eeea0e26b82f660ec86f3c8b9dd40b4ca28cd83493b622f"
+      },
+      "de_de": {
+        "changedKeys": [],
+        "oldEntrySha256": "b0adf36ab4c997d9d85e0386e07401ff0f963baf313898301d8b5733fbd7e563",
+        "currentEntrySha256": "b0adf36ab4c997d9d85e0386e07401ff0f963baf313898301d8b5733fbd7e563",
+        "generatedSha256": "b0adf36ab4c997d9d85e0386e07401ff0f963baf313898301d8b5733fbd7e563"
+      },
+      "cs_cz": {
+        "changedKeys": [],
+        "oldEntrySha256": "987e7ed81651c7ddfebc00525612d9de961a189f550dec839efb67e39d4229fd",
+        "currentEntrySha256": "987e7ed81651c7ddfebc00525612d9de961a189f550dec839efb67e39d4229fd",
+        "generatedSha256": "987e7ed81651c7ddfebc00525612d9de961a189f550dec839efb67e39d4229fd"
+      },
+      "pl_pl": {
+        "changedKeys": [],
+        "oldEntrySha256": "61c60ef41ce74d4ae209dd2d016eb94ac695f848724191417565f83d8c76bd69",
+        "currentEntrySha256": "61c60ef41ce74d4ae209dd2d016eb94ac695f848724191417565f83d8c76bd69",
+        "generatedSha256": "61c60ef41ce74d4ae209dd2d016eb94ac695f848724191417565f83d8c76bd69"
+      },
+      "ms_my": {
+        "changedKeys": [],
+        "oldEntrySha256": "337bbd9a43ca3b71216049ee792f5d95284af8557e7fdd3559353af06ad41eac",
+        "currentEntrySha256": "337bbd9a43ca3b71216049ee792f5d95284af8557e7fdd3559353af06ad41eac",
+        "generatedSha256": "337bbd9a43ca3b71216049ee792f5d95284af8557e7fdd3559353af06ad41eac"
+      },
+      "ro_ro": {
+        "changedKeys": [],
+        "oldEntrySha256": "792b375063ad6addbc35142ebe7e51bf5b977afcc919942da731d1c312152c80",
+        "currentEntrySha256": "792b375063ad6addbc35142ebe7e51bf5b977afcc919942da731d1c312152c80",
+        "generatedSha256": "792b375063ad6addbc35142ebe7e51bf5b977afcc919942da731d1c312152c80"
+      },
+      "ar_sa": {
+        "changedKeys": [],
+        "oldEntrySha256": "b5632410904eb688aa95155858627d0d8dfbb004285b54d84cfcfe69e6e7c09b",
+        "currentEntrySha256": "b5632410904eb688aa95155858627d0d8dfbb004285b54d84cfcfe69e6e7c09b",
+        "generatedSha256": "b5632410904eb688aa95155858627d0d8dfbb004285b54d84cfcfe69e6e7c09b"
+      },
+      "id_id": {
+        "changedKeys": [],
+        "oldEntrySha256": "da1d87722b2fa95f4d1cf689ead8c6fe946398ed62f9a4ce2cab2e5ad83d9d45",
+        "currentEntrySha256": "da1d87722b2fa95f4d1cf689ead8c6fe946398ed62f9a4ce2cab2e5ad83d9d45",
+        "generatedSha256": "da1d87722b2fa95f4d1cf689ead8c6fe946398ed62f9a4ce2cab2e5ad83d9d45"
+      },
+      "ko_kr": {
+        "changedKeys": [
+          "ieponder.lesson.metal_press.summary"
+        ],
+        "oldEntrySha256": "8be9ad807239a33c0d99689da076f1069cc145e6cb6502e53a547ff89a30df97",
+        "currentEntrySha256": "07277151f9f0d69ee1613df9c9f2c5eec40d04fc42b9da73452acb733c66c1a7",
+        "generatedSha256": "07277151f9f0d69ee1613df9c9f2c5eec40d04fc42b9da73452acb733c66c1a7"
+      },
+      "vi_vn": {
+        "changedKeys": [],
+        "oldEntrySha256": "bd2a2301683ce19aca1ca2d55932acb158c1c078fb2c1b678042ababe8897178",
+        "currentEntrySha256": "bd2a2301683ce19aca1ca2d55932acb158c1c078fb2c1b678042ababe8897178",
+        "generatedSha256": "bd2a2301683ce19aca1ca2d55932acb158c1c078fb2c1b678042ababe8897178"
+      },
+      "tr_tr": {
+        "changedKeys": [],
+        "oldEntrySha256": "c79ade4430b4c0de0785e212405529db5f2265f383c38afaeccc881052dff7b0",
+        "currentEntrySha256": "c79ade4430b4c0de0785e212405529db5f2265f383c38afaeccc881052dff7b0",
+        "generatedSha256": "c79ade4430b4c0de0785e212405529db5f2265f383c38afaeccc881052dff7b0"
+      },
+      "it_it": {
+        "changedKeys": [],
+        "oldEntrySha256": "f64828115ff5fa2725d944a0f99632577cd1b3ebd649960230203a08f5d3c660",
+        "currentEntrySha256": "f64828115ff5fa2725d944a0f99632577cd1b3ebd649960230203a08f5d3c660",
+        "generatedSha256": "f64828115ff5fa2725d944a0f99632577cd1b3ebd649960230203a08f5d3c660"
+      }
+    },
+    "interpretation": "Old proof is not relabeled as a new0.1.6 run. Description/caption/role/model/control inputs are equal; JA+KO search summaries, version metadata and pure NFC normalization changed. Displayed text/roles/layout/classes are unchanged."
+  },
+  "searchNormalization": {
+    "form": "NFC",
+    "pipeline": [
+      "NFC",
+      "trim/collapse whitespace",
+      "selected-locale lowercase",
+      "NFC"
+    ],
+    "scope": "Both query and haystack temporary logical strings; source/display text and stable IDs remain unchanged",
+    "regressions": {
+      "assertions": 13,
+      "corpusEntries": 7040,
+      "oldAndNewRawEqual": 7039,
+      "nfcOldEqualsNew": 7040,
+      "log": {
+        "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\build\\jaen-compliance-20261030\\search-test.log",
+        "sha256": "d0820bb366abd915bab2381dd1b46eda553ae6cc7077372e2b1275769b338d08",
+        "scope": "Current pure Java regression results"
+      }
+    },
+    "turkish": {
+      "locale": "tr_tr",
+      "sourceKey": "ieponder.lesson.coke_oven.summary",
+      "expectedLesson": "coke_oven",
+      "queryCanonical": "Kömürü",
+      "queryDecomposed": "Kömürü",
+      "queryDecomposedEscaped": "Ko\\u0308mürü",
+      "queryCodePoints": [
+        "U+004B",
+        "U+006F",
+        "U+0308",
+        "U+006D",
+        "U+00FC",
+        "U+0072",
+        "U+00FC"
+      ],
+      "sourceContainsCanonical": true,
+      "casePairs": [
+        "I→ı",
+        "ı→ı",
+        "İ→i",
+        "I+U+0307→i"
+      ]
+    },
+    "arabic": {
+      "logicalOrderPreserved": true,
+      "displayShapingApplied": false,
+      "source": {
+        "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\translations\\content\\ar_sa.json",
+        "sha256": "577b1d80a86d0f9a01bb12aaa8ef48d7035766d572c4d8c8635e677cc7388ac5",
+        "scope": "Unchanged logical Arabic original"
+      },
+      "onlyRawCorpusDeltaKey": "ieponder.ponder.shared.garden_cloche_3",
+      "delta": "Temporary search string canonical mark order U+0651 U+064E becomes U+064E U+0651; source and rendered caption unchanged"
+    },
+    "freshMinecraftInputTest": false
+  },
+  "minecraftProcessesStarted": 0,
+  "runtimeExecuted": false,
+  "runtimeMeaning": "Minecraft client/server; Python/Gradle checks were executed",
+  "sourceReferences": [
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\GuideConstants.java",
+      "sha256": "5ed105d2b433ef80a1d32d6fe4ca957d5bf814ca6a18b79b553af91871fed4ad",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\GuideResources.java",
+      "sha256": "f58f8bdadc637861450f51aa743da2d493caf20bb67700ad235916800caef076",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\ImmersiveEngineeringPonder.java",
+      "sha256": "6468b9ce8558aa8d3ba229ffcb5fede399a23db14bd451a57c8c02539bf35fe4",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\Platform.java",
+      "sha256": "d7c9f816b18c855731343544bc219485aaaf8601f2db079ed672610b45452102",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\CaptionUnits.java",
+      "sha256": "94dda2c2a479ee1a66ae3a925b4499bcc4adacc4d6784f9270ffe2668a06c058",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideBook.java",
+      "sha256": "9e87bdf1c483e2bf57f599e14ee6b6a10ee1331934caabbff23c0ce1cdb26bd0",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideCaptionElement.java",
+      "sha256": "4b8ebfbf08d7c0f0af24c561a49b44a1597f9abc6de6fdf88c7e3dfd21795c57",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideCaptions.java",
+      "sha256": "a1d8a05dce3521d36500b6b6f2b1ba89cff59b18f231d9ad70369630217c1a80",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideChapter.java",
+      "sha256": "435e9541f18e417a565960a298eb10d727ca2328785756c143918adf840d8072",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideClient.java",
+      "sha256": "004f27a0cdbde74e28e7b860075a9d015c1488b7466e93cc42fac9fe5a99e131",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideClientEvents.java",
+      "sha256": "5b106e5edc08101dc72a6ee60a9863c51b51f6e1a946490c43f759cbaf12bb09",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideCommands.java",
+      "sha256": "1f944df3d75ef06f050fd9cc0817adc263010a74639ad658200094e053407c63",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideItemDescriptions.java",
+      "sha256": "c191ef08a59469f3c6512628133c1abc10e8c2aa32f89d1f32265953aacb0047",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideNavigation.java",
+      "sha256": "6bfc74009026955dcbc295ea39610b793c8992578fdca598e1177c2c2660cbcd",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuidePlugin.java",
+      "sha256": "016f9bde002a771121f22bbbf94910a65b1d82fc2fff56e01839c25145ff0bbc",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuidePonderScreen.java",
+      "sha256": "8121f11a2ea562609fe44fc6482cb5249ebbc93e1963675e7312bdfa441c901f",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideProgress.java",
+      "sha256": "5528a2da7de76f2c2f8bc3510b884e6a15358ef8904c56120484bb3e34a65831",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideScenes.java",
+      "sha256": "88f234cc7bde57224f5fdb8b68b58980e029f858543dffff3e970f979a6f59ac",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideStructures.java",
+      "sha256": "7715163133bfa1ed3aa6df6d7526b0f53291ed121669293704ac7d28bb855631",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\GuideTextTones.java",
+      "sha256": "eb4f3f0a4a1fbadd619cf569173f49e79c8f8c455f8c9d21bb01f0a8be33a49e",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\NativePonderItemStackContext.java",
+      "sha256": "8623179699238e6034e31373c24be9c5480dcf7a5be0c5f65bb4c7eccb471711",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\client\\SearchText.java",
+      "sha256": "8de4e4a85a16cdf120ac1f1044176128958c717c5aa625d2821cd13dc711ff5e",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\mixin\\IEVertexBufferMixin.java",
+      "sha256": "90026c532a8856e7db464d98daa46d282cef29d573955cf19e0bb341fe625fc5",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\mixin\\PonderUIAccessor.java",
+      "sha256": "00fd86b679b69d69509d10fdfa71c4a304665f1dda4a0690414f6f15731595ea",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\mixin\\PonderUIContextMixin.java",
+      "sha256": "d681eb14a701bba93cd2c3a38fd29b8702fb6a4ca8b2d9d25bb75091dbc70b56",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\mixin\\PonderUIFactoryMixin.java",
+      "sha256": "1acc3188601abe6bc7259ebeffbe367a81c0fd3321b94245afd596b97825917d",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\mixin\\SafeChunkUtilsMixin.java",
+      "sha256": "3aaca350192a8f17677fafa2efd18c6b36183d21f8e4a1e532c2e6838d6b2d07",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    },
+    {
+      "path": "~\\dev\\minecraft\\mods\\ponder-series\\ie-ponder\\src\\main\\java\\dev\\ieponder\\mixin\\TextWindowElementAccessor.java",
+      "sha256": "779202ded635f7cff1bfcd0f6d9eed3eb14728d3480ca8877761588c2471488b",
+      "scope": "Current production source symbol referenced by the requirement matrix"
+    }
+  ],
+  "commands": [
+    {
+      "name": "translations",
+      "command": "python tools/check_translations.py",
+      "chunk_id": "175c89",
+      "wall_time_seconds": 0.9054388,
+      "exit_code": 0,
+      "original_token_count": 45,
+      "output": "PASS: 22 complete content locales, 304 keys each; source and reviewed file hashes current\r\nPASS: 145 native UI supplements; upstream originals and reviewed translations current\r\n"
+    },
+    {
+      "name": "navigation",
+      "command": "python tools/check_navigation.py",
+      "chunk_id": "0baea7",
+      "wall_time_seconds": 0.9265369,
+      "exit_code": 0,
+      "original_token_count": 19,
+      "output": "PASS: 22 navigation locales, 16 keys each; 20 unique chapter/item targets\r\n"
+    },
+    {
+      "name": "captions",
+      "command": "python tools/check_captions.py",
+      "chunk_id": "3eda39",
+      "wall_time_seconds": 1.7238820000000001,
+      "exit_code": 0,
+      "original_token_count": 29,
+      "output": "PASS: 3080 localized captions, 7936 authored complete units\r\nPASS: 54 sentence/continuation regression assertions\r\n"
+    },
+    {
+      "name": "tones",
+      "command": "python tools/check_text_tones.py",
+      "chunk_id": "274435",
+      "wall_time_seconds": 0.7969202,
+      "exit_code": 0,
+      "original_token_count": 29,
+      "output": "PASS: 22 locales, 140 caption keys, 124 item descriptions; unit counts, enums and semantic regressions verified\r\n"
+    },
+    {
+      "name": "guide",
+      "command": "python tools/check_guide.py --ie-jar build/research/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
+      "chunk_id": "fe7f5b",
+      "wall_time_seconds": 0.8793148,
+      "exit_code": 0,
+      "original_token_count": 24,
+      "output": "PASS: 20 lessons, 363 nodes, 140 steps, 151 callouts; exact IE items and templates verified\r\n"
+    },
+    {
+      "name": "coverage",
+      "command": "python tools/check_item_coverage.py --ie-jar build/research/ImmersiveEngineering-1.21.1-12.4.2-194.jar --runtime-result docs/validation-0.1.5.json --release-jar build/libs/immersive-engineering-ponder-guide-0.1.5-neoforge-1.21.1.jar",
+      "chunk_id": "00bc80",
+      "wall_time_seconds": 1.422611,
+      "exit_code": 0,
+      "original_token_count": 46,
+      "output": "PASS: 408 independent manual IDs, 21 variant families; 352 baseline manual gaps ->0\r\nSTATIC: W 58->69, Shift 9->568; 119 new prose keys; existing storyboard text/geometry retained\r\n"
+    },
+    {
+      "name": "build",
+      "command": ".\\gradlew.bat compileJava generateGuideResources jar",
+      "exit_code": 0,
+      "log": "build/jaen-compliance-20261030/build.log"
+    },
+    {
+      "name": "release",
+      "command": "python tools/check_release.py build/libs/immersive-engineering-ponder-guide-0.1.6-neoforge-1.21.1.jar",
+      "exit_code": 0,
+      "log": "build/jaen-compliance-20261030/release.log"
+    },
+    {
+      "name": "deployment-tests",
+      "command": "python tools/test_install_prism.py",
+      "exit_code": 0,
+      "tests": 6,
+      "executor": "primary after compatible older minimum regression/fix",
+      "log": "build/jaen-compliance-20261030/install-tests.log"
+    },
+    {
+      "name": "search-regression",
+      "command": "Gradle8.14.3 testSearchText",
+      "exit_code": 0,
+      "assertions": 13,
+      "corpusEntries": 7040,
+      "log": "build/jaen-compliance-20261030/search-test.log"
+    },
+    {
+      "name": "final-jar",
+      "command": ".\\gradlew.bat jar",
+      "exit_code": 0,
+      "log": "build/jaen-compliance-20261030/final-build.log"
+    },
+    {
+      "name": "input-binding",
+      "command": "python build/jaen-compliance-20261030/inspect.py",
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "No new Minecraft startup, all22 redraw or all-scene replay was performed",
+    "No physical W/Shift key press, full Prism eight-guide coexistence startup, dedicated-server startup or guide-absent server connection",
+    "No exhaustive arbitrary component/configuration/accepted-version matrix or all-frame occlusion/visual review",
+    "Fresh semantic second-scope samples are representative12keys/locale; full previous corpus review is reused by value equivalence, not native-speaker certification",
+    "Manual resolves in item commands but is not advertised in current autocomplete; not a failed entrance"
+  ],
+  "checkedLanguages": [
+    "ja_jp",
+    "en_us"
+  ],
+  "counts": {
+    "ja_jp": {
+      "titles": {
+        "keys": 20,
+        "units": 20,
+        "continuationMarkers": 0
+      },
+      "summaries": {
+        "keys": 20,
+        "units": 20,
+        "continuationMarkers": 0
+      },
+      "captions": {
+        "keys": 140,
+        "units": 303,
+        "continuationMarkers": 0
+      },
+      "descriptions": {
+        "keys": 124,
+        "units": 220,
+        "continuationMarkers": 0
+      },
+      "contentKeys": 304,
+      "generatedKeys": 320,
+      "navigationKeys": 16,
+      "chapterNames": 6,
+      "chapterDescriptions": 6,
+      "descriptionHints": 1,
+      "commandErrors": 2,
+      "guideTitles": 1,
+      "addonLessons": 0,
+      "guidePages": 0,
+      "tones": {
+        "NORMAL": 404,
+        "WARNING": 60,
+        "HINT": 59
+      },
+      "missingKeys": 0,
+      "emptyValues": 0,
+      "exposedKeys": 0,
+      "placeholderIssues": 0
+    },
+    "en_us": {
+      "titles": {
+        "keys": 20,
+        "units": 20,
+        "continuationMarkers": 0
+      },
+      "summaries": {
+        "keys": 20,
+        "units": 20,
+        "continuationMarkers": 0
+      },
+      "captions": {
+        "keys": 140,
+        "units": 348,
+        "continuationMarkers": 0
+      },
+      "descriptions": {
+        "keys": 124,
+        "units": 220,
+        "continuationMarkers": 0
+      },
+      "contentKeys": 304,
+      "generatedKeys": 320,
+      "navigationKeys": 16,
+      "chapterNames": 6,
+      "chapterDescriptions": 6,
+      "descriptionHints": 1,
+      "commandErrors": 2,
+      "guideTitles": 1,
+      "addonLessons": 0,
+      "guidePages": 0,
+      "tones": {
+        "NORMAL": 440,
+        "WARNING": 60,
+        "HINT": 68
+      },
+      "missingKeys": 0,
+      "emptyValues": 0,
+      "exposedKeys": 0,
+      "placeholderIssues": 0
+    }
+  },
+  "requirements": [
+    {
+      "number": 1,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 2,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 3,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 4,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 5,
+      "status": "pass",
+      "group": "教材と短文の使い分け",
+      "basis": "20教材と124短文を同じ定義から生成。無限キャパシタ等は有用なShift説明とし、無関係な有限機械教材へ登録しない",
+      "evidence": [
+        "GuideBook",
+        "GuidePlugin",
+        "GuideItemDescriptions",
+        "coverage"
+      ]
+    },
+    {
+      "number": 6,
+      "status": "pass",
+      "group": "教材と短文の使い分け",
+      "basis": "20教材と124短文を同じ定義から生成。無限キャパシタ等は有用なShift説明とし、無関係な有限機械教材へ登録しない",
+      "evidence": [
+        "GuideBook",
+        "GuidePlugin",
+        "GuideItemDescriptions",
+        "coverage"
+      ]
+    },
+    {
+      "number": 7,
+      "status": "pass",
+      "group": "対象版・用語・条件",
+      "basis": "固定IE12.4.2-194のJAR/レシピ/NBTと公式名を使用。Cage Lampは英語名+訳案を明示。既知の実装対ガイド不具合を正しい挙動として隠していない。全設定/版の網羅試験ではない",
+      "evidence": [
+        "tools/check_guide.py",
+        "docs/creative-capacitor-0.1.5.md",
+        "semanticReview"
+      ]
+    },
+    {
+      "number": 8,
+      "status": "pass",
+      "group": "教材と短文の使い分け",
+      "basis": "20教材と124短文を同じ定義から生成。無限キャパシタ等は有用なShift説明とし、無関係な有限機械教材へ登録しない",
+      "evidence": [
+        "GuideBook",
+        "GuidePlugin",
+        "GuideItemDescriptions",
+        "coverage"
+      ]
+    },
+    {
+      "number": 9,
+      "status": "pass",
+      "group": "教材と短文の使い分け",
+      "basis": "20教材と124短文を同じ定義から生成。無限キャパシタ等は有用なShift説明とし、無関係な有限機械教材へ登録しない",
+      "evidence": [
+        "GuideBook",
+        "GuidePlugin",
+        "GuideItemDescriptions",
+        "coverage"
+      ]
+    },
+    {
+      "number": 10,
+      "status": "pass",
+      "group": "教材と短文の使い分け",
+      "basis": "20教材と124短文を同じ定義から生成。無限キャパシタ等は有用なShift説明とし、無関係な有限機械教材へ登録しない",
+      "evidence": [
+        "GuideBook",
+        "GuidePlugin",
+        "GuideItemDescriptions",
+        "coverage"
+      ]
+    },
+    {
+      "number": 11,
+      "status": "pass",
+      "group": "模型と表示順",
+      "basis": "仮想scene.worldのみ、安定IDと作者順、151材料/操作吹き出し、keyframe/読む時間を保持。転送演出を生産速度保証としない",
+      "evidence": [
+        "GuideScenes",
+        "GuideStructures",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 12,
+      "status": "pass",
+      "group": "文体・単位・配色",
+      "basis": "日英全原本と代表内容を見直し、句点/単位/局所のNORMAL-WARNING-HINT意図を検査。催促語数だけで合否を決めず、故障対処/安全の依頼を維持。本文色の実証は不変クラスへ限定再利用",
+      "evidence": [
+        "semanticReview",
+        "captions",
+        "tones",
+        "presentation"
+      ]
+    },
+    {
+      "number": 13,
+      "status": "conditional",
+      "group": "各言語の語調",
+      "basis": "日英に加え第二20言語を代表12キーずつ新規レビューし、残りは値/色/描画クラスが不変の既存意味レビューを再利用。全翻訳の今回新規母語校閲ではない",
+      "evidence": [
+        "secondScope",
+        "content-review"
+      ]
+    },
+    {
+      "number": 14,
+      "status": "pass",
+      "group": "対象版・用語・条件",
+      "basis": "固定IE12.4.2-194のJAR/レシピ/NBTと公式名を使用。Cage Lampは英語名+訳案を明示。既知の実装対ガイド不具合を正しい挙動として隠していない。全設定/版の網羅試験ではない",
+      "evidence": [
+        "tools/check_guide.py",
+        "docs/creative-capacitor-0.1.5.md",
+        "semanticReview"
+      ]
+    },
+    {
+      "number": 15,
+      "status": "pass",
+      "group": "対象版・用語・条件",
+      "basis": "固定IE12.4.2-194のJAR/レシピ/NBTと公式名を使用。Cage Lampは英語名+訳案を明示。既知の実装対ガイド不具合を正しい挙動として隠していない。全設定/版の網羅試験ではない",
+      "evidence": [
+        "tools/check_guide.py",
+        "docs/creative-capacitor-0.1.5.md",
+        "semanticReview"
+      ]
+    },
+    {
+      "number": 16,
+      "status": "pass",
+      "group": "対象版・用語・条件",
+      "basis": "固定IE12.4.2-194のJAR/レシピ/NBTと公式名を使用。Cage Lampは英語名+訳案を明示。既知の実装対ガイド不具合を正しい挙動として隠していない。全設定/版の網羅試験ではない",
+      "evidence": [
+        "tools/check_guide.py",
+        "docs/creative-capacitor-0.1.5.md",
+        "semanticReview"
+      ]
+    },
+    {
+      "number": 17,
+      "status": "conditional",
+      "group": "到達点・前提",
+      "basis": "章順/要約/基本→操作→条件の代表内容を確認。明示的な目的/前提メタデータはなく、全20教材の教育効果を実ユーザーで実験したものではない",
+      "evidence": [
+        "GuideChapter",
+        "GuideBook",
+        "semanticReview"
+      ]
+    },
+    {
+      "number": 18,
+      "status": "pass",
+      "group": "模型と表示順",
+      "basis": "仮想scene.worldのみ、安定IDと作者順、151材料/操作吹き出し、keyframe/読む時間を保持。転送演出を生産速度保証としない",
+      "evidence": [
+        "GuideScenes",
+        "GuideStructures",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 19,
+      "status": "conditional",
+      "group": "実フォント・配置・可視性",
+      "basis": "全22字幕と124短文の実フォントは有効範囲へ再利用しmax3。模型/配置は日本語代表3場面/3GUIサイズ、静的な全参照を確認。全20場面の全フレーム/遮蔽/全タグカード画面寸法を目視したものではない",
+      "evidence": [
+        "validation0.1.4",
+        "validation0.1.5",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 20,
+      "status": "pass",
+      "group": "文体・単位・配色",
+      "basis": "日英全原本と代表内容を見直し、句点/単位/局所のNORMAL-WARNING-HINT意図を検査。催促語数だけで合否を決めず、故障対処/安全の依頼を維持。本文色の実証は不変クラスへ限定再利用",
+      "evidence": [
+        "semanticReview",
+        "captions",
+        "tones",
+        "presentation"
+      ]
+    },
+    {
+      "number": 21,
+      "status": "pass",
+      "group": "模型と表示順",
+      "basis": "仮想scene.worldのみ、安定IDと作者順、151材料/操作吹き出し、keyframe/読む時間を保持。転送演出を生産速度保証としない",
+      "evidence": [
+        "GuideScenes",
+        "GuideStructures",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 22,
+      "status": "pass",
+      "group": "模型と表示順",
+      "basis": "仮想scene.worldのみ、安定IDと作者順、151材料/操作吹き出し、keyframe/読む時間を保持。転送演出を生産速度保証としない",
+      "evidence": [
+        "GuideScenes",
+        "GuideStructures",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 23,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 24,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 25,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 26,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 27,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 28,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 29,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 30,
+      "status": "pass",
+      "group": "言語と生成",
+      "basis": "22localeを維持、304本文+16導線=320各生成キー。全キー/空欄/露出/プレースホルダ/元言語対応とJARを照合。日韓要約だけ修正し英語+他19要約は意味を確認して維持。最終fallbackは英語",
+      "evidence": [
+        "translations",
+        "navigation",
+        "release",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 31,
+      "status": "conditional",
+      "group": "検索",
+      "basis": "選択言語の論理順検索へNFC→locale lowercase→NFCを適用。現行7040キーと13純粋回帰で結合文字/Turkish I/İ/Arabic論理順を検証。変更JA/KO検索データも静的照合。新コードのゲーム内入力は未実施",
+      "evidence": [
+        "GuideNavigation.findLessonForSearch",
+        "validation0.1.4",
+        "localeComparison"
+      ]
+    },
+    {
+      "number": 32,
+      "status": "pass",
+      "group": "RTL",
+      "basis": "アラビア語原文は論理順で検索。描画は既存実visual-order字形幅/グリフ検査を、全文/表示定義/クラス不変の条件で再利用。二重整形しない",
+      "evidence": [
+        "GuideItemDescriptions.splitLogicalLines",
+        "validation0.1.5",
+        "validation0.1.4"
+      ]
+    },
+    {
+      "number": 33,
+      "status": "conditional",
+      "group": "実フォント・配置・可視性",
+      "basis": "全22字幕と124短文の実フォントは有効範囲へ再利用しmax3。模型/配置は日本語代表3場面/3GUIサイズ、静的な全参照を確認。全20場面の全フレーム/遮蔽/全タグカード画面寸法を目視したものではない",
+      "evidence": [
+        "validation0.1.4",
+        "validation0.1.5",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 34,
+      "status": "pass",
+      "group": "模型と表示順",
+      "basis": "仮想scene.worldのみ、安定IDと作者順、151材料/操作吹き出し、keyframe/読む時間を保持。転送演出を生産速度保証としない",
+      "evidence": [
+        "GuideScenes",
+        "GuideStructures",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 35,
+      "status": "pass",
+      "group": "対象版・用語・条件",
+      "basis": "固定IE12.4.2-194のJAR/レシピ/NBTと公式名を使用。Cage Lampは英語名+訳案を明示。既知の実装対ガイド不具合を正しい挙動として隠していない。全設定/版の網羅試験ではない",
+      "evidence": [
+        "tools/check_guide.py",
+        "docs/creative-capacitor-0.1.5.md",
+        "semanticReview"
+      ]
+    },
+    {
+      "number": 36,
+      "status": "conditional",
+      "group": "実フォント・配置・可視性",
+      "basis": "全22字幕と124短文の実フォントは有効範囲へ再利用しmax3。模型/配置は日本語代表3場面/3GUIサイズ、静的な全参照を確認。全20場面の全フレーム/遮蔽/全タグカード画面寸法を目視したものではない",
+      "evidence": [
+        "validation0.1.4",
+        "validation0.1.5",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 37,
+      "status": "conditional",
+      "group": "実フォント・配置・可視性",
+      "basis": "全22字幕と124短文の実フォントは有効範囲へ再利用しmax3。模型/配置は日本語代表3場面/3GUIサイズ、静的な全参照を確認。全20場面の全フレーム/遮蔽/全タグカード画面寸法を目視したものではない",
+      "evidence": [
+        "validation0.1.4",
+        "validation0.1.5",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 38,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 39,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 40,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 41,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 42,
+      "status": "conditional",
+      "group": "実フォント・配置・可視性",
+      "basis": "全22字幕と124短文の実フォントは有効範囲へ再利用しmax3。模型/配置は日本語代表3場面/3GUIサイズ、静的な全参照を確認。全20場面の全フレーム/遮蔽/全タグカード画面寸法を目視したものではない",
+      "evidence": [
+        "validation0.1.4",
+        "validation0.1.5",
+        "guide",
+        "captionProofBinding"
+      ]
+    },
+    {
+      "number": 43,
+      "status": "conditional",
+      "group": "クライアント専用",
+      "basis": "空common entryとDist.CLIENT hooks、client-only mixins、独自registry/packet/servercommandなしを確認。専用サーバー起動とガイド未導入サーバーへの実接続は未検証",
+      "evidence": [
+        "ImmersiveEngineeringPonder",
+        "GuideClientEvents",
+        "ieponder.mixins.json"
+      ]
+    },
+    {
+      "number": 44,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 45,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 46,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 47,
+      "status": "not_applicable",
+      "group": "アドオン",
+      "basis": "現行はIE本体20教材のみでaddon章/短文/任意依存は0。今回IEへの追加拡張は対象外。空章を作らず、将来のaddon導入/未導入動作を検証済みにしない",
+      "evidence": [
+        "AGENTS.md#17",
+        "../docs/project-specific-requirements.md",
+        "GuideBook.lessonsForMods"
+      ]
+    },
+    {
+      "number": 48,
+      "status": "not_applicable",
+      "group": "アドオン",
+      "basis": "現行はIE本体20教材のみでaddon章/短文/任意依存は0。今回IEへの追加拡張は対象外。空章を作らず、将来のaddon導入/未導入動作を検証済みにしない",
+      "evidence": [
+        "AGENTS.md#17",
+        "../docs/project-specific-requirements.md",
+        "GuideBook.lessonsForMods"
+      ]
+    },
+    {
+      "number": 49,
+      "status": "not_applicable",
+      "group": "アドオン",
+      "basis": "現行はIE本体20教材のみでaddon章/短文/任意依存は0。今回IEへの追加拡張は対象外。空章を作らず、将来のaddon導入/未導入動作を検証済みにしない",
+      "evidence": [
+        "AGENTS.md#17",
+        "../docs/project-specific-requirements.md",
+        "GuideBook.lessonsForMods"
+      ]
+    },
+    {
+      "number": 50,
+      "status": "pass",
+      "group": "版・ローダー",
+      "basis": "現行対象はMC1.21.1/NeoForge/Java21。小さなPlatform橋、別出力/開発world、メタデータ/bytecode/mixin境界を照合。他版/loaderへの対応を主張しない",
+      "evidence": [
+        "build.gradle",
+        "gradle.properties",
+        "release"
+      ]
+    },
+    {
+      "number": 51,
+      "status": "pass",
+      "group": "版・ローダー",
+      "basis": "現行対象はMC1.21.1/NeoForge/Java21。小さなPlatform橋、別出力/開発world、メタデータ/bytecode/mixin境界を照合。他版/loaderへの対応を主張しない",
+      "evidence": [
+        "build.gradle",
+        "gradle.properties",
+        "release"
+      ]
+    },
+    {
+      "number": 52,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 53,
+      "status": "conditional",
+      "group": "共存",
+      "basis": "globalRedirect複製なし、own-scene guard/foreign所有復元と既存AE2 fixture共存を再利用。Prism全8ガイド同時起動は未検証",
+      "evidence": [
+        "SafeChunkUtilsMixin",
+        "IEVertexBufferMixin",
+        "PonderUIContextMixin",
+        "validation0.1.5"
+      ]
+    },
+    {
+      "number": 54,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 55,
+      "status": "pass",
+      "group": "構造検査",
+      "basis": "20教材363node/140step/151calloutのID/参照/表示順/visibility、固定JARのitem/block/template、全locale対応を検査",
+      "evidence": [
+        "guide",
+        "translations",
+        "captions"
+      ]
+    },
+    {
+      "number": 56,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 57,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 58,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 59,
+      "status": "pass",
+      "group": "権利・配布境界",
+      "basis": "LICENSE/THIRD_PARTY_NOTICES/MIT-Ponder/Apache本文とmetadataをJAR内確認。検証class/依存JAR/IE画像・模型・構造・手引書本文を同梱しない",
+      "evidence": [
+        "THIRD_PARTY_NOTICES.md",
+        "tools/check_release.py",
+        "release"
+      ]
+    },
+    {
+      "number": 60,
+      "status": "pass",
+      "group": "権利・配布境界",
+      "basis": "LICENSE/THIRD_PARTY_NOTICES/MIT-Ponder/Apache本文とmetadataをJAR内確認。検証class/依存JAR/IE画像・模型・構造・手引書本文を同梱しない",
+      "evidence": [
+        "THIRD_PARTY_NOTICES.md",
+        "tools/check_release.py",
+        "release"
+      ]
+    },
+    {
+      "number": 61,
+      "status": "pass",
+      "group": "配置と旧コピー",
+      "basis": "成功した0.1.6完成JARのSHAを配置先と照合。metadata確認済み旧0.1.5を除去し、suffixを問わない再帰ZIP読取で自身の現行1コピーだけを確認。開発run dirsにも自身の旧コピー0。他版/他MODを保持",
+      "evidence": [
+        "deployment",
+        "tools/install_prism.py",
+        "tools/test_install_prism.py"
+      ]
+    },
+    {
+      "number": 62,
+      "status": "pass",
+      "group": "配置と旧コピー",
+      "basis": "成功した0.1.6完成JARのSHAを配置先と照合。metadata確認済み旧0.1.5を除去し、suffixを問わない再帰ZIP読取で自身の現行1コピーだけを確認。開発run dirsにも自身の旧コピー0。他版/他MODを保持",
+      "evidence": [
+        "deployment",
+        "tools/install_prism.py",
+        "tools/test_install_prism.py"
+      ]
+    },
+    {
+      "number": 63,
+      "status": "pass",
+      "group": "配置と旧コピー",
+      "basis": "成功した0.1.6完成JARのSHAを配置先と照合。metadata確認済み旧0.1.5を除去し、suffixを問わない再帰ZIP読取で自身の現行1コピーだけを確認。開発run dirsにも自身の旧コピー0。他版/他MODを保持",
+      "evidence": [
+        "deployment",
+        "tools/install_prism.py",
+        "tools/test_install_prism.py"
+      ]
+    },
+    {
+      "number": 64,
+      "status": "pass",
+      "group": "配置と旧コピー",
+      "basis": "成功した0.1.6完成JARのSHAを配置先と照合。metadata確認済み旧0.1.5を除去し、suffixを問わない再帰ZIP読取で自身の現行1コピーだけを確認。開発run dirsにも自身の旧コピー0。他版/他MODを保持",
+      "evidence": [
+        "deployment",
+        "tools/install_prism.py",
+        "tools/test_install_prism.py"
+      ]
+    },
+    {
+      "number": 65,
+      "status": "conditional",
+      "group": "依存と構成",
+      "basis": "指定PrismのIE/Ponder/Flywheel既存版とSHAを前回と照合し再利用。MC1.21.1/NeoForge21.1.262 metadataは適合。Prism全MOD構成の同時起動/他担当addonの動作は未検証",
+      "evidence": [
+        "deployment",
+        "docs/deployment-0.1.5.json"
+      ]
+    },
+    {
+      "number": 66,
+      "status": "pass",
+      "group": "文体・単位・配色",
+      "basis": "日英全原本と代表内容を見直し、句点/単位/局所のNORMAL-WARNING-HINT意図を検査。催促語数だけで合否を決めず、故障対処/安全の依頼を維持。本文色の実証は不変クラスへ限定再利用",
+      "evidence": [
+        "semanticReview",
+        "captions",
+        "tones",
+        "presentation"
+      ]
+    },
+    {
+      "number": 67,
+      "status": "pass",
+      "group": "明示継続",
+      "basis": "現行日英の作者文に継続マーカーは0。句の途中を自動分割せず、必要な場合のpaired…は既存54構造回帰/testCaptionUnitsで対応を保持",
+      "evidence": [
+        "captions",
+        "CaptionUnits"
+      ]
+    },
+    {
+      "number": 68,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 69,
+      "status": "pass",
+      "group": "文体・単位・配色",
+      "basis": "日英全原本と代表内容を見直し、句点/単位/局所のNORMAL-WARNING-HINT意図を検査。催促語数だけで合否を決めず、故障対処/安全の依頼を維持。本文色の実証は不変クラスへ限定再利用",
+      "evidence": [
+        "semanticReview",
+        "captions",
+        "tones",
+        "presentation"
+      ]
+    },
+    {
+      "number": 70,
+      "status": "pass",
+      "group": "文体・単位・配色",
+      "basis": "日英全原本と代表内容を見直し、句点/単位/局所のNORMAL-WARNING-HINT意図を検査。催促語数だけで合否を決めず、故障対処/安全の依頼を維持。本文色の実証は不変クラスへ限定再利用",
+      "evidence": [
+        "semanticReview",
+        "captions",
+        "tones",
+        "presentation"
+      ]
+    },
+    {
+      "number": 71,
+      "status": "pass",
+      "group": "標準入口・クライアント導線",
+      "basis": "標準W/Shift、ponder-ie/ieponder、章番号/名称/アイテム、nativeタグ/前後/戻るを維持。追加画面ボタン/特殊キー登録なし。不変43本番クラスと検索正規化以外のGuideNavigationソース一致に基づくnative公開factory/UI/履歴証拠で、物理キー押下は未実施",
+      "evidence": [
+        "GuideCommands",
+        "GuideNavigation",
+        "GuidePlugin",
+        "PonderUIContextMixin",
+        "validation0.1.5",
+        "presentation"
+      ]
+    },
+    {
+      "number": 72,
+      "status": "pass",
+      "group": "運用・範囲",
+      "basis": "独立Git/所有範囲、現在の指示、安い検査、過去証拠のハッシュ対応を確認。今回はMinecraft等の長期プロセスを開始せず、既存プロセスも操作していない",
+      "evidence": [
+        "AGENTS.md",
+        "../AGENTS.md",
+        "../work/JAEN_COMPLIANCE_PLAN.md",
+        "checks",
+        "build"
+      ]
+    },
+    {
+      "number": 73,
+      "status": "pass",
+      "group": "文体・単位・配色",
+      "basis": "日英全原本と代表内容を見直し、句点/単位/局所のNORMAL-WARNING-HINT意図を検査。催促語数だけで合否を決めず、故障対処/安全の依頼を維持。本文色の実証は不変クラスへ限定再利用",
+      "evidence": [
+        "semanticReview",
+        "captions",
+        "tones",
+        "presentation"
+      ]
+    },
+    {
+      "number": 74,
+      "status": "not_applicable",
+      "group": "アドオン",
+      "basis": "現行はIE本体20教材のみでaddon章/短文/任意依存は0。今回IEへの追加拡張は対象外。空章を作らず、将来のaddon導入/未導入動作を検証済みにしない",
+      "evidence": [
+        "AGENTS.md#17",
+        "../docs/project-specific-requirements.md",
+        "GuideBook.lessonsForMods"
+      ]
+    },
+    {
+      "number": 75,
+      "status": "pass",
+      "group": "派生形と元ガイド",
+      "basis": "642実registry、独立408手引書ID/21群、W69/Shift568/和集合625（vanillaW3含む）、除外20を既存成功証拠と同じ定義/クラスへ結び付けた。任意成分の全組合せ試験は別",
+      "evidence": [
+        "coverage",
+        "validation0.1.5",
+        "docs/item-coverage-expectations.json"
+      ]
+    }
+  ],
+  "semanticExamples": {
+    "ieponder.ponder.shared.basic_wiring_2": {
+      "ja_jp": {
+        "text": "低圧ワイヤーの束で端子、継電器の順に右クリックすると接続します\n線は接続経路を示す説明用の表示です",
+        "tones": [
+          "NORMAL",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "An LV Wire Coil connects a connector and relay when each is right-clicked in turn\nThe animated line illustrates the connection path",
+        "tones": [
+          "NORMAL",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    },
+    "ieponder.ponder.shared.coke_oven_4": {
+      "ja_jp": {
+        "text": "油が満杯になると処理が止まります\n容器や液体ポンプで回収してください\n油は防腐木材の材料になります",
+        "tones": [
+          "WARNING",
+          "HINT",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "A full oil tank stops processing\nDrain it with containers or a Fluid Pump\nThe creosote is used to make treated wood",
+        "tones": [
+          "WARNING",
+          "HINT",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    },
+    "ieponder.ponder.shared.garden_cloche_2": {
+      "ja_jp": {
+        "text": "対応する肥料を加えると成長を速められます\n肥料は栽培の必須条件ではありません",
+        "tones": [
+          "HINT",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "A supported fertilizer speeds up growth\nFertilizer is optional for cultivation",
+        "tones": [
+          "HINT",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    },
+    "ieponder.description.faraday": {
+      "ja_jp": {
+        "text": "全身装備で、非絶縁ワイヤーや低出力テスラコイルの感電から身を守ります\n高出力のテスラコイルでは、逆に受けるダメージが増えます",
+        "tones": [
+          "NORMAL",
+          "WARNING"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "A full set protects against uninsulated wires and low-power Tesla coils\nHigh-power Tesla coils instead increase damage to the wearer",
+        "tones": [
+          "NORMAL",
+          "WARNING"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    },
+    "ieponder.description.lanterns": {
+      "ja_jp": {
+        "text": "周囲を照らす照明です\nCage Lamp（訳案：ケージランプ）は通常、レッドストーン信号で点灯します",
+        "tones": [
+          "NORMAL",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "These lamps illuminate their surroundings\nA Cage Lamp requires a redstone signal by default",
+        "tones": [
+          "NORMAL",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    },
+    "ieponder.description.creative_capacitor": {
+      "ja_jp": {
+        "text": "電力が尽きない、クリエイティブ用の電源です\n初期は全6面が出力で、ハンマーで無効・入力・出力に切り替えます\n出力に設定した面からだけ、電力を送り出します",
+        "tones": [
+          "NORMAL",
+          "NORMAL",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "This creative source supplies unlimited energy\nAll six faces output by default; a hammer cycles disabled, input and output\nEnergy leaves only through faces set to output",
+        "tones": [
+          "NORMAL",
+          "NORMAL",
+          "NORMAL"
+        ],
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    },
+    "ieponder.lesson.metal_press.summary": {
+      "ja_jp": {
+        "text": "ピストンと、搬送方向をそろえたコンベアでプレス機を組み、金型・電力・材料の条件を確認します",
+        "tones": null,
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      },
+      "en_us": {
+        "text": "A piston and aligned conveyors press ingredients with a matching mold and energy",
+        "tones": null,
+        "judgment": "Operations/conditions, negation, identity, order and authored units reviewed; source alignment correction is recorded separately"
+      }
+    }
+  },
+  "repairs": [
+    {
+      "key": "ieponder.lesson.metal_press.summary",
+      "ja_jp": {
+        "before": "ピストンと同じ向きのコンベアでプレス機を組み、金型・電力・材料の条件を確認します",
+        "after": "ピストンと、搬送方向をそろえたコンベアでプレス機を組み、金型・電力・材料の条件を確認します"
+      },
+      "ko_kr": {
+        "before": "금속 압축기는 피스톤과 같은 방향의 컨베이어로 재료를 맞는 금형에 보내며, 작동에는 전력이 필요합니다",
+        "after": "금속 압축기는 피스톤과, 서로 같은 방향으로 움직이는 컨베이어로 재료를 맞는 금형에 보내며, 작동에는 전력이 필요합니다"
+      }
+    }
+  ],
+  "nativeControls": {
+    "upstreamLabelKeys": 22,
+    "jaSupplementKeys": 1,
+    "enSupplementKeys": 0,
+    "scope": "previous actual resource-stack22-label probes; current supplement/templates unchanged"
+  },
+  "requirementSummary": {
+    "pass": 60,
+    "conditional": 11,
+    "not_applicable": 4
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Immersive Engineering ガイド",
+  "ieponder.command.requires_world": "ワールドに入るとガイドを開けます",
+  "ieponder.command.unknown": "章・レッスン・アイテムが見つかりません: %s",
+  "ieponder.tooltip.hold_for_description": "[%s] で説明を表示",
+  "ieponder.ponder.tag.start": "1. はじめに",
+  "ieponder.ponder.tag.start.description": "基本素材と最初の機械を扱います",
+  "ieponder.ponder.tag.power": "2. 電力",
+  "ieponder.ponder.tag.power.description": "発電・蓄電・配線の仕組みを扱います",
+  "ieponder.ponder.tag.metallurgy": "3. 冶金",
+  "ieponder.ponder.tag.metallurgy.description": "鉱石処理と金属加工を扱います",
+  "ieponder.ponder.tag.logistics": "4. 物流",
+  "ieponder.ponder.tag.logistics.description": "アイテムと液体の搬送を扱います",
+  "ieponder.ponder.tag.processing": "5. 加工",
+  "ieponder.ponder.tag.processing.description": "マルチブロック機械の加工を扱います",
+  "ieponder.ponder.tag.troubleshooting": "6. トラブルシューティング",
+  "ieponder.ponder.tag.troubleshooting.description": "電力・構成・入出力を順に確認します"
+}

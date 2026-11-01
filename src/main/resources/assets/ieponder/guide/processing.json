@@ -1,0 +1,1754 @@
+[
+  {
+    "id": "improved_blast_furnace",
+    "chapter": "metallurgy",
+    "title": {
+      "ja": "改良型高炉の組み立てと自動搬出",
+      "en": "Building and automating the Improved Blast Furnace"
+    },
+    "summary": {
+      "ja": "高炉用強化レンガとホッパーで高炉を組み、材料・燃料・鋼鉄・鉱滓の経路と予熱器の役割を確認します",
+      "en": "The reinforced furnace takes material and fuel, yields steel and slag, and accepts optional preheaters"
+    },
+    "icon": "immersiveengineering:blastbrick_reinforced",
+    "components": [
+      "immersiveengineering:blastbrick_reinforced",
+      "minecraft:hopper",
+      "immersiveengineering:blastfurnace_preheater",
+      "immersiveengineering:coke",
+      "immersiveengineering:ingot_steel",
+      "immersiveengineering:advanced_blast_furnace"
+    ],
+    "structure": {
+      "template": "improved_blast_furnace",
+      "origin": [
+        3,
+        1,
+        3
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "改良型高炉の組み立て模型です\n最下段は高炉用強化レンガを3×3に、隙間なく並べた形です",
+          "en": "This is an assembly model of the Improved Blast Furnace\nReinforced Blast Bricks fill the bottom 3×3 layer"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:blastbrick_reinforced",
+            "anchor": "mb_1_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目も3×3すべてを高炉用強化レンガで埋めます\n通常の高炉と同様に、中央も空洞にしません",
+          "en": "Reinforced bricks also fill the entire second 3×3 layer\nThe center stays filled, as with the Crude Blast Furnace"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:blastbrick_reinforced",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "3段目も同じ形にします\nここまでで高炉用強化レンガは27個です",
+          "en": "The third layer repeats the same solid shape\nThe three layers use 27 Reinforced Blast Bricks in total"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_2_1"
+        ]
+      },
+      {
+        "text": {
+          "ja": "最上部の中央には下向きのホッパーを置きます\n周囲をレンガで埋める必要はありません",
+          "en": "One downward-facing Hopper sits at the top center\nThe other positions in this top layer stay empty"
+        },
+        "show": [
+          "@layer3"
+        ],
+        "focus": [
+          "mb_1_3_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:hopper",
+            "anchor": "mb_1_3_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、正面中央の2段目のレンガが形成位置です\nそこをエンジニアのハンマーで右クリックすると形成します\nこの場面は組み立て模型のまま、完成後の使い方を案内します",
+          "en": "In your world, the central front brick on the second layer is the formation point\nRight-clicking it with the Engineer's Hammer forms the furnace\nThis scene keeps the assembly model while explaining its completed use"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後は上部から鉄とコークスなどの対応燃料を入れます\n高炉本体は燃料で製錬するため、電力だけでは動きません",
+          "en": "Iron enters through the top of the completed furnace\nAn accepted fuel such as Coal Coke enters through the same input\nThe furnace burns fuel\nSupplying electricity alone does not smelt anything"
+        },
+        "focus": [
+          "mb_1_3_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:iron_ingot",
+            "anchor": "mb_1_3_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:coke",
+            "anchor": "mb_1_3_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "鋼鉄は正面下部から、鉱滓は背面下部から搬出します\n各出口につなぐ収納やコンベアには、両方を受け取る空きが必要です",
+          "en": "Steel leaves the lower front, while slag leaves the lower back\nSeparate inventories or conveyors receive the two outputs\nBoth outputs need room"
+        },
+        "focus": [
+          "mb_1_0_2",
+          "mb_1_0_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:ingot_steel",
+            "anchor": "mb_1_0_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:slag",
+            "anchor": "mb_1_0_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "左右の送風口には高炉予熱器を追加できます\n予熱器には電力が必要で、稼働すると製錬を速めます\n高炉本体には引き続き燃料が必要です\n予熱器はこの模型には含まれていません",
+          "en": "Optional Blast Furnace Preheaters connect to the side air ports\nPowered preheaters accelerate smelting\nThe furnace still needs fuel\nThe preheaters are not part of this assembly model"
+        },
+        "focus": [
+          "mb_0_1_1",
+          "mb_2_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:blastfurnace_preheater",
+            "anchor": "mb_0_1_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "動かない場合は、完成状態・材料・対応燃料・出力の空きを順に確認してください\n製錬時間や燃料の扱いは、導入先のレシピと設定を優先します",
+          "en": "If it stalls, check formation, ingredients, accepted fuel and output space\nUse the recipes and settings of your modpack for processing times and fuel behavior"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "metal_press",
+    "chapter": "processing",
+    "title": {
+      "ja": "金属プレス機と工業金型",
+      "en": "Metal Press and molds"
+    },
+    "summary": {
+      "ja": "ピストンと、搬送方向をそろえたコンベアでプレス機を組み、金型・電力・材料の条件を確認します",
+      "en": "A piston and aligned conveyors press ingredients with a matching mold and energy"
+    },
+    "icon": "immersiveengineering:heavy_engineering",
+    "components": [
+      "immersiveengineering:heavy_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:steel_scaffolding_standard",
+      "minecraft:piston",
+      "immersiveengineering:conveyor_basic",
+      "immersiveengineering:mold_plate",
+      "immersiveengineering:metal_press"
+    ],
+    "structure": {
+      "template": "metal_press",
+      "origin": [
+        3,
+        1,
+        4
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "金属プレス機の組み立て模型です\n最下段は中央にレッドストーン機構ブロック、その両側に鋼鉄製の足場を置きます",
+          "en": "Two Steel Scaffolding blocks form the sides of the base\nA Redstone Engineering Block sits between them"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_1_0_0",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:steel_scaffolding_standard",
+            "anchor": "mb_0_0_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "中央上の下向きピストンを、同じ方向へ運ぶ左右のコンベアではさみます\n材料が片側から入り、反対側へ抜ける向きにします",
+          "en": "A downward-facing Piston sits above the center, with a conveyor on each side\nBoth conveyors must move in the same direction\nItems enter from one end and leave through the other"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_1_1_0",
+          "mb_0_1_0",
+          "mb_2_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:piston",
+            "anchor": "mb_1_1_0",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:conveyor_basic",
+            "anchor": "mb_0_1_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "ピストンの上に重機構ブロックを1個置きます\nこの3段の配置で組み立てがそろいます",
+          "en": "One Heavy Engineering Block sits above the Piston\nThis completes the three-layer assembly"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_2_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:heavy_engineering",
+            "anchor": "mb_1_2_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、中央のピストンをエンジニアのハンマーで右クリックすると形成します\n以降も組み立て模型を目印に、完成後の機能を説明します",
+          "en": "In your world, the center Piston is the formation point\nRight-clicking it with the Engineer's Hammer forms the press\nThe assembly model remains here as a reference for the completed machine"
+        },
+        "focus": [
+          "mb_1_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_0",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成したプレス機を対応する工業金型で右クリックすると、金型が付きます\nたとえば工業金型:板材はインゴットを板材へ加工するレシピに使います",
+          "en": "Right-clicking the formed press with a supported mold installs it\nFor example, the Plate mold is used by recipes that press ingots into plates"
+        },
+        "focus": [
+          "mb_1_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:mold_plate",
+            "anchor": "mb_1_1_0",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "電力は完成後のピストン上部にある接続部へ供給します\n金型と材料が合っていても、電力がなければ加工は進みません",
+          "en": "Energy enters through the connector above the completed piston\nA matching mold and ingredient still need power to process"
+        },
+        "focus": [
+          "mb_1_2_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_mv",
+            "anchor": "mb_1_2_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "材料は進行方向の手前側のコンベアへ入れます\nこの鉄インゴットの移動は投入経路を示す演出で、処理速度を再現していません",
+          "en": "Ingredients enter on the conveyor at the incoming end\nThis moving Iron Ingot illustrates the input route\nIts speed does not represent the processing speed"
+        },
+        "focus": [
+          "mb_0_1_0",
+          "mb_1_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:iron_ingot",
+            "anchor": "mb_0_1_0",
+            "action": "none"
+          }
+        ],
+        "flow": {
+          "from": "mb_0_1_0",
+          "to": "mb_1_1_0",
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      {
+        "text": {
+          "ja": "加工品は反対側のコンベアへ出ます\n鉄の板材は一例です\n移動演出は完成した機械の稼働状態を表すものではありません",
+          "en": "Products leave on the opposite conveyor\nAn Iron Plate is one example\nThis illustration does not show an operating formed machine"
+        },
+        "focus": [
+          "mb_1_1_0",
+          "mb_2_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:plate_iron",
+            "anchor": "mb_2_1_0",
+            "action": "none"
+          }
+        ],
+        "flow": {
+          "from": "mb_1_1_0",
+          "to": "mb_2_1_0",
+          "item": "immersiveengineering:plate_iron"
+        }
+      },
+      {
+        "text": {
+          "ja": "最下段中央は完成後のレッドストーン制御部です\n通常は信号で停止し、エンジニアのネジ回しで右クリックすると条件を反転できます",
+          "en": "The lower center becomes the redstone control port\nA signal normally stops processing\nRight-clicking with the Engineer's Screwdriver inverts that condition"
+        },
+        "focus": [
+          "mb_1_0_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:screwdriver",
+            "anchor": "mb_1_0_0",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "詰まった場合は金型・対応レシピ・電力・コンベアの向き・搬出先を確認してください\n加工品や必要電力は、導入先のレシピと設定に従います",
+          "en": "If the press stalls, check the mold, recipe and energy\nAlso check conveyor direction and the output path\nProducts and energy costs follow the recipes and settings of your installation"
+        },
+        "focus": [
+          "mb_1_1_0"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "crusher",
+    "chapter": "processing",
+    "title": {
+      "ja": "工業用粉砕機の投入と安全な搬出",
+      "en": "Feeding and unloading the Crusher"
+    },
+    "summary": {
+      "ja": "ホッパー付きの粉砕機を組み、上部投入・肩の給電部・正面下部の搬出を確認します",
+      "en": "The hopper-topped Crusher takes items above, power at the shoulder and outputs below the front"
+    },
+    "icon": "immersiveengineering:light_engineering",
+    "components": [
+      "immersiveengineering:light_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:steel_scaffolding_standard",
+      "immersiveengineering:steel_fence",
+      "minecraft:hopper",
+      "immersiveengineering:dust_iron",
+      "immersiveengineering:crusher"
+    ],
+    "structure": {
+      "template": "crusher",
+      "origin": [
+        2,
+        1,
+        3
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "工業用粉砕機の組み立て模型です\n最下段の5×3は、表示どおりの鋼鉄製の足場と軽機構ブロックで構成します",
+          "en": "This is the Crusher assembly model\nSteel Scaffolding and Light Engineering Blocks make up the 5×3 base\nThe model shows their arrangement"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_2_0_1",
+          "mb_0_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:steel_scaffolding_standard",
+            "anchor": "mb_0_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:light_engineering",
+            "anchor": "mb_2_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目には鋼鉄製のフェンスと機構ブロックを配置します\n正面左端のレッドストーン機構ブロックが、完成後の制御部の目印です",
+          "en": "Steel Fences and engineering blocks make up the second layer\nThe Redstone Engineering Block at the front end marks the future control panel"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_2_1_2",
+          "mb_0_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:steel_fence",
+            "anchor": "mb_2_1_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_0_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "上部中央の3×3に、下向きのホッパーを9個置きます\n両端の肩にはホッパーを追加しません",
+          "en": "Nine downward-facing Hoppers cover the middle 3×3 area\nThe shoulder sections at either end stay uncovered"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_2_2_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:hopper",
+            "anchor": "mb_2_2_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、制御部と同じ長辺の中央フェンスが形成位置です\nそこをハンマーで右クリックすると粉砕機になります\nこの模型は形成前の配置を保ちます",
+          "en": "In your world, the center fence on the long side with the control block is the formation point\nRight-clicking this fence with the Engineer's Hammer forms the Crusher\nThis model retains the unformed assembly"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_2_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後は肩の上面にある接続部から電力を供給します\n粉砕の進み方は利用できる電力に影響されます",
+          "en": "Energy enters the connector on top of the completed machine's shoulder\nAvailable power affects how quickly crushing proceeds"
+        },
+        "focus": [
+          "mb_4_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_mv",
+            "anchor": "mb_4_1_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "対応する鉱石などは上部の回転ドラムへ投入します\nレシピによって粉や副産物が得られ、丸石などを砕くレシピもあります",
+          "en": "Accepted ores enter the drums at the top\nRecipes produce dusts and sometimes secondary products\nSome recipes also crush materials such as Cobblestone"
+        },
+        "focus": [
+          "mb_2_2_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:raw_iron",
+            "anchor": "mb_2_2_1",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:cobblestone",
+            "anchor": "mb_2_2_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "加工品は完成後の正面下部から出ます\n出口につなぐ収納やコンベアが、粉と副産物を受け取ります",
+          "en": "Products leave the lower front output of the formed Crusher\nStorage or a conveyor at this exit receives both primary and secondary products"
+        },
+        "focus": [
+          "mb_2_0_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:dust_iron",
+            "anchor": "mb_2_0_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:conveyor_basic",
+            "anchor": "mb_2_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "正面の制御部へ信号を入れると通常は停止します\nエンジニアのネジ回しで右クリックすると、レッドストーンの動作条件を反転できます",
+          "en": "A signal at the front control panel normally stops the Crusher\nRight-clicking it with the Engineer's Screwdriver inverts the redstone condition"
+        },
+        "focus": [
+          "mb_0_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:screwdriver",
+            "anchor": "mb_0_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "稼働中のドラムには近づかないでください\n生物も巻き込まれて大きなダメージを受けます\n投入路を囲い、足場を確保してください",
+          "en": "Keep clear of working drums\nLiving entities can be caught and take severe damage\nEnclose the feed route and provide safe access around it"
+        },
+        "focus": [
+          "mb_2_2_1"
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "動かない場合は電力・停止信号・対応レシピ・搬出経路を確認してください\n産出物や消費電力はMODパックのレシピと設定で変わります",
+          "en": "If it stalls, check energy, stop signals, the recipe and the output route\nProducts and energy costs may change with modpack recipes and settings"
+        },
+        "focus": [
+          "mb_4_1_1",
+          "mb_0_1_2"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "arc_furnace",
+    "chapter": "metallurgy",
+    "title": {
+      "ja": "アーク炉の組み立てと電極管理",
+      "en": "Arc Furnace construction and electrode care"
+    },
+    "summary": {
+      "ja": "5段のアーク炉を組み、炭素電極・材料・添加剤・給電・分離した搬出を確認します",
+      "en": "The five-layer furnace needs electrode maintenance, ingredients, additives, power and separate outputs"
+    },
+    "icon": "immersiveengineering:graphite_electrode",
+    "components": [
+      "immersiveengineering:blastbrick_reinforced",
+      "immersiveengineering:sheetmetal_steel",
+      "immersiveengineering:slab_sheetmetal_steel",
+      "immersiveengineering:storage_steel",
+      "immersiveengineering:heavy_engineering",
+      "immersiveengineering:light_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:steel_scaffolding_standard",
+      "minecraft:cauldron",
+      "immersiveengineering:graphite_electrode",
+      "immersiveengineering:arc_furnace"
+    ],
+    "structure": {
+      "template": "arcfurnace",
+      "origin": [
+        2,
+        1,
+        2
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "アーク炉の組み立て模型です\n最下段の5×5は、表示どおりの鋼鉄の板金ブロックとハーフブロックで構成します\n鋼鉄ブロックと足場も模型の位置に並びます\n重機構ブロックと大釜は、示した位置に入ります",
+          "en": "This is an assembly model of the Arc Furnace\nSteel Sheetmetal and slabs form the 5×5 base pattern shown\nThe steel blocks and scaffolding occupy the positions shown\nThe Heavy Engineering Block and Cauldron sit in their marked positions"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_2_0_4",
+          "mb_2_0_0"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:cauldron",
+            "anchor": "mb_2_0_4",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:slab_sheetmetal_steel",
+            "anchor": "mb_1_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目は後方の機構ブロック、両側の鋼鉄ブロック、内側の高炉用強化レンガを組みます\n正面左にはレッドストーン機構ブロックも入ります",
+          "en": "Engineering blocks sit behind the vat on the second layer\nSteel blocks line the sides\nReinforced Blast Bricks fill the inside\nA Redstone Engineering Block sits at the front left"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_0_1_4",
+          "mb_2_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:blastbrick_reinforced",
+            "anchor": "mb_2_1_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_0_1_4",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "3段目では高炉用強化レンガの炉床を広げ、後方に軽機構ブロックを並べます\n模型で空いている位置は、そのまま空けた構造です",
+          "en": "The reinforced-brick vat widens on the third layer\nA row of Light Engineering Blocks sits behind it\nThe openings shown in the model stay clear"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_2_2_3",
+          "mb_2_2_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:light_engineering",
+            "anchor": "mb_2_2_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "4段目は中央の3×3を高炉用強化レンガにし、後ろ側の軽機構ブロックを足場ではさみます",
+          "en": "Reinforced bricks fill the central 3×3 of the fourth layer\nAt the back, scaffolding flanks a Light Engineering Block"
+        },
+        "show": [
+          "@layer3"
+        ],
+        "focus": [
+          "mb_2_3_2",
+          "mb_2_3_0"
+        ]
+      },
+      {
+        "text": {
+          "ja": "最上段は軽機構ブロック3個と鋼鉄製の足場2個です\n5段すべての形と空隙が、形成に必要です",
+          "en": "The top layer uses three Light Engineering Blocks and two Steel Scaffolding blocks\nFormation requires the shapes and open spaces of all five layers"
+        },
+        "show": [
+          "@layer4"
+        ],
+        "focus": [
+          "mb_2_4_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:light_engineering",
+            "anchor": "mb_2_4_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:steel_scaffolding_standard",
+            "anchor": "mb_1_4_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、正面最下段の大釜が形成位置です\nそこをエンジニアのハンマーで右クリックすると形成します\nここでは組み立て模型を使い、完成後の各部を案内します",
+          "en": "In your world, the Cauldron at the bottom front is the formation point\nRight-clicking it with the Engineer's Hammer forms the furnace\nThe assembly remains here as a reference for its completed functions"
+        },
+        "focus": [
+          "mb_2_0_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_2_0_4",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後の画面では、上部の3枠に炭素電極を入れます\n電極は稼働で消耗するため、手動で交換する必要があります",
+          "en": "The formed furnace's interface holds its electrodes\nGraphite Electrodes occupy the three top slots\nElectrodes wear during operation and require manual replacement"
+        },
+        "focus": [
+          "mb_2_4_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:graphite_electrode",
+            "anchor": "mb_2_4_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "主材料と添加剤は別の投入部へ入れます\n標準の鋼鉄レシピでは主材料に鉄、添加剤にコークスの粉を使います\n上部の2つのハッチが、それぞれの入口です",
+          "en": "Main ingredients and additives enter separately\nThe default steel recipe uses iron as the main ingredient\nIt uses Coke Dust as the additive\nThe two top hatches provide separate inputs"
+        },
+        "focus": [
+          "mb_1_3_2",
+          "mb_3_3_2"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:iron_ingot",
+            "anchor": "mb_1_3_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:dust_coke",
+            "anchor": "mb_3_3_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "電力は背面の3つの接続部から供給します\n正面の制御部は通常、レッドストーン信号で停止します\n材料と電力に加えて、使用可能な電極が必要です",
+          "en": "Power enters at the three rear connectors\nThe front control panel normally stops processing when signaled\nIngredients, power and usable electrodes are all required"
+        },
+        "focus": [
+          "mb_1_1_0",
+          "mb_2_1_0",
+          "mb_3_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_hv",
+            "anchor": "mb_2_1_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "製品は正面の受け皿から、鉱滓は背面中央から自動搬出します\n別々の回収先に、両方を受け取る空きが必要です",
+          "en": "Products are pushed out through the front basin\nSlag is pushed out through the center rear port\nBoth separate collection routes need room"
+        },
+        "focus": [
+          "mb_2_0_4",
+          "mb_2_0_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:ingot_steel",
+            "anchor": "mb_2_0_4",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:slag",
+            "anchor": "mb_2_0_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "停止時は電極の消耗と給電、主材料と添加剤の組み合わせを確認してください\n停止信号と出力の空きも確認してください\nレシピや消費電力は導入先の設定を優先してください",
+          "en": "When it stalls, check electrode wear and power\nCheck ingredient and additive combinations\nAlso check stop signals and output space\nFollow the recipes and energy settings of your modpack"
+        },
+        "focus": [
+          "mb_2_4_2",
+          "mb_0_1_4"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "squeezer",
+    "chapter": "processing",
+    "title": {
+      "ja": "工業用圧搾機で植物油を作る",
+      "en": "Making Plant Oil with the Industrial Squeezer"
+    },
+    "summary": {
+      "ja": "木製バレルを使う圧搾機を組み、種から植物油を得るための電力と排出口を確認します",
+      "en": "The wooden-barrel Squeezer uses seeds, power and a fluid route to produce Plant Oil"
+    },
+    "icon": "immersiveengineering:wooden_barrel",
+    "components": [
+      "immersiveengineering:wooden_barrel",
+      "immersiveengineering:light_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:steel_scaffolding_standard",
+      "immersiveengineering:steel_fence",
+      "immersiveengineering:fluid_pipe",
+      "minecraft:piston",
+      "immersiveengineering:seed",
+      "immersiveengineering:plantoil_bucket",
+      "immersiveengineering:squeezer"
+    ],
+    "structure": {
+      "template": "squeezer",
+      "origin": [
+        3,
+        1,
+        3
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "工業用圧搾機の組み立て模型です\n最下段に鋼鉄製の足場、軽機構ブロック、液体パイプを表示どおり置きます",
+          "en": "This is an assembly model of the Industrial Squeezer\nSteel Scaffolding and a Light Engineering Block form part of the bottom layer\nFluid Pipes complete the bottom-layer pattern shown"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_1",
+          "mb_0_0_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_1_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:steel_scaffolding_standard",
+            "anchor": "mb_0_0_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目は木製バレル4個が2×2に並びます\n端には別の軽機構ブロックとレッドストーン機構ブロックが入ります",
+          "en": "Four Wooden Barrels form a 2×2 square on the second layer\nAnother Light Engineering Block sits along the edge\nA Redstone Engineering Block sits along that edge too"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_1_1_1",
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:wooden_barrel",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_2_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "最上段は木製バレルの上に下向きのピストンが載ります\n残りの3か所は鋼鉄製のフェンスです",
+          "en": "A downward-facing Piston sits above the barrels\nSteel Fences fill the square's other three positions"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_2_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:piston",
+            "anchor": "mb_1_2_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:steel_fence",
+            "anchor": "mb_0_2_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、中央の木製バレルが形成位置です\n制御部側からハンマーで右クリックすると形成します\n場面は形成前の模型を保ちます",
+          "en": "In your world, the central Wooden Barrel is approached from the redstone-control side\nRight-clicking it with the hammer forms the machine\nThis scene retains the unformed assembly model"
+        },
+        "focus": [
+          "mb_1_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_1",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後は軽機構ブロック側の上面にある接続部へ電力を供給します\n圧搾機は電動機械で、種を入れるだけでは加工が進みません",
+          "en": "Energy enters the connector above the engineering-block section of the formed machine\nThe Squeezer is electrically powered\nSeeds alone do not start processing"
+        },
+        "focus": [
+          "mb_0_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_mv",
+            "anchor": "mb_0_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "背面の青い印が付いたハッチへ対応する種を入れます\nたとえば工業用大麻の種から植物油を得られます\n使える材料はレシピで確認してください",
+          "en": "Accepted seeds enter through the blue-marked input hatches at the back\nIndustrial Hemp Seeds are one source of Plant Oil\nCheck recipes for other accepted ingredients"
+        },
+        "focus": [
+          "mb_0_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:seed",
+            "anchor": "mb_0_1_0",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:wheat_seeds",
+            "anchor": "mb_0_1_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後のオレンジ印のハッチはアイテム出力、その下は液体出力です\n植物油は下側から液体パイプなどで回収し、精製機へ送れます",
+          "en": "On the formed machine, the orange-marked hatch is the item output\nThe port below it is the fluid output\nPlant Oil from the lower port can flow through pipes to a Refinery"
+        },
+        "focus": [
+          "mb_1_1_1",
+          "mb_2_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:plantoil_bucket",
+            "anchor": "mb_2_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_2_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "圧搾レシピにはアイテムを作るものもあります\nコークスの粉から高配向パイログラファイトの粉を作れます\nこの粉は液体配管ではなく、アイテム出力へ出ます",
+          "en": "Some Squeezer recipes produce items instead\nCoke Dust can be processed into HOP Graphite Dust\nThis dust leaves at the item output, rather than through a fluid pipe"
+        },
+        "focus": [
+          "mb_1_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:dust_coke",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:dust_hop_graphite",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "通常は制御部へのレッドストーン信号で停止し、ネジ回しで右クリックすると条件を反転します\n停止時は電力・材料・液体とアイテムの空きも確認してください",
+          "en": "A redstone signal normally stops the Squeezer\nRight-clicking its panel with the Engineer's Screwdriver inverts this\nAlso check power, ingredients and space for both fluid and item outputs"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:screwdriver",
+            "anchor": "mb_2_1_2",
+            "action": "right_click"
+          }
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "ここで示したものは標準レシピの例です\n植物油の生産量や消費電力は、MODパックのレシピと設定で変わります",
+          "en": "These examples use default recipes\nPlant Oil yields and energy costs follow your modpack's recipes and settings"
+        },
+        "focus": [
+          "mb_2_0_1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fermenter",
+    "chapter": "processing",
+    "title": {
+      "ja": "工業用発酵槽でエタノールを作る",
+      "en": "Making Ethanol with the Industrial Fermenter"
+    },
+    "summary": {
+      "ja": "大釜と鉄の板金ブロックで発酵槽を組み、農作物・電力・エタノールの経路を確認します",
+      "en": "The cauldron-and-sheetmetal Fermenter uses crops and power to produce Ethanol"
+    },
+    "icon": "minecraft:cauldron",
+    "components": [
+      "minecraft:cauldron",
+      "immersiveengineering:sheetmetal_iron",
+      "immersiveengineering:light_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:steel_scaffolding_standard",
+      "immersiveengineering:fluid_pipe",
+      "immersiveengineering:ethanol_bucket",
+      "immersiveengineering:fermenter"
+    ],
+    "structure": {
+      "template": "fermenter",
+      "origin": [
+        3,
+        1,
+        3
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "工業用発酵槽の組み立て模型です\n最下段は鋼鉄製の足場と軽機構ブロック、中央を通る液体パイプで構成します",
+          "en": "This is an assembly model of the Industrial Fermenter\nSteel Scaffolding and a Light Engineering Block form part of the base\nFluid Pipes run through the center of the base"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_1_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:steel_scaffolding_standard",
+            "anchor": "mb_0_0_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目には大釜4個を2×2に並べます\n端には軽機構ブロックとレッドストーン機構ブロックが入ります",
+          "en": "Four Cauldrons form a 2×2 square on the second layer\nA Light Engineering Block and a Redstone Engineering Block sit along the edge"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_1_1_1",
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:cauldron",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_2_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "大釜の上を鉄の板金ブロック4個で覆います\n圧搾機とは最上段の材料が異なります",
+          "en": "Four Iron Sheetmetal blocks cover the Cauldrons\nThis top layer differs from the Squeezer's piston and fences"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_2_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:sheetmetal_iron",
+            "anchor": "mb_1_2_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、制御部側から中央の大釜をハンマーで右クリックすると形成します\nこの場面は組み立て模型のまま、完成後の使い方を説明します",
+          "en": "In your world, the central Cauldron is the formation point\nRight-clicking it with the hammer from the control side forms the Fermenter\nThe scene keeps the assembly model while explaining the completed machine"
+        },
+        "focus": [
+          "mb_1_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_1",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後は軽機構ブロック側の上面にある接続部から電力を供給します\n発酵槽も電動機械のため、自然に発酵が進むわけではありません",
+          "en": "Energy enters the connector above the engineering-block section of the formed machine\nThe Fermenter requires electricity to process crops"
+        },
+        "focus": [
+          "mb_0_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_mv",
+            "anchor": "mb_0_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "背面の青い印が付いたハッチから対応する材料を入れます\n標準レシピではリンゴやジャガイモなどからエタノールを得られます",
+          "en": "Supported ingredients enter through the blue-marked hatches at the back\nDefault recipes turn materials such as Apples and Potatoes into Ethanol"
+        },
+        "focus": [
+          "mb_0_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:apple",
+            "anchor": "mb_0_1_0",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:potato",
+            "anchor": "mb_0_1_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後のオレンジ印のアイテム出力の下から、エタノールを取り出します\n液体パイプで精製機へ送ると、植物油と合わせて燃料を作れます",
+          "en": "Ethanol leaves below the orange-marked item output of the formed machine\nFluid Pipes carry it to a Refinery, where it combines with Plant Oil for fuel"
+        },
+        "focus": [
+          "mb_2_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:ethanol_bucket",
+            "anchor": "mb_2_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_2_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "アイテムの副産物があるレシピでは、オレンジ印のハッチからそちらも回収します\nたとえばハチミツ入りの瓶を使う標準レシピでは空のガラス瓶が返ります",
+          "en": "Recipes with item byproducts also need the orange item hatch\nFor example, the default Honey Bottle recipe returns an empty Glass Bottle"
+        },
+        "focus": [
+          "mb_1_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:honey_bottle",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:glass_bottle",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "制御部は通常、レッドストーン信号で停止します\nネジ回しで停止信号の条件を反転できます\n停止時は制御状態と給電、材料、出力の空きを確認してください",
+          "en": "A redstone signal normally stops the Fermenter\nThe Engineer's Screwdriver inverts that condition\nCheck control state, power, ingredients and output space when processing stops"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:screwdriver",
+            "anchor": "mb_2_1_2",
+            "action": "right_click"
+          }
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "対応作物・液体の生産量・消費電力は、導入先のレシピと設定を優先します\nすべての農作物を発酵できるわけではありません",
+          "en": "Your installation's recipes determine accepted crops and fluid yields\nIts settings also determine energy costs\nNot every crop has a fermentation recipe"
+        },
+        "focus": [
+          "mb_0_1_0"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "refinery",
+    "chapter": "processing",
+    "title": {
+      "ja": "工業用精製機とバイオディーゼル",
+      "en": "Refinery and Biodiesel"
+    },
+    "summary": {
+      "ja": "2系統の液体入力、電力、消費されない触媒を用意してバイオディーゼルを作ります",
+      "en": "Two fluid inputs, power and a reusable catalyst support Biodiesel production"
+    },
+    "icon": "immersiveengineering:fluid_pipe",
+    "components": [
+      "immersiveengineering:heavy_engineering",
+      "immersiveengineering:light_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:sheetmetal_iron",
+      "immersiveengineering:steel_scaffolding_standard",
+      "immersiveengineering:fluid_pipe",
+      "immersiveengineering:dust_saltpeter",
+      "immersiveengineering:biodiesel_bucket",
+      "immersiveengineering:refinery"
+    ],
+    "structure": {
+      "template": "refinery",
+      "origin": [
+        2,
+        1,
+        3
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "工業用精製機の組み立て模型です\n最下段の5×3に足場、中央の機構ブロック、左右をつなぐ液体パイプを置きます",
+          "en": "This is an assembly model of the Refinery\nScaffolding and central engineering blocks form part of the 5×3 base\nFluid Pipes run between the two sides, as shown"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_2_0_1",
+          "mb_2_0_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_2_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:heavy_engineering",
+            "anchor": "mb_2_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目では左右の槽を鉄の板金ブロックで組み、中央に軽機構・重機構ブロックを置きます\n正面端には制御ブロックも入ります",
+          "en": "Two Iron Sheetmetal tanks rise on the second layer\nLight and Heavy Engineering Blocks sit between them\nThe control block sits at the front end"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_2_1_2",
+          "mb_4_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:sheetmetal_iron",
+            "anchor": "mb_1_1_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_4_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "最上段は左右の槽の上を鉄の板金ブロックで覆います\n中央部分は模型どおり空いた構造です",
+          "en": "Iron Sheetmetal caps both tanks on the top layer\nThe middle section stays open as shown"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_2_1",
+          "mb_3_2_1"
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、中央の2段目にある重機構ブロックをハンマーで右クリックして形成します\nこの模型は形成前の配置を保ちます",
+          "en": "In your world, the central Heavy Engineering Block in the middle layer is the formation point\nRight-clicking it with the Engineer's Hammer forms the Refinery\nThe model here remains an unformed assembly"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_2_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後は中央背面の上面にある接続部へ電力を供給します\n液体がそろっていても、電力がなければ精製は進みません",
+          "en": "Energy enters the connector on top of the center rear section of the formed machine\nMatching fluids still require energy to process"
+        },
+        "focus": [
+          "mb_2_1_0"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_mv",
+            "anchor": "mb_2_1_0",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "バイオディーゼルを作るには、植物油とエタノールを左右の別々の入力口へ送ります\n両方を同じタンクへ混ぜて入れないでください",
+          "en": "Biodiesel needs Plant Oil and Ethanol\nThey enter separate input ports at the two sides\nKeep the two ingredients in separate input tanks"
+        },
+        "focus": [
+          "mb_0_0_1",
+          "mb_4_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:plantoil_bucket",
+            "anchor": "mb_0_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:ethanol_bucket",
+            "anchor": "mb_4_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "この版の標準バイオディーゼルレシピには、触媒として硝石の粉が必要です\n画面の触媒枠への投入は手動です\n触媒は消費されません",
+          "en": "This release's default Biodiesel recipe needs Saltpeter Dust as a catalyst\nThe interface's catalyst slot is filled manually\nIt is not consumed"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:dust_saltpeter",
+            "anchor": "mb_2_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "バイオディーゼルは完成後の正面下部、オレンジ印の出力から取り出します\n液体パイプでタンクやディーゼル発電機へ送ります",
+          "en": "Biodiesel leaves the orange-marked lower front output of the formed Refinery\nFluid Pipes carry it to a tank or Diesel Generator"
+        },
+        "focus": [
+          "mb_2_0_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:biodiesel_bucket",
+            "anchor": "mb_2_0_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_2_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "正面端の制御部は通常、レッドストーン信号で停止します\nネジ回しで条件を反転できます\n止まる場合は入力液体・触媒・給電・出力の空きも確認してください",
+          "en": "The front-end control panel normally stops processing when signaled\nThe Engineer's Screwdriver inverts that condition\nAlso check input fluids, catalyst, power and output space if it stalls"
+        },
+        "focus": [
+          "mb_4_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:screwdriver",
+            "anchor": "mb_4_1_2",
+            "action": "right_click"
+          }
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "精製機のレシピには液体1種類または2種類を使うものがあり、触媒の要否もレシピによります\n材料・触媒・消費電力は導入先のレシピを確認してください",
+          "en": "Refinery recipes can use one or two fluids\nCatalyst requirements depend on the recipe\nCheck your installation for its ingredients, catalysts and energy costs"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "diesel_generator",
+    "chapter": "power",
+    "title": {
+      "ja": "ディーゼル発電機と燃料供給",
+      "en": "Diesel Generator and fuel supply"
+    },
+    "summary": {
+      "ja": "ラジエーター付き発電機を組み、燃料入力・受電先・レッドストーン制御を確認します",
+      "en": "The radiator-equipped generator uses fuel, an energy consumer and redstone control"
+    },
+    "icon": "immersiveengineering:generator",
+    "components": [
+      "immersiveengineering:radiator",
+      "immersiveengineering:generator",
+      "immersiveengineering:heavy_engineering",
+      "immersiveengineering:rs_engineering",
+      "immersiveengineering:steel_scaffolding_standard",
+      "immersiveengineering:fluid_pipe",
+      "immersiveengineering:biodiesel_bucket",
+      "immersiveengineering:diesel_generator"
+    ],
+    "structure": {
+      "template": "diesel_generator",
+      "origin": [
+        3,
+        1,
+        2
+      ]
+    },
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "ディーゼル発電機の組み立て模型です\n最下段の3×5にラジエーター、鋼鉄製の足場、液体パイプ、ジェネレーターブロックを並べます",
+          "en": "This is an assembly model of the Diesel Generator\nRadiator Blocks and Steel Scaffolding form part of the 3×5 base\nFluid Pipes and a Generator Block complete the pattern shown"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_0",
+          "mb_1_0_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:radiator",
+            "anchor": "mb_1_0_0",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:generator",
+            "anchor": "mb_1_0_4",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_1_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "2段目ではラジエーターと発電機の間に重機構ブロックを置きます\n側面中央の1か所はレッドストーン機構ブロックです",
+          "en": "Heavy Engineering Blocks sit between radiators and Generator Blocks\nThese form part of the second layer\nA Redstone Engineering Block sits at the center of one side"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_1_1_2",
+          "mb_2_1_2",
+          "mb_1_1_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:heavy_engineering",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:rs_engineering",
+            "anchor": "mb_2_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "最上段はラジエーターと重機構ブロックを表示どおり置きます\n形成前の模型では、発電機の列の上は空いています",
+          "en": "The top Radiator Blocks and Heavy Engineering Blocks follow the pattern shown\nAbove the row of Generator Blocks, the unformed assembly has empty space"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_2_0",
+          "mb_1_2_2"
+        ]
+      },
+      {
+        "text": {
+          "ja": "実際のワールドでは、発電機側の中央、2段目のジェネレーターブロックが形成位置です\nそこをハンマーで右クリックすると形成します\nここでは組み立て模型を保ちます",
+          "en": "In your world, the center Generator Block on the second layer is the formation point\nRight-clicking it with the Engineer's Hammer forms the generator\nThis scene retains the assembly model"
+        },
+        "focus": [
+          "mb_1_1_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_4",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後の発電機側、下部左右の入力口へバイオディーゼルなどの対応燃料を送ります\n液体パイプが燃料を継続して供給します",
+          "en": "The generator accepts fuels such as Biodiesel\nFuel enters either lower side port at the formed machine's generator end\nFluid Pipes provide a steady supply"
+        },
+        "focus": [
+          "mb_0_0_4",
+          "mb_2_0_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:biodiesel_bucket",
+            "anchor": "mb_0_0_4",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "mb_2_0_4",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後は発電機側の上部に3つの電力出力ができます\n受電できる機器が接続先になります\n3つの出力は同じ発電量を分け合います",
+          "en": "The formed generator has three power outputs on the bar above its generator end\nConnected equipment receives energy from them\nThey share the generator's total output"
+        },
+        "focus": [
+          "mb_0_1_4",
+          "mb_1_1_4",
+          "mb_2_1_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_hv",
+            "anchor": "mb_1_1_4",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "発電機は少なくとも1つの接続先が電力を受け取れるときに稼働します\n燃料があっても、受電先がない場合やすべて満充電の場合は発電しません",
+          "en": "The generator runs only when at least one connected output can accept energy\nFuel alone cannot run it without a connected consumer\nIt also stops if every receiving buffer is full"
+        },
+        "focus": [
+          "mb_1_1_4"
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "側面の小さな制御部へ信号を入れると通常は停止します\nエンジニアのネジ回しで右クリックすると、この条件を反転できます",
+          "en": "A signal at the small side terminal normally stops the generator\nRight-clicking with the Engineer's Screwdriver inverts that condition"
+        },
+        "focus": [
+          "mb_2_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:screwdriver",
+            "anchor": "mb_2_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "燃料は圧搾機・発酵槽・精製機で生産できますが、それらの機械には先に電力が必要です\n燃料ラインを始動できる別の電源と、燃料の備蓄を用意してください",
+          "en": "A Squeezer, Fermenter and Refinery can produce the fuel\nThose machines need power first\nProvide another source to start the fuel line and keep a fuel reserve"
+        },
+        "focus": [
+          "mb_0_0_4"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:biodiesel_bucket",
+            "anchor": "mb_0_0_4",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "停止時は対応燃料・受電先・停止信号を確認してください\n出力や燃料の消費は設定と燃料レシピで変わるため、導入先の値を確認します",
+          "en": "If it stops, check accepted fuel, receiving capacity and stop signals\nOutput and fuel consumption depend on settings and fuel recipes in your installation"
+        },
+        "focus": [
+          "mb_1_1_4",
+          "mb_2_1_2"
+        ],
+        "warning": true
+      }
+    ]
+  }
+]

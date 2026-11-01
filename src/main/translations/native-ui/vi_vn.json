@@ -1,0 +1,13 @@
+{
+  "ponder.ui.subject": "Chủ đề của cảnh này",
+  "ponder.ui.next": "Cảnh tiếp theo",
+  "ponder.ui.next_up": "Tiếp theo:",
+  "ponder.ui.previous": "Cảnh trước",
+  "ponder.ui.replay": "Phát lại",
+  "ponder.ui.think_back": "Quay lại",
+  "ponder.ui.slow_text": "Đọc thong thả",
+  "ponder.ui.welcome": "Chào mừng đến với Ponder",
+  "ponder.ponder.shared.sneak_and": "Cúi +",
+  "ponder.ponder.shared.ctrl_and": "Ctrl +",
+  "catnip.ui.go_back_button": "Trở lại"
+}

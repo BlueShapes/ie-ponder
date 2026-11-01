@@ -1,0 +1,42 @@
+{
+  "scope": [
+    "zh_cn",
+    "zh_tw",
+    "zh_hk",
+    "hi_in",
+    "ko_kr",
+    "vi_vn",
+    "tr_tr"
+  ],
+  "entries_per_locale": 185,
+  "source": "build/translation-source.json",
+  "reviewed_source_scope": "20 titles, 20 summaries, 140 subtitles, 5 item descriptions",
+  "source_review": {
+    "english": "All 185 English source entries considered during authoring and targeted review.",
+    "japanese": "Terminology-only corrections reported by primary were considered: coal coke, slag, fluid pump, wooden barrel and crate identity changes do not alter the English facts translated here."
+  },
+  "terminology": {
+    "zh_cn": "Current installed-IE snapshot names used.",
+    "zh_tw": "Unambiguous legacy lexical names retained, but current-key missing terms are paired with English and explicitly marked 暫譯 at the first named mention per lesson/description. The current-key graphite electrode has its official translation.",
+    "zh_hk": "Separate Hong Kong wording. No official locale snapshot entries: first named terms pair English with 建議譯名.",
+    "hi_in": "No official locale snapshot entries: first named terms pair English with प्रस्तावित अनुवाद.",
+    "ko_kr": "Installed-IE names used, including current furnace_heater, sheetmetal_iron and crate terms.",
+    "vi_vn": "No official locale snapshot entries: first named terms pair English with dịch đề xuất.",
+    "tr_tr": "Installed-IE names used, including AG/OG/YG, furnace_heater, sheetmetal_iron, graphite_electrode and crate terms."
+  },
+  "mechanical_checks": [
+    "Each file has exactly the 185 source keys in source order.",
+    "No empty strings, unchanged English source entries or unresolved authoring markers.",
+    "Traditional Chinese term matching uses longest full term to avoid substring corruption."
+  ],
+  "limitations": [
+    "No native-speaker review performed.",
+    "No Minecraft launch or runtime font-width/layout test performed by this translation worker.",
+    "No source hash is asserted by this note."
+  ],
+  "transferred_untouched_locales": [
+    "ar_sa",
+    "id_id",
+    "ms_my"
+  ]
+}

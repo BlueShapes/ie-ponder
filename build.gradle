@@ -1,0 +1,153 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+group = 'dev.ieponder'
+version = mod_version
+base.archivesName = 'immersive-engineering-ponder-guide'
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.createmod.net' }
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content { includeGroup 'maven.modrinth' }
+    }
+}
+
+sourceSets {
+    captionTest {
+        compileClasspath = files(layout.buildDirectory.dir('classes/java/main'))
+        runtimeClasspath = output + compileClasspath
+    }
+    validation {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+
+neoForge {
+    version = neo_version
+    runs {
+        client { client() }
+        validationClient {
+            client()
+            sourceSet = sourceSets.validation
+            gameDirectory = layout.buildDirectory.dir('validation-run').get().asFile
+            systemProperty 'ieponder.validate', 'true'
+            systemProperty 'ieponder.captionValidation', (project.hasProperty('captionValidation') || project.hasProperty('layoutValidation')).toString()
+            systemProperty 'ieponder.layoutValidation', project.hasProperty('layoutValidation').toString()
+            systemProperty 'ieponder.presentationValidation', project.hasProperty('presentationValidation').toString()
+            systemProperty 'ieponder.coverageValidation', project.hasProperty('coverageValidation').toString()
+            systemProperty 'ieponder.coverageExpectations', project.findProperty('coverageExpectations')
+                    ?: file('docs/item-coverage-expectations.json').absolutePath
+            systemProperty 'ieponder.coverageJar', project.findProperty('coverageJar')
+                    ?: layout.buildDirectory.file("libs/${base.archivesName.get()}-${project.version}-neoforge-1.21.1.jar")
+                    .get().asFile.absolutePath
+            systemProperty 'ieponder.validationLessons', project.findProperty('validationLessons') ?: ''
+            programArguments.addAll '--width', '960', '--height',
+                    (project.hasProperty('captionValidation') || project.hasProperty('layoutValidation')
+                            || project.hasProperty('presentationValidation')) ? '720' : '640'
+        }
+    }
+    mods {
+        ieponder {
+            sourceSet sourceSets.main
+            if (project.hasProperty('validateGuide')) sourceSet sourceSets.validation
+        }
+    }
+}
+
+dependencies {
+    implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}"
+    runtimeOnly("maven.modrinth:immersiveengineering:${immersive_engineering_version}") { transitive = false }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+tasks.named('compileCaptionTestJava').configure { dependsOn tasks.named('compileJava') }
+tasks.register('testCaptionUnits', JavaExec) {
+    dependsOn tasks.named('compileCaptionTestJava')
+    classpath = sourceSets.captionTest.runtimeClasspath
+    mainClass = 'dev.ieponder.client.CaptionUnitsTest'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+    doFirst {
+        def json = new groovy.json.JsonSlurper()
+        def guide = file('src/main/resources/assets/ieponder/guide')
+        def lessons = ['lessons.json', 'processing.json'].collectMany { json.parse(new File(guide, it), 'UTF-8') }
+        def locales = json.parse(file('src/main/translations/languages.json'), 'UTF-8').keySet()
+        def rows = []
+        locales.each { locale ->
+            def captions = [:]
+            if (locale in ['ja_jp', 'en_us']) {
+                def language = locale == 'ja_jp' ? 'ja' : 'en'
+                lessons.each { lesson -> lesson.steps.eachWithIndex { step, index ->
+                    captions["ieponder.ponder.shared.${lesson.id}_${index}".toString()] = step.text[language]
+                } }
+            } else {
+                captions = json.parse(file("src/main/translations/content/${locale}.json"), 'UTF-8')
+                        .findAll { key, value -> key.startsWith('ieponder.ponder.shared.') }
+            }
+            captions.each { key, text ->
+                rows.add("${locale}\t${key}\t${text.getBytes('UTF-8').encodeBase64()}".toString())
+            }
+        }
+        standardInput = new ByteArrayInputStream(rows.join('\n').getBytes('UTF-8'))
+        args = ['--audit']
+    }
+}
+tasks.register('testSearchText', JavaExec) {
+    dependsOn tasks.named('compileCaptionTestJava'), tasks.named('generateGuideResources')
+    classpath = sourceSets.captionTest.runtimeClasspath
+    mainClass = 'dev.ieponder.client.SearchTextTest'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+    doFirst {
+        def locales = new groovy.json.JsonSlurper().parse(file('src/main/translations/languages.json'), 'UTF-8')
+        def rows = []
+        locales.each { locale, language ->
+            def generated = file("build/generated/guideResources/assets/ieponder/lang/${locale}.json")
+            def content = new groovy.json.JsonSlurper().parse(generated, 'UTF-8')
+            content.each { key, text ->
+                rows.add("${locale}\t${key}\t${text.getBytes('UTF-8').encodeBase64()}".toString())
+            }
+        }
+        standardInput = new ByteArrayInputStream(rows.join('\n').getBytes('UTF-8'))
+        args = []
+    }
+}
+tasks.named('check').configure { dependsOn tasks.named('testCaptionUnits') }
+
+apply from: 'gradle/guide-resources.gradle'
+tasks.named('generateGuideResources').configure { dependsOn tasks.named('testCaptionUnits') }
+
+processResources {
+    from('LICENSE')
+    from('THIRD_PARTY_NOTICES.md')
+    from('LICENSES') { into 'LICENSES' }
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+}
+
+tasks.named('jar', Jar) { archiveClassifier = 'neoforge-1.21.1' }
+tasks.named('wrapper', Wrapper).configure { gradleVersion = '8.14.3' }
+
+tasks.matching { it.name == 'runValidationClient' }.configureEach {
+    def resultFile = layout.buildDirectory.file('validation-run/validation-result.json')
+    def failureFile = layout.buildDirectory.file('validation-run/validation-failure.txt')
+    if (project.hasProperty('coverageValidation')) dependsOn tasks.named('jar')
+    doFirst {
+        if (!project.hasProperty('validateGuide')) throw new GradleException('Use -PvalidateGuide')
+        java.nio.file.Files.deleteIfExists(resultFile.get().asFile.toPath())
+        java.nio.file.Files.deleteIfExists(failureFile.get().asFile.toPath())
+    }
+    doLast {
+        def result = resultFile.get().asFile
+        if (!result.isFile() || new groovy.json.JsonSlurper().parse(result, 'UTF-8').passed != true)
+            throw new GradleException("Guide validation failed; inspect ${result.parent}/validation-failure.txt")
+    }
+}

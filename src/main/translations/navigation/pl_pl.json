@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Poradnik Immersive Engineering",
+  "ieponder.command.requires_world": "Wejdź do świata, aby otworzyć poradnik",
+  "ieponder.command.unknown": "Nieznany rozdział, lekcja lub przedmiot: %s",
+  "ieponder.tooltip.hold_for_description": "Przytrzymaj [%s], aby wyświetlić opis",
+  "ieponder.ponder.tag.start": "1. Pierwsze kroki",
+  "ieponder.ponder.tag.start.description": "Podstawowe materiały i pierwsze maszyny",
+  "ieponder.ponder.tag.power": "2. Energia",
+  "ieponder.ponder.tag.power.description": "Wytwarzanie i magazynowanie energii, okablowanie",
+  "ieponder.ponder.tag.metallurgy": "3. Metalurgia",
+  "ieponder.ponder.tag.metallurgy.description": "Przetwarzanie rud i obróbka metali",
+  "ieponder.ponder.tag.logistics": "4. Logistyka",
+  "ieponder.ponder.tag.logistics.description": "Transport przedmiotów i płynów",
+  "ieponder.ponder.tag.processing": "5. Przetwarzanie",
+  "ieponder.ponder.tag.processing.description": "Przetwarzanie materiałów w maszynach wieloblokowych",
+  "ieponder.ponder.tag.troubleshooting": "6. Rozwiązywanie problemów",
+  "ieponder.ponder.tag.troubleshooting.description": "Zasilanie, konstrukcja, wejścia i wyjścia"
+}

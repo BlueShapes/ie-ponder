@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Ghid Immersive Engineering",
+  "ieponder.command.requires_world": "Intră într-o lume pentru a deschide ghidul",
+  "ieponder.command.unknown": "Capitol, lecție sau obiect necunoscut: %s",
+  "ieponder.tooltip.hold_for_description": "Ține apăsată tasta [%s] pentru a vedea descrierea",
+  "ieponder.ponder.tag.start": "1. Primii pași",
+  "ieponder.ponder.tag.start.description": "Materiale de bază și primele mașini",
+  "ieponder.ponder.tag.power": "2. Energie",
+  "ieponder.ponder.tag.power.description": "Generarea și stocarea energiei, cablare",
+  "ieponder.ponder.tag.metallurgy": "3. Metalurgie",
+  "ieponder.ponder.tag.metallurgy.description": "Prelucrarea minereurilor și a metalelor",
+  "ieponder.ponder.tag.logistics": "4. Logistică",
+  "ieponder.ponder.tag.logistics.description": "Transportul obiectelor și lichidelor",
+  "ieponder.ponder.tag.processing": "5. Prelucrare",
+  "ieponder.ponder.tag.processing.description": "Prelucrarea materialelor în mașini multibloc",
+  "ieponder.ponder.tag.troubleshooting": "6. Depanare",
+  "ieponder.ponder.tag.troubleshooting.description": "Alimentare, asamblare, intrări și ieșiri"
+}

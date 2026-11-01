@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Průvodce Immersive Engineering",
+  "ieponder.command.requires_world": "Pro otevření průvodce vstupte do světa",
+  "ieponder.command.unknown": "Neznámá kapitola, lekce nebo předmět: %s",
+  "ieponder.tooltip.hold_for_description": "Podržte [%s] pro zobrazení popisu",
+  "ieponder.ponder.tag.start": "1. Začínáme",
+  "ieponder.ponder.tag.start.description": "Základní materiály a první stroje",
+  "ieponder.ponder.tag.power": "2. Energie",
+  "ieponder.ponder.tag.power.description": "Výroba a ukládání energie, zapojení kabelů",
+  "ieponder.ponder.tag.metallurgy": "3. Metalurgie",
+  "ieponder.ponder.tag.metallurgy.description": "Zpracování rud a obrábění kovů",
+  "ieponder.ponder.tag.logistics": "4. Logistika",
+  "ieponder.ponder.tag.logistics.description": "Přeprava předmětů a kapalin",
+  "ieponder.ponder.tag.processing": "5. Zpracování",
+  "ieponder.ponder.tag.processing.description": "Zpracování materiálů ve víceblokových strojích",
+  "ieponder.ponder.tag.troubleshooting": "6. Řešení problémů",
+  "ieponder.ponder.tag.troubleshooting.description": "Napájení, sestavení, vstupy a výstupy"
+}

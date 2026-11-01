@@ -1,0 +1,1801 @@
+[
+  {
+    "id": "coke_oven",
+    "chapter": "start",
+    "title": {
+      "ja": "コークス炉の組み立て",
+      "en": "Building a Coke Oven"
+    },
+    "summary": {
+      "ja": "27個のレンガから、コークスとクレオソート油の生産を始めます",
+      "en": "A 27-brick oven supplies Coal Coke and Creosote Oil"
+    },
+    "icon": "immersiveengineering:cokebrick",
+    "components": [
+      "immersiveengineering:cokebrick",
+      "immersiveengineering:coal_coke",
+      "immersiveengineering:creosote_bucket",
+      "immersiveengineering:coke_oven"
+    ],
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "コークス炉用レンガを3×3に並べた層が底面になります\n電力は不要です",
+          "en": "A 3 by 3 layer of Coke Bricks forms the base\nThe oven does not need electricity"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:cokebrick",
+            "anchor": "mb_1_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "中央の層にも9個のレンガを使います\n中央を空洞にせず、合計27個で組みます",
+          "en": "The middle layer uses nine more bricks\nThe center stays solid: the full structure uses 27 bricks"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_1_1_1"
+        ]
+      },
+      {
+        "text": {
+          "ja": "上段を埋め、エンジニアのハンマーで側面中央を右クリックすると形成します\n模型は組み立て前の配置を示しています",
+          "en": "A full top layer completes the brick layout\nRight-clicking a side's center with an Engineer's Hammer forms the oven\nThis model shows the construction layout"
+        },
+        "show": [
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後の画面に石炭を入れると、コークスとクレオソート油を得られます\n木材の処理にも対応します",
+          "en": "Coal in the formed oven's interface produces Coal Coke and Creosote Oil\nRecipes also exist for logs"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:coal",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:coal_coke",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "油が満杯になると処理が止まります\n容器や液体ポンプで回収してください\n油は防腐木材の材料になります",
+          "en": "A full oil tank stops processing\nDrain it with containers or a Fluid Pump\nThe creosote is used to make treated wood"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:creosote_bucket",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          }
+        ],
+        "warning": true
+      }
+    ],
+    "structure": {
+      "template": "coke_oven",
+      "origin": [
+        3,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "alloy_kiln",
+    "chapter": "start",
+    "title": {
+      "ja": "合金窯の組み立て",
+      "en": "Building an Alloy Kiln"
+    },
+    "summary": {
+      "ja": "2×2×2の窯で、燃料と2種類の材料から合金を作ります",
+      "en": "A 2 by 2 by 2 kiln combines two ingredients with furnace fuel"
+    },
+    "icon": "immersiveengineering:alloybrick",
+    "components": [
+      "immersiveengineering:alloybrick",
+      "immersiveengineering:ingot_electrum",
+      "immersiveengineering:ingot_constantan",
+      "immersiveengineering:alloy_smelter"
+    ],
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "耐熱レンガを2×2に並べた層が底面です\n合金窯は電力ではなく、かまど用の燃料を使います",
+          "en": "A 2 by 2 layer of Kiln Bricks forms the base\nAn Alloy Kiln uses furnace fuel rather than electricity"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_0_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:alloybrick",
+            "anchor": "mb_0_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "上にもう4個を重ねた、合計8個の2×2×2の立方体です",
+          "en": "Four more bricks on top complete a solid 2 by 2 by 2 cube of eight bricks"
+        },
+        "show": [
+          "@layer1"
+        ],
+        "focus": [
+          "mb_0_1_1"
+        ]
+      },
+      {
+        "text": {
+          "ja": "側面をエンジニアのハンマーで右クリックすると合金窯になります\nこの模型は形成に必要な配置です",
+          "en": "Right-clicking a side with the Engineer's Hammer forms the kiln\nThe model shows the blocks required for construction"
+        },
+        "focus": [
+          "mb_1_1_1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_1",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "合金窯はレシピで指定された2種類の材料と燃料を使います\n金と銀からはエレクトラムを作れます",
+          "en": "The kiln combines two recipe ingredients using fuel\nGold and silver, for example, make Electrum"
+        },
+        "focus": [
+          "mb_0_0_1"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:gold_ingot",
+            "anchor": "mb_0_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:ingot_silver",
+            "anchor": "mb_0_0_1",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:ingot_electrum",
+            "anchor": "mb_0_0_1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "材料の組み合わせと個数は現在の環境のレシピを確認してください\n出力欄が埋まった場合も取り出す必要があります",
+          "en": "Check the active recipes for ingredient combinations and quantities\nClear the output slot when it fills"
+        },
+        "focus": [
+          "mb_0_0_1"
+        ],
+        "warning": true
+      }
+    ],
+    "structure": {
+      "template": "alloy_smelter",
+      "origin": [
+        3,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "basic_wiring",
+    "chapter": "power",
+    "title": {
+      "ja": "低圧配線と継電器",
+      "en": "LV wiring and relays"
+    },
+    "summary": {
+      "ja": "接続端子と継電器を使い分け、ワイヤーを2点に接続します",
+      "en": "Two endpoints connect by wire, using connectors at devices and relays at junctions"
+    },
+    "icon": "immersiveengineering:connector_lv",
+    "components": [
+      "immersiveengineering:connector_lv",
+      "immersiveengineering:connector_lv_relay",
+      "immersiveengineering:wirecoil_copper",
+      "immersiveengineering:wirecoil_copper_ins",
+      "immersiveengineering:wirecutter"
+    ],
+    "nodes": [
+      {
+        "id": "source",
+        "block": "immersiveengineering:capacitor_lv",
+        "pos": [
+          2,
+          1,
+          4
+        ],
+        "nbt": "{sideConfig_0:0,sideConfig_1:2,sideConfig_2:0,sideConfig_3:0,sideConfig_4:0,sideConfig_5:0}"
+      },
+      {
+        "id": "source_plug",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          2,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      },
+      {
+        "id": "pole",
+        "block": "immersiveengineering:treated_wood_horizontal",
+        "pos": [
+          4,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "relay",
+        "block": "immersiveengineering:connector_lv_relay",
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      },
+      {
+        "id": "target",
+        "block": "immersiveengineering:capacitor_lv",
+        "pos": [
+          6,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "target_plug",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          6,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "装置と電力をやり取りする場所には低圧線接続端子を使います\n端子を付けた面は、装置側でも入出力を設定します",
+          "en": "LV Wire Connectors exchange power with devices\nThe device side beneath each connector needs the intended input or output setting"
+        },
+        "show": [
+          "source",
+          "source_plug",
+          "target",
+          "target_plug"
+        ],
+        "focus": [
+          "source_plug"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_lv",
+            "anchor": "source_plug",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "途中の分岐には低圧線継電器を使います\n継電器はワイヤーを中継しますが、土台の装置に電力を渡しません",
+          "en": "An LV Wire Relay serves as a junction\nRelays join wires but do not exchange power with the block supporting them"
+        },
+        "show": [
+          "pole",
+          "relay"
+        ],
+        "focus": [
+          "relay"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_lv_relay",
+            "anchor": "relay",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "低圧ワイヤーの束で端子、継電器の順に右クリックすると接続します\n線は接続経路を示す説明用の表示です",
+          "en": "An LV Wire Coil connects a connector and relay when each is right-clicked in turn\nThe animated line illustrates the connection path"
+        },
+        "focus": [
+          "source_plug",
+          "relay"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:wirecoil_copper",
+            "anchor": "source_plug",
+            "action": "right_click"
+          },
+          {
+            "item": "immersiveengineering:wirecoil_copper",
+            "anchor": "relay",
+            "action": "right_click"
+          }
+        ],
+        "flow": {
+          "from": "source_plug",
+          "to": "relay",
+          "item": "immersiveengineering:wirecoil_copper"
+        }
+      },
+      {
+        "text": {
+          "ja": "同じ操作で継電器から受電側の端子へも接続します\n端子・継電器とワイヤーは同じ電圧を使います",
+          "en": "The same action connects the relay to the receiving connector\nThe wire, connectors and relay need matching voltage tiers"
+        },
+        "focus": [
+          "relay",
+          "target_plug"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:wirecoil_copper",
+            "anchor": "target_plug",
+            "action": "right_click"
+          }
+        ],
+        "flow": {
+          "from": "relay",
+          "to": "target_plug",
+          "item": "immersiveengineering:wirecoil_copper"
+        }
+      },
+      {
+        "text": {
+          "ja": "ワイヤーに障害物が重なると接続できません\n生物に触れる場所では被覆済みワイヤーを使い、切断にはワイヤーカッターを使ってください",
+          "en": "Blocks obstructing the wire path prevent a connection\nUse insulated wire where creatures could touch it\nA Wirecutter removes a connection"
+        },
+        "focus": [
+          "relay"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:wirecoil_copper_ins",
+            "anchor": "relay",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:wirecutter",
+            "anchor": "relay",
+            "action": "right_click"
+          }
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "capacitors",
+    "chapter": "power",
+    "title": {
+      "ja": "キャパシタの面設定",
+      "en": "Configuring capacitor sides"
+    },
+    "summary": {
+      "ja": "青の入力、橙の出力、無効の面をハンマーで切り替えます",
+      "en": "The hammer switches capacitor faces between blue input, orange output and disabled"
+    },
+    "icon": "immersiveengineering:capacitor_lv",
+    "components": [
+      "immersiveengineering:capacitor_lv",
+      "immersiveengineering:capacitor_mv",
+      "immersiveengineering:capacitor_hv",
+      "immersiveengineering:hammer"
+    ],
+    "nodes": [
+      {
+        "id": "buffer",
+        "block": "immersiveengineering:capacitor_lv",
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "nbt": "{sideConfig_0:0,sideConfig_1:1,sideConfig_2:0,sideConfig_3:0,sideConfig_4:0,sideConfig_5:0}"
+      },
+      {
+        "id": "input",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      },
+      {
+        "id": "output",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          5,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "west"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "キャパシタは発電と消費の間で電力を蓄えます\n低・中・高電圧で容量と入出力上限が異なります",
+          "en": "A capacitor buffers energy between generation and consumption\nLV, MV and HV variants have different capacities and transfer limits"
+        },
+        "show": [
+          "buffer"
+        ],
+        "focus": [
+          "buffer"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:capacitor_lv",
+            "anchor": "buffer",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "青い面は入力です\nエンジニアのハンマーで面を右クリックすると、入力・出力・無効を切り替えられます",
+          "en": "Blue marks an input\nRight-clicking a face with the Engineer's Hammer changes its setting\nThis cycles its input, output and disabled settings"
+        },
+        "show": [
+          "input"
+        ],
+        "focus": [
+          "buffer"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "buffer",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "橙の面は出力です\n発電側から入力へ、出力から消費側へ電力が流れます\n接続端子だけでは面設定は変わりません",
+          "en": "Orange marks an output\nPower flows from the generator to an input, then from an output to the consumer\nAdding a connector does not configure the capacitor face"
+        },
+        "show": [
+          "output"
+        ],
+        "focus": [
+          "buffer",
+          "output"
+        ],
+        "nbt": {
+          "buffer": "{sideConfig_5:2}"
+        }
+      },
+      {
+        "text": {
+          "ja": "スニークしながらハンマーを使うと、クリックした面の反対側を設定できます\n色のない面は接続を受け付けません",
+          "en": "Sneaking while using the hammer configures the opposite face\nFaces without a color marking do not accept a connection"
+        },
+        "focus": [
+          "buffer"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "buffer",
+            "action": "right_click",
+            "sneak": true
+          }
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "蓄電があっても出力上限を超えて供給できません\n装置が止まるときは残量と面設定、電圧、転送上限を確認してください",
+          "en": "Stored energy cannot bypass the output limit\nIf a machine stops, check stored energy and side settings\nAlso check its voltage tier and transfer limits"
+        },
+        "focus": [
+          "buffer"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "thermoelectric",
+    "chapter": "power",
+    "title": {
+      "ja": "温度差による発電",
+      "en": "Generating power from temperature"
+    },
+    "summary": {
+      "ja": "熱源と冷却源を向かい合わせ、熱電発電機から電力を取り出します",
+      "en": "Opposite hot and cold sources power a Thermoelectric Generator"
+    },
+    "icon": "immersiveengineering:thermoelectric_generator",
+    "components": [
+      "immersiveengineering:thermoelectric_generator"
+    ],
+    "nodes": [
+      {
+        "id": "gen",
+        "block": "immersiveengineering:thermoelectric_generator",
+        "pos": [
+          4,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "hot",
+        "block": "minecraft:magma_block",
+        "pos": [
+          3,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "cold",
+        "block": "minecraft:blue_ice",
+        "pos": [
+          5,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "plug",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "熱電発電機は、向かい合う2面の温度差から発電します\n燃料や回転軸を必要としません",
+          "en": "The Thermoelectric Generator uses a temperature difference to generate power\nThe hot and cold sources must touch two opposite faces\nIt needs neither fuel nor a rotating shaft"
+        },
+        "show": [
+          "gen"
+        ],
+        "focus": [
+          "gen"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:thermoelectric_generator",
+            "anchor": "gen",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "熱源と冷たいブロックを、発電機を挟んで向かい合わせます\nここではマグマブロックと青氷を示しています",
+          "en": "The hot and cold sources sit on opposite sides of the generator\nThis example uses a Magma Block and Blue Ice"
+        },
+        "show": [
+          "hot",
+          "cold"
+        ],
+        "focus": [
+          "hot",
+          "cold"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:magma_block",
+            "anchor": "hot",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:blue_ice",
+            "anchor": "cold",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "発電機に付けた接続端子から、電力を使う装置へ配線します\n上下の対向面でも温度差を利用できます",
+          "en": "A wire connector on the generator supplies a wired consumer\nOpposite faces above and below the generator can also provide a temperature gradient"
+        },
+        "show": [
+          "plug"
+        ],
+        "focus": [
+          "plug"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_lv",
+            "anchor": "plug",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "熱源と冷却源が隣り合う配置では、その2つの差を使えません\n発電機を挟んで向かい合う配置が必要です",
+          "en": "Sources on adjacent sides do not form a temperature pair\nThe generator needs to sit directly between the hot and cold sources"
+        },
+        "focus": [
+          "hot",
+          "cold"
+        ],
+        "warning": true
+      },
+      {
+        "text": {
+          "ja": "発電量は温度差と設定で変わります\n受電先や配線の上限も確認し、一定の発電量を前提にしないでください",
+          "en": "Output depends on the temperature difference and configuration\nCheck the receiving network and its limits instead of assuming a fixed output"
+        },
+        "focus": [
+          "gen"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "water_wheel",
+    "chapter": "power",
+    "title": {
+      "ja": "水車と動力ダイナモ",
+      "en": "Waterwheel and Kinetic Dynamo"
+    },
+    "summary": {
+      "ja": "先にダイナモを置き、軸に水車を取り付けて水流を利用します",
+      "en": "The dynamo goes down first, then a waterwheel attaches to its shaft and turns with flowing water"
+    },
+    "icon": "immersiveengineering:watermill",
+    "components": [
+      "immersiveengineering:watermill",
+      "immersiveengineering:dynamo"
+    ],
+    "nodes": [
+      {
+        "id": "dynamo",
+        "block": "immersiveengineering:dynamo",
+        "pos": [
+          4,
+          3,
+          4
+        ],
+        "state": {
+          "facing": "east"
+        }
+      },
+      {
+        "id": "wheel",
+        "block": "immersiveengineering:watermill",
+        "pos": [
+          5,
+          3,
+          4
+        ],
+        "state": {
+          "facing": "west"
+        }
+      },
+      {
+        "id": "water",
+        "block": "minecraft:water",
+        "pos": [
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "id": "plug",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          4,
+          4,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "先に設置する動力ダイナモの軸を、水車の位置へ向けます\n電力はダイナモから取り出します",
+          "en": "The Kinetic Dynamo goes down first, with its shaft facing the planned wheel\nElectrical power comes from the dynamo"
+        },
+        "show": [
+          "dynamo"
+        ],
+        "focus": [
+          "dynamo"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:dynamo",
+            "anchor": "dynamo",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "水車はダイナモの軸に取り付けます\n周囲には車輪が収まる空間を確保します\nこの模型は軸の位置関係を示しています",
+          "en": "The Waterwheel attaches to the shaft and needs room around its rim\nThis model illustrates the alignment of the wheel and dynamo"
+        },
+        "show": [
+          "wheel"
+        ],
+        "focus": [
+          "wheel"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:watermill",
+            "anchor": "wheel",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "車輪の外周を流れる水が水車を回します\n発電量は水流の状態に応じて変わります\n水源の表示は流す位置の目印です",
+          "en": "Water flowing around the rim drives the wheel\nOutput depends on the water flow\nThe water block here marks a possible supply position"
+        },
+        "show": [
+          "water"
+        ],
+        "focus": [
+          "water",
+          "wheel"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:water_bucket",
+            "anchor": "water",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "ダイナモに付けた接続端子から電力を送ります\n水車を同じ軸に最大3枚つなげて、1台のダイナモを駆動できます",
+          "en": "A connector attached to the dynamo carries power to the wires\nUp to three adjacent waterwheels on one shaft can drive a single dynamo"
+        },
+        "show": [
+          "plug"
+        ],
+        "focus": [
+          "plug"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:connector_lv",
+            "anchor": "plug",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "回らない場合は車輪の空間と水流、軸の接続を確認してください\nダイナモはIEの水車と風車から回転を受け取ります",
+          "en": "If the wheel does not turn, check clearance, water flow and shaft alignment\nThe dynamo accepts rotation from IE waterwheels and windmills"
+        },
+        "focus": [
+          "wheel",
+          "dynamo"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "crude_blast_furnace",
+    "chapter": "metallurgy",
+    "title": {
+      "ja": "高炉で鋼鉄を作る",
+      "en": "Making steel in a Crude Blast Furnace"
+    },
+    "summary": {
+      "ja": "27個のレンガで高炉を形成し、鉄と適切な燃料を処理します",
+      "en": "A 27-brick furnace processes iron with a suitable carbon-rich fuel"
+    },
+    "icon": "immersiveengineering:blastbrick",
+    "components": [
+      "immersiveengineering:blastbrick",
+      "immersiveengineering:ingot_steel",
+      "immersiveengineering:slag",
+      "immersiveengineering:blast_furnace"
+    ],
+    "nodes": [],
+    "steps": [
+      {
+        "text": {
+          "ja": "高炉用レンガを3×3に並べた層が底面です\n鉄を鋼鉄にするには、コークスなどの適切な燃料も必要です",
+          "en": "A 3 by 3 layer of Blast Bricks forms the base\nTurning iron into steel also needs a suitable fuel such as Coal Coke"
+        },
+        "show": [
+          "@layer0"
+        ],
+        "focus": [
+          "mb_1_0_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:blastbrick",
+            "anchor": "mb_1_0_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "中央と上段もすべて埋めた、合計27個の立方体です\n中央のブロックも必要です",
+          "en": "Full middle and top layers complete a solid cube of 27 bricks\nThe central block is required too"
+        },
+        "show": [
+          "@layer1",
+          "@layer2"
+        ],
+        "focus": [
+          "mb_1_1_2"
+        ]
+      },
+      {
+        "text": {
+          "ja": "側面中央をハンマーで右クリックすると高炉になります\n模型は形成前のレンガ配置を示しています",
+          "en": "Right-clicking the center of a side with the hammer forms the furnace\nThis model shows the brick layout before formation"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "mb_1_1_2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "完成後の画面で鉄インゴットとコークスなどの対応燃料を使います\n鋼鉄と鉱滓が出力されます",
+          "en": "Iron ingots go into the formed furnace's interface\nA supported fuel such as Coal Coke supplies the heat\nIt produces steel and slag"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:iron_ingot",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:coal_coke",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:ingot_steel",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "この高炉の入出力は手動です\n鋼鉄だけでなく鉱滓も取り出してください\n自動化には改良型高炉を使います",
+          "en": "The Crude Blast Furnace requires manual input and output\nRemove both steel and slag\nThe Improved Blast Furnace supports automation"
+        },
+        "focus": [
+          "mb_1_1_2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:slag",
+            "anchor": "mb_1_1_2",
+            "action": "none"
+          }
+        ],
+        "warning": true
+      }
+    ],
+    "structure": {
+      "template": "blast_furnace",
+      "origin": [
+        3,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "conveyors",
+    "chapter": "logistics",
+    "title": {
+      "ja": "コンベアによる搬送",
+      "en": "Transporting items on conveyors"
+    },
+    "summary": {
+      "ja": "搬送方向と送り先を揃え、アイテムをインベントリへ届けます",
+      "en": "Belts aligned with an inventory route items without electrical power"
+    },
+    "icon": "immersiveengineering:conveyor_basic",
+    "components": [
+      "immersiveengineering:conveyor_basic",
+      "immersiveengineering:conveyor_extract",
+      "immersiveengineering:conveyor_dropper",
+      "immersiveengineering:conveyor_vertical"
+    ],
+    "nodes": [
+      {
+        "id": "belt1",
+        "block": "immersiveengineering:conveyor_basic",
+        "pos": [
+          2,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "east"
+        }
+      },
+      {
+        "id": "belt2",
+        "block": "immersiveengineering:conveyor_basic",
+        "pos": [
+          3,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "east"
+        }
+      },
+      {
+        "id": "belt3",
+        "block": "immersiveengineering:conveyor_basic",
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "east"
+        }
+      },
+      {
+        "id": "chest",
+        "block": "minecraft:chest",
+        "pos": [
+          5,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "south"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "ベルトコンベアは電力なしで、上に落ちたアイテムを運びます\n矢印がアイテムの進む向きです",
+          "en": "Conveyor Belts move dropped items without power\nTheir arrows point toward the destination"
+        },
+        "show": [
+          "belt1",
+          "belt2",
+          "belt3"
+        ],
+        "focus": [
+          "belt1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:conveyor_basic",
+            "anchor": "belt1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "ハンマーの右クリックで向きを変えられます\nスニークしながら右クリックすると、上り・下りを切り替えます",
+          "en": "Right-clicking with the hammer rotates a belt\nSneaking and right-clicking changes its incline"
+        },
+        "focus": [
+          "belt2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "belt2",
+            "action": "right_click"
+          },
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "belt2",
+            "action": "right_click",
+            "sneak": true
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "先端をチェストなどのインベントリへ向けると、空きがある場合にアイテムが入ります\n動く鉄は搬送経路の説明用です",
+          "en": "A belt end facing an inventory such as a chest feeds items into it\nItems enter when there is room\nThe moving iron illustrates the route"
+        },
+        "show": [
+          "chest"
+        ],
+        "focus": [
+          "belt3",
+          "chest"
+        ],
+        "flow": {
+          "from": "belt1",
+          "to": "chest",
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      {
+        "text": {
+          "ja": "普通のベルトはチェストから取り出しません\n搬出ベルトコンベアやホッパーが取り出しを担います",
+          "en": "A basic belt does not extract from a chest\nAn Extracting Conveyor Belt or hopper supplies items from it"
+        },
+        "focus": [
+          "belt1"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:conveyor_extract",
+            "anchor": "belt1",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "送り先が満杯になるとアイテムが滞留します\n垂直コンベアはアイテム用で、液体の搬送には使えません",
+          "en": "Items back up when the destination is full\nVertical Conveyors move items\nThey do not transport fluids"
+        },
+        "focus": [
+          "chest"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "fluid_pipes",
+    "chapter": "logistics",
+    "title": {
+      "ja": "液体のパイプと接続",
+      "en": "Fluid pipes and connections"
+    },
+    "summary": {
+      "ja": "液体を押し出す装置からパイプへ送り、不要な接続を閉じます",
+      "en": "Fluid outputs feed the pipe network, while closed branches restrict its route"
+    },
+    "icon": "immersiveengineering:fluid_pipe",
+    "components": [
+      "immersiveengineering:fluid_pipe",
+      "immersiveengineering:fluid_pump"
+    ],
+    "nodes": [
+      {
+        "id": "pump",
+        "block": "immersiveengineering:fluid_pump",
+        "pos": [
+          2,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "east"
+        }
+      },
+      {
+        "id": "pipe1",
+        "block": "immersiveengineering:fluid_pipe",
+        "pos": [
+          3,
+          1,
+          4
+        ],
+        "nbt": "{connections:48b,sideConfig:[I;1,1,1,1,1,1],cover:\"minecraft:air\"}"
+      },
+      {
+        "id": "pipe2",
+        "block": "immersiveengineering:fluid_pipe",
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "nbt": "{connections:48b,sideConfig:[I;1,1,1,1,1,1],cover:\"minecraft:air\"}"
+      },
+      {
+        "id": "pipe3",
+        "block": "immersiveengineering:fluid_pipe",
+        "pos": [
+          5,
+          1,
+          4
+        ],
+        "nbt": "{connections:48b,sideConfig:[I;1,1,1,1,1,1],cover:\"minecraft:air\"}"
+      },
+      {
+        "id": "barrel",
+        "block": "immersiveengineering:wooden_barrel",
+        "pos": [
+          6,
+          1,
+          4
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "液体のパイプは、入力された液体を接続先へ運びます\nタンクに接続するだけで、自動的に吸い出す装置ではありません",
+          "en": "Fluid Pipes carry fluids supplied to them\nConnecting a pipe to a tank does not make the pipe extract from that tank"
+        },
+        "show": [
+          "pipe1",
+          "pipe2",
+          "pipe3"
+        ],
+        "focus": [
+          "pipe2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:fluid_pipe",
+            "anchor": "pipe2",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "液体ポンプなどが、液体をパイプへ送り出します\nポンプ自体の電力や面設定も必要です",
+          "en": "A Fluid Pump or another fluid-output device feeds the network\nThe pump needs power and suitable side settings"
+        },
+        "show": [
+          "pump"
+        ],
+        "focus": [
+          "pump"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:fluid_pump",
+            "anchor": "pump",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "送り先もパイプにつなぎます\nここでは木製バレルを示しています\n樽によって扱える液体の条件が異なります",
+          "en": "The destination also connects to the pipe\nThis example uses a Wooden Barrel\nBarrel types restrict which fluids they can store"
+        },
+        "show": [
+          "barrel"
+        ],
+        "focus": [
+          "barrel"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:wooden_barrel",
+            "anchor": "barrel",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "ハンマーでパイプの接続を切り替えられます\n不要な分岐やタンクへの接続を閉じると、経路を絞れます",
+          "en": "The hammer toggles pipe connections\nClosing unwanted branches and tank connections narrows the route"
+        },
+        "focus": [
+          "pipe2"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "pipe2",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "複数の出力へ流れる場合や圧力により、流量は変わります\n色を付けたパイプは新しく置いたパイプと自動接続しない点にも注意してください",
+          "en": "Flow depends on pressure and available outputs\nDyed pipes also do not automatically connect to newly placed pipes"
+        },
+        "focus": [
+          "pipe2"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "item_router",
+    "chapter": "logistics",
+    "title": {
+      "ja": "アイテム分配器の仕分け",
+      "en": "Sorting with the Item Router"
+    },
+    "summary": {
+      "ja": "面ごとのフィルターと搬入経路を設定します",
+      "en": "Per-face output filters sort items supplied by an external inserter"
+    },
+    "icon": "immersiveengineering:sorter",
+    "components": [
+      "immersiveengineering:sorter"
+    ],
+    "nodes": [
+      {
+        "id": "router",
+        "block": "immersiveengineering:sorter",
+        "pos": [
+          4,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "west",
+        "block": "minecraft:chest",
+        "pos": [
+          3,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "south"
+        }
+      },
+      {
+        "id": "east",
+        "block": "minecraft:chest",
+        "pos": [
+          5,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "south"
+        }
+      },
+      {
+        "id": "feed",
+        "block": "minecraft:hopper",
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "アイテム分配器は、搬入されたアイテムを面ごとのフィルターで振り分けます\n隣接するインベントリが送り先になります",
+          "en": "The Item Router distributes inserted items using filters for each face\nAdjacent inventories serve as destinations"
+        },
+        "show": [
+          "router",
+          "west",
+          "east"
+        ],
+        "focus": [
+          "router"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:sorter",
+            "anchor": "router",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "分配器を右クリックすると、色と方角を見ながら各面のフィルターを設定できます\n鉄と銅など、送り先を区別できます",
+          "en": "Right-clicking the router opens filters labeled by face color and direction\nFilters route materials such as iron and copper to different outputs"
+        },
+        "focus": [
+          "router"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:iron_ingot",
+            "anchor": "router",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:copper_ingot",
+            "anchor": "router",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "ホッパーなどがアイテムを搬入します\n説明用の鉄は、入力から分配器へ進みます",
+          "en": "A hopper or another inserter supplies items\nThe animated iron illustrates the input route"
+        },
+        "show": [
+          "feed"
+        ],
+        "focus": [
+          "feed",
+          "router"
+        ],
+        "flow": {
+          "from": "feed",
+          "to": "router",
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      {
+        "text": {
+          "ja": "一致する設定済みの面が優先され、その後でフィルターなしの面が候補になります\n空のフィルター面は予備の出口にもなります",
+          "en": "Matching configured outputs are considered before unfiltered faces\nA face without filters can act as an overflow route"
+        },
+        "focus": [
+          "router",
+          "east"
+        ]
+      },
+      {
+        "text": {
+          "ja": "どの面にも送れない場合は搬入を受け付けません\nフィルター、タグ・コンポーネントの比較設定、送り先の空きを確認してください",
+          "en": "Insertion is rejected when no output can accept an item\nCheck filters and the tag and component matching options\nAlso check free space at the destinations"
+        },
+        "focus": [
+          "router"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "garden_cloche",
+    "chapter": "processing",
+    "title": {
+      "ja": "園芸クローシュの入出力",
+      "en": "Garden Cloche inputs and outputs"
+    },
+    "summary": {
+      "ja": "土と種、水、電力を揃え、自動栽培の出力を回収します",
+      "en": "Soil, seeds, water and energy sustain cultivation with an automatic item output"
+    },
+    "icon": "immersiveengineering:cloche",
+    "components": [
+      "immersiveengineering:cloche",
+      "immersiveengineering:fertilizer"
+    ],
+    "nodes": [
+      {
+        "id": "base",
+        "block": "immersiveengineering:cloche",
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "north",
+          "multiblockslave": "false"
+        },
+        "nbt": "{dummy:0}"
+      },
+      {
+        "id": "glass",
+        "block": "immersiveengineering:cloche",
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "north",
+          "multiblockslave": "true"
+        },
+        "nbt": "{dummy:1}"
+      },
+      {
+        "id": "top",
+        "block": "immersiveengineering:cloche",
+        "pos": [
+          4,
+          3,
+          4
+        ],
+        "state": {
+          "facing": "north",
+          "multiblockslave": "true"
+        },
+        "nbt": "{dummy:2}"
+      },
+      {
+        "id": "out",
+        "block": "minecraft:chest",
+        "pos": [
+          4,
+          2,
+          5
+        ],
+        "state": {
+          "facing": "south"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "園芸クローシュは縦3ブロック分の空間を使います\n設置後の画面で、作物に対応する土と種を使います",
+          "en": "A Garden Cloche occupies three blocks of vertical space\nIts interface holds the soil and seed required by the crop"
+        },
+        "show": [
+          "base",
+          "glass",
+          "top"
+        ],
+        "focus": [
+          "glass"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:dirt",
+            "anchor": "glass",
+            "action": "none"
+          },
+          {
+            "item": "minecraft:wheat_seeds",
+            "anchor": "glass",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "栽培には水と電力が必要です\n電力用の端子と、底部の液体用ポートを区別します",
+          "en": "Cultivation needs water and energy\nThe power connectors and fluid ports at the base have separate roles"
+        },
+        "focus": [
+          "base",
+          "top"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:water_bucket",
+            "anchor": "base",
+            "action": "none"
+          },
+          {
+            "item": "immersiveengineering:connector_lv",
+            "anchor": "top",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "対応する肥料を加えると成長を速められます\n肥料は栽培の必須条件ではありません",
+          "en": "A supported fertilizer speeds up growth\nFertilizer is optional for cultivation"
+        },
+        "focus": [
+          "base"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:fertilizer",
+            "anchor": "base",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "収穫物は内部に保管され、ガラス部分の正面のハッチからインベントリへ自動出力されます",
+          "en": "Harvested items are stored inside the cloche\nThey leave automatically through the hatch on the glass section's front"
+        },
+        "show": [
+          "out"
+        ],
+        "focus": [
+          "glass",
+          "out"
+        ],
+        "flow": {
+          "from": "glass",
+          "to": "out",
+          "item": "minecraft:wheat"
+        }
+      },
+      {
+        "text": {
+          "ja": "栽培が止まる場合は、種と土の組み合わせ、水、電力、出力欄の空きを確認してください\n対応作物は現在のレシピで確認できます",
+          "en": "If growth stops, check the seed and soil combination, water, energy and output space\nConsult the active recipes for supported crops"
+        },
+        "focus": [
+          "glass"
+        ],
+        "warning": true
+      }
+    ]
+  },
+  {
+    "id": "power_diagnostics",
+    "chapter": "troubleshooting",
+    "title": {
+      "ja": "電力が届かないとき",
+      "en": "When power does not arrive"
+    },
+    "summary": {
+      "ja": "発電、蓄電、面設定、端子、受電先の順に経路を確認します",
+      "en": "Power checks follow generation, stored energy, side settings, connectors and the consumer"
+    },
+    "icon": "immersiveengineering:voltmeter",
+    "components": [
+      "immersiveengineering:voltmeter"
+    ],
+    "nodes": [
+      {
+        "id": "source",
+        "block": "immersiveengineering:capacitor_lv",
+        "pos": [
+          2,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "plug1",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          2,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      },
+      {
+        "id": "relaybase",
+        "block": "immersiveengineering:treated_wood_horizontal",
+        "pos": [
+          4,
+          1,
+          4
+        ]
+      },
+      {
+        "id": "relay",
+        "block": "immersiveengineering:connector_lv_relay",
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      },
+      {
+        "id": "load",
+        "block": "immersiveengineering:furnace_heater",
+        "pos": [
+          6,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "east"
+        }
+      },
+      {
+        "id": "plug2",
+        "block": "immersiveengineering:connector_lv",
+        "pos": [
+          6,
+          2,
+          4
+        ],
+        "state": {
+          "facing": "down"
+        }
+      },
+      {
+        "id": "furnace",
+        "block": "minecraft:furnace",
+        "pos": [
+          7,
+          1,
+          4
+        ],
+        "state": {
+          "facing": "south"
+        }
+      }
+    ],
+    "steps": [
+      {
+        "text": {
+          "ja": "まず発電側の動作と蓄電量を確認してください\n配線がつながっていても、供給元が空なら装置は動きません",
+          "en": "Start with generation and stored energy\nConnected wires cannot supply a machine when the source is empty"
+        },
+        "show": [
+          "source",
+          "plug1"
+        ],
+        "focus": [
+          "source"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:voltmeter",
+            "anchor": "source",
+            "action": "right_click"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "次にキャパシタの出力面を確認してください\n端子の下が無効や入力のままでは、配電できません",
+          "en": "Check the capacitor output face next\nA connector over a disabled or input face cannot distribute its stored power"
+        },
+        "focus": [
+          "source"
+        ],
+        "callouts": [
+          {
+            "item": "immersiveengineering:hammer",
+            "anchor": "source",
+            "action": "right_click"
+          }
+        ],
+        "nbt": {
+          "source": "{sideConfig_1:2}"
+        }
+      },
+      {
+        "text": {
+          "ja": "中継点は継電器、装置の接続先は接続端子です\n電圧の一致、ワイヤーの障害物と接続距離を確認してください",
+          "en": "Relays serve as junctions, while connectors exchange power with devices\nCheck matching voltage tiers, wire obstructions and connection range"
+        },
+        "show": [
+          "relaybase",
+          "relay",
+          "load",
+          "plug2",
+          "furnace"
+        ],
+        "focus": [
+          "relay",
+          "plug2"
+        ]
+      },
+      {
+        "text": {
+          "ja": "外部加熱器は隣のかまどを電力で加熱できます\n最後に消費側の向きと、処理する材料・出力欄を確認してください",
+          "en": "An External Heater can heat an adjacent furnace with electricity\nAt the consumer, check orientation, ingredients and output space"
+        },
+        "focus": [
+          "load",
+          "furnace"
+        ],
+        "callouts": [
+          {
+            "item": "minecraft:iron_ore",
+            "anchor": "furnace",
+            "action": "none"
+          }
+        ]
+      },
+      {
+        "text": {
+          "ja": "供給や転送の上限が消費量より小さい場合も停止します\n数値とレシピはMODパックの設定を優先し、区間ごとに調べてください",
+          "en": "A supply or transfer limit below demand can also stop processing\nUse the modpack's configured limits and recipes, and inspect one section at a time"
+        },
+        "focus": [
+          "source",
+          "load"
+        ],
+        "warning": true
+      }
+    ]
+  }
+]

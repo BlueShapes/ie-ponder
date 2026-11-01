@@ -1,0 +1,1686 @@
+[
+  {
+    "id": "tools",
+    "items": [
+      "immersiveengineering:hammer"
+    ],
+    "text": {
+      "ja": "エンジニアのハンマーは対応マルチブロックの形成、装置の向き、対応する面設定の変更に使います\n対象によって操作が異なります",
+      "en": "The Engineer's Hammer forms supported multiblocks and changes device orientation or supported side settings\nThe action depends on the target"
+    }
+  },
+  {
+    "id": "wirecutter",
+    "items": [
+      "immersiveengineering:wirecutter"
+    ],
+    "text": {
+      "ja": "エンジニアのワイヤーカッターは、端子につながるワイヤーの切断に使います\nワイヤーの束と取り違えないようにしてください",
+      "en": "The Engineer's Wirecutter removes wires connected to a connector\nA Wire Coil is used to make the connections"
+    }
+  },
+  {
+    "id": "treated_wood",
+    "items": [
+      "immersiveengineering:slab_treated_wood_horizontal",
+      "immersiveengineering:slab_treated_wood_packaged",
+      "immersiveengineering:slab_treated_wood_vertical",
+      "immersiveengineering:stairs_treated_wood_horizontal",
+      "immersiveengineering:stairs_treated_wood_packaged",
+      "immersiveengineering:stairs_treated_wood_vertical",
+      "immersiveengineering:treated_wood_horizontal",
+      "immersiveengineering:treated_wood_packaged",
+      "immersiveengineering:treated_wood_vertical",
+      "immersiveengineering:treated_fence",
+      "immersiveengineering:treated_fence_gate",
+      "immersiveengineering:treated_scaffold"
+    ],
+    "text": {
+      "ja": "防腐木材はクレオソート油で処理した建材です\n機械の部品や建築に使いますが、単体で発電やアイテム輸送は行いません",
+      "en": "Treated Wood is a building material preserved with Creosote Oil\nIt is used in construction and machine components\nThe planks themselves do not generate power or move items"
+    }
+  },
+  {
+    "id": "crate",
+    "items": [
+      "immersiveengineering:crate",
+      "immersiveengineering:reinforced_crate"
+    ],
+    "text": {
+      "ja": "収納木箱はアイテムを保管します\n破壊しても内容を保持するため、収納したまま移動できます",
+      "en": "Wooden Crates store items and retain their contents when broken, allowing you to move the filled crate"
+    }
+  },
+  {
+    "id": "scaffolding",
+    "items": [
+      "immersiveengineering:alu_scaffolding_grate_top",
+      "immersiveengineering:alu_scaffolding_standard",
+      "immersiveengineering:alu_scaffolding_wooden_top",
+      "immersiveengineering:slab_alu_scaffolding_grate_top",
+      "immersiveengineering:slab_alu_scaffolding_standard",
+      "immersiveengineering:slab_alu_scaffolding_wooden_top",
+      "immersiveengineering:slab_steel_scaffolding_grate_top",
+      "immersiveengineering:slab_steel_scaffolding_standard",
+      "immersiveengineering:slab_steel_scaffolding_wooden_top",
+      "immersiveengineering:stairs_alu_scaffolding_grate_top",
+      "immersiveengineering:stairs_alu_scaffolding_standard",
+      "immersiveengineering:stairs_alu_scaffolding_wooden_top",
+      "immersiveengineering:stairs_steel_scaffolding_grate_top",
+      "immersiveengineering:stairs_steel_scaffolding_standard",
+      "immersiveengineering:stairs_steel_scaffolding_wooden_top",
+      "immersiveengineering:steel_scaffolding_grate_top",
+      "immersiveengineering:steel_scaffolding_standard",
+      "immersiveengineering:steel_scaffolding_wooden_top"
+    ],
+    "text": {
+      "ja": "足場は建築や対応マルチブロックの材料に使います\n配置図で指定された種類を使ってください",
+      "en": "Scaffolding is used for construction and supported multiblocks\nUse the type specified by the assembly layout"
+    }
+  },
+  {
+    "id": "tool_upgrades",
+    "items": [
+      "immersiveengineering:toolupgrade_buzzsaw_spareblades",
+      "immersiveengineering:toolupgrade_chemthrower_focus",
+      "immersiveengineering:toolupgrade_chemthrower_multitank",
+      "immersiveengineering:toolupgrade_drill_capacity",
+      "immersiveengineering:toolupgrade_drill_damage",
+      "immersiveengineering:toolupgrade_drill_fortune",
+      "immersiveengineering:toolupgrade_drill_lube",
+      "immersiveengineering:toolupgrade_drill_waterproof",
+      "immersiveengineering:toolupgrade_powerpack_antenna",
+      "immersiveengineering:toolupgrade_powerpack_induction",
+      "immersiveengineering:toolupgrade_powerpack_magnet",
+      "immersiveengineering:toolupgrade_powerpack_tesla",
+      "immersiveengineering:toolupgrade_railgun_capacitors",
+      "immersiveengineering:toolupgrade_railgun_scope",
+      "immersiveengineering:toolupgrade_revolver_bayonet",
+      "immersiveengineering:toolupgrade_revolver_electro",
+      "immersiveengineering:toolupgrade_revolver_magazine",
+      "immersiveengineering:toolupgrade_shield_flash",
+      "immersiveengineering:toolupgrade_shield_magnet",
+      "immersiveengineering:toolupgrade_shield_shock",
+      "immersiveengineering:toolupgrade_skyhook_insulation",
+      "immersiveengineering:toolupgrade_skyhook_mace",
+      "immersiveengineering:toolupgrade_skyhook_slope"
+    ],
+    "text": {
+      "ja": "対応する工具をエンジニアの工具台に置くと、アップグレードを装着できます\n対応する工具と効果はアップグレードごとに異なります",
+      "en": "Install upgrades with a compatible tool in the Engineer's Workbench\nEach upgrade supports particular tools and effects"
+    }
+  },
+  {
+    "id": "screwdriver",
+    "items": [
+      "immersiveengineering:screwdriver"
+    ],
+    "text": {
+      "ja": "対応する装置の細かな設定を変更する工具です\n操作する面や装置によって設定項目が変わります",
+      "en": "This tool changes settings on supported devices\nAvailable settings depend on the device and the side used"
+    }
+  },
+  {
+    "id": "energy_wires",
+    "items": [
+      "immersiveengineering:connector_mv",
+      "immersiveengineering:connector_mv_relay",
+      "immersiveengineering:connector_hv",
+      "immersiveengineering:connector_hv_relay",
+      "immersiveengineering:wirecoil_electrum",
+      "immersiveengineering:wirecoil_electrum_ins",
+      "immersiveengineering:wirecoil_steel"
+    ],
+    "text": {
+      "ja": "電力ワイヤーと端子は電圧区分を合わせて接続します\n継電器はワイヤー同士をつなぎ、端子は装置へ接続します",
+      "en": "Match the voltage category of energy wires and connectors\nRelays join wires; connectors transfer energy to devices"
+    }
+  },
+  {
+    "id": "blueprints",
+    "items": [
+      "immersiveengineering:blueprint"
+    ],
+    "text": {
+      "ja": "エンジニアの工具台に置くと、その設計図の種類に対応するレシピが使えます\n製作には指定の材料も必要です",
+      "en": "A blueprint in the Engineer's Workbench enables its own recipe category\nCrafting also requires the listed ingredients"
+    }
+  },
+  {
+    "id": "workbench",
+    "items": [
+      "immersiveengineering:workbench"
+    ],
+    "text": {
+      "ja": "設計図を使った製作と、対応する工具の改造に使います\n工具を主スロットに置くと対応するアップグレード枠が現れます",
+      "en": "The Engineer's Workbench crafts from blueprints and modifies compatible tools\nPlace a tool in the main slot to expose its supported upgrade slots"
+    }
+  },
+  {
+    "id": "maintenance",
+    "items": [
+      "immersiveengineering:maintenance_kit"
+    ],
+    "text": {
+      "ja": "持ち運んで、エンジニアの工具台と同じように対応する工具の改造に使えます",
+      "en": "This portable kit modifies compatible tools like an Engineer's Workbench"
+    }
+  },
+  {
+    "id": "crafting_table",
+    "items": [
+      "immersiveengineering:craftingtable"
+    ],
+    "text": {
+      "ja": "閉じても製作枠のアイテムを保持します\n部品を保管する収納枠もあります",
+      "en": "The crafting grid retains its items when closed\nAdditional slots store crafting components"
+    }
+  },
+  {
+    "id": "blueprint_shelf",
+    "items": [
+      "immersiveengineering:blueprint_shelf"
+    ],
+    "text": {
+      "ja": "設計図を保管して取り出すための棚です",
+      "en": "This shelf stores blueprints for later retrieval"
+    }
+  },
+  {
+    "id": "mining_drill",
+    "items": [
+      "immersiveengineering:drill",
+      "immersiveengineering:drillhead_iron",
+      "immersiveengineering:drillhead_steel"
+    ],
+    "text": {
+      "ja": "採掘ドリルは燃料と、エンジニアの工具台で装着したドリルヘッドで動きます\nヘッドとアップグレードにより採掘範囲や能力が変わります",
+      "en": "The mining drill needs fuel and a drill head fitted in the Engineer's Workbench\nIts head and upgrades determine mining area and capability"
+    }
+  },
+  {
+    "id": "buzzsaw",
+    "items": [
+      "immersiveengineering:buzzsaw",
+      "immersiveengineering:sawblade",
+      "immersiveengineering:rockcutter",
+      "immersiveengineering:grindingdisk"
+    ],
+    "text": {
+      "ja": "回転ノコは燃料と、エンジニアの工具台で装着した刃で動きます\n刃の種類により切断できる素材と結果が変わります",
+      "en": "The buzzsaw needs fuel and a blade fitted in the Engineer's Workbench\nThe blade determines which materials it cuts and the results"
+    }
+  },
+  {
+    "id": "chemthrower",
+    "items": [
+      "immersiveengineering:chemthrower"
+    ],
+    "text": {
+      "ja": "充填した液体を噴射する道具です\n液体の種類と着火設定により効果が変わります",
+      "en": "This tool sprays the fluid loaded into it\nThe fluid and ignition setting determine its effect"
+    }
+  },
+  {
+    "id": "railgun",
+    "items": [
+      "immersiveengineering:railgun"
+    ],
+    "text": {
+      "ja": "蓄えた電力を消費し、持ち物から対応する弾体を発射します\n対応するアップグレードはエンジニアの工具台で装着します",
+      "en": "The railgun uses stored energy to fire supported ammunition from inventory\nFit compatible upgrades in the Engineer's Workbench"
+    }
+  },
+  {
+    "id": "revolver",
+    "items": [
+      "immersiveengineering:revolver",
+      "immersiveengineering:speedloader"
+    ],
+    "text": {
+      "ja": "リボルバーは装填したカートリッジを発射します\nスピードローダーはまとめて再装填するために使います",
+      "en": "The revolver fires loaded cartridges\nA speedloader reloads several cartridges together"
+    }
+  },
+  {
+    "id": "cartridges",
+    "items": [
+      "immersiveengineering:bullet_armor_piercing",
+      "immersiveengineering:bullet_buckshot",
+      "immersiveengineering:bullet_casull",
+      "immersiveengineering:bullet_dragons_breath",
+      "immersiveengineering:bullet_firework",
+      "immersiveengineering:bullet_flare",
+      "immersiveengineering:bullet_he",
+      "immersiveengineering:bullet_homing",
+      "immersiveengineering:bullet_potion",
+      "immersiveengineering:bullet_silver",
+      "immersiveengineering:bullet_wolfpack"
+    ],
+    "text": {
+      "ja": "リボルバーの弾薬で、種類により発射物の効果が変わります\nポーションや照明弾は、保存された液体や色の情報も使います",
+      "en": "These revolver cartridges produce different projectile effects\nPotion and flare cartridges also use their stored fluid or color data"
+    }
+  },
+  {
+    "id": "shield",
+    "items": [
+      "immersiveengineering:shield"
+    ],
+    "text": {
+      "ja": "前方からの攻撃を防ぐ盾です\n対応するアップグレードはエンジニアの工具台で装着します",
+      "en": "This shield blocks attacks from the front\nFit compatible upgrades in the Engineer's Workbench"
+    }
+  },
+  {
+    "id": "earmuffs",
+    "items": [
+      "immersiveengineering:earmuffs"
+    ],
+    "text": {
+      "ja": "装備すると、選択した種類の音を小さくします\nエンジニアの工具台で音の種類と減衰量を設定できます",
+      "en": "Worn earmuffs reduce selected sound categories\nConfigure the categories and attenuation in the Engineer's Workbench"
+    }
+  },
+  {
+    "id": "glider",
+    "items": [
+      "immersiveengineering:glider"
+    ],
+    "text": {
+      "ja": "胸の装備枠で使い、空中を滑空します\n急降下やロケット花火による加速では消耗が増えます",
+      "en": "Wear this in the chest slot to glide\nSteep dives and firework acceleration increase wear"
+    }
+  },
+  {
+    "id": "skyhook",
+    "items": [
+      "immersiveengineering:skyhook"
+    ],
+    "text": {
+      "ja": "ワイヤーの近くで使用し続けると、ワイヤーに沿って移動します\n絶縁なしで通電中のワイヤーに触れるのは危険です",
+      "en": "Hold use near a wire to travel along it\nLive wires are hazardous without insulation"
+    }
+  },
+  {
+    "id": "powerpack",
+    "items": [
+      "immersiveengineering:powerpack"
+    ],
+    "text": {
+      "ja": "エンジニアの工具台でキャパシタを装着して背負うと、手持ち道具や防具を充電します",
+      "en": "Fit a capacitor in the Engineer's Workbench, then wear the pack to charge held tools and armor"
+    }
+  },
+  {
+    "id": "toolbox",
+    "items": [
+      "immersiveengineering:toolbox"
+    ],
+    "text": {
+      "ja": "工具・食料・配線部品を整理する収納です\n持ち運ぶことも、ブロックとして置くこともできます",
+      "en": "This box organizes tools, food and wiring supplies\nCarry it or place it as a block"
+    }
+  },
+  {
+    "id": "jerrycan",
+    "items": [
+      "immersiveengineering:jerrycan"
+    ],
+    "text": {
+      "ja": "液体を運び、対応する容器や燃料式工具へ補充します\n補充先は中の液体に対応している必要があります",
+      "en": "This can carries fluid and refills compatible containers or fueled tools\nThe receiving item must accept the stored fluid"
+    }
+  },
+  {
+    "id": "automaton",
+    "items": [
+      "immersiveengineering:robot_wolf"
+    ],
+    "text": {
+      "ja": "配置すると持ち主について歩き、敵と戦います\n片手に金属板を持ち、もう片手のハンマーで修理します",
+      "en": "Once deployed, it follows its owner and fights enemies\nRepair it with a hammer while holding a metal plate in the other hand"
+    }
+  },
+  {
+    "id": "chutes",
+    "items": [
+      "immersiveengineering:chute_aluminum",
+      "immersiveengineering:chute_colored_black",
+      "immersiveengineering:chute_colored_blue",
+      "immersiveengineering:chute_colored_brown",
+      "immersiveengineering:chute_colored_cyan",
+      "immersiveengineering:chute_colored_gray",
+      "immersiveengineering:chute_colored_green",
+      "immersiveengineering:chute_colored_light_blue",
+      "immersiveengineering:chute_colored_light_gray",
+      "immersiveengineering:chute_colored_lime",
+      "immersiveengineering:chute_colored_magenta",
+      "immersiveengineering:chute_colored_orange",
+      "immersiveengineering:chute_colored_pink",
+      "immersiveengineering:chute_colored_purple",
+      "immersiveengineering:chute_colored_red",
+      "immersiveengineering:chute_colored_white",
+      "immersiveengineering:chute_colored_yellow",
+      "immersiveengineering:chute_copper",
+      "immersiveengineering:chute_iron",
+      "immersiveengineering:chute_steel"
+    ],
+    "text": {
+      "ja": "アイテムや小さなエンティティを下へ通し、下の収納へ搬入します\nハンマーを持ってスニーク使用すると、横へ曲がる形になります",
+      "en": "Chutes guide items and small entities down into storage below\nSneak-use a hammer to make a sideways corner"
+    }
+  },
+  {
+    "id": "conveyor_redstone",
+    "items": [
+      "immersiveengineering:conveyor_redstone"
+    ],
+    "text": {
+      "ja": "レッドストーン信号を受けると停止するコンベアです\n通常の搬送には電力を消費しません",
+      "en": "This conveyor stops when it receives a redstone signal\nNormal item transport does not consume energy"
+    }
+  },
+  {
+    "id": "conveyor_splitter",
+    "items": [
+      "immersiveengineering:conveyor_splitter"
+    ],
+    "text": {
+      "ja": "入ってきたアイテムスタックを、左右へ交互に振り分けます",
+      "en": "Incoming item stacks alternate between the left and right outputs"
+    }
+  },
+  {
+    "id": "fluid_router",
+    "items": [
+      "immersiveengineering:fluid_sorter"
+    ],
+    "text": {
+      "ja": "流入した液体を、面のフィルターに合う出口か未設定の出口へ送ります\nポーションなどの液体データも区別する設定があります",
+      "en": "Incoming fluids use matching side filters or unfiltered exits\nFiltering can distinguish fluid data such as potion identity"
+    }
+  },
+  {
+    "id": "pipe_valve",
+    "items": [
+      "immersiveengineering:pipe_valve"
+    ],
+    "text": {
+      "ja": "矢印の向きだけに液体を通します\nレッドストーン信号を受けると閉じます",
+      "en": "Fluid passes only in the marked direction\nA redstone signal closes the valve"
+    }
+  },
+  {
+    "id": "fluid_outlet",
+    "items": [
+      "immersiveengineering:fluid_placer"
+    ],
+    "text": {
+      "ja": "流入した液体を、出口の高さまで実ワールドへ流し出します\nレッドストーン信号で流入を止めます",
+      "en": "Incoming fluid is placed in the world up to the outlet height\nA redstone signal blocks incoming flow"
+    }
+  },
+  {
+    "id": "item_batcher",
+    "items": [
+      "immersiveengineering:item_batcher"
+    ],
+    "text": {
+      "ja": "指定した個数を集め、まとまった一組か条件を満たした枠ごとに搬出します\n完了状態を色付きレッドストーン信号で出力できます",
+      "en": "It collects filtered quantities and releases whole batches or satisfied slots\nCompletion can be reported on colored redstone channels"
+    }
+  },
+  {
+    "id": "item_hatch",
+    "items": [
+      "immersiveengineering:hatch"
+    ],
+    "text": {
+      "ja": "空の手で使うと、背後の収納から最初のスタックを取り出します",
+      "en": "Use with an empty hand to withdraw the first stack from storage behind it"
+    }
+  },
+  {
+    "id": "metal_barrel",
+    "items": [
+      "immersiveengineering:metal_barrel"
+    ],
+    "text": {
+      "ja": "液体を保管し、高温の液体や気体にも対応します\nレッドストーンで液体の搬出を制御できます",
+      "en": "This barrel stores fluids, including hot fluids and gases\nRedstone can control fluid output"
+    }
+  },
+  {
+    "id": "storage_carts",
+    "items": [
+      "immersiveengineering:minecart_metalbarrel",
+      "immersiveengineering:minecart_reinforcedcrate",
+      "immersiveengineering:minecart_woodenbarrel",
+      "immersiveengineering:minecart_woodencrate"
+    ],
+    "text": {
+      "ja": "木箱付きはアイテムを、樽付きは液体を運ぶトロッコです\n中の収納容器に応じた出し入れができます",
+      "en": "Crate carts carry items; barrel carts carry fluids\nContents can be transferred through the attached container"
+    }
+  },
+  {
+    "id": "charging_station",
+    "items": [
+      "immersiveengineering:charging_station"
+    ],
+    "text": {
+      "ja": "背面か底面へ電力を送り、差し込んだ蓄電アイテムを充電します\nコンパレーター出力は充電の割合を示します",
+      "en": "Supply energy at the back or bottom to charge an inserted energy item\nComparator output indicates its charge fraction"
+    }
+  },
+  {
+    "id": "external_heater",
+    "items": [
+      "immersiveengineering:furnace_heater"
+    ],
+    "text": {
+      "ja": "電力を使って、隣接する通常のかまどを加熱します\nハンマーで出力面を設定します",
+      "en": "Energy heats adjacent normal furnaces\nConfigure output faces with a hammer"
+    }
+  },
+  {
+    "id": "electromagnet",
+    "items": [
+      "immersiveengineering:electromagnet"
+    ],
+    "text": {
+      "ja": "電力を使って、近くのアイテムを引き寄せます\n停止用のレッドストーン制御はドライバーで反転できます",
+      "en": "Energy attracts nearby item entities\nA screwdriver can invert the redstone control that disables it"
+    }
+  },
+  {
+    "id": "breaker_switch",
+    "items": [
+      "immersiveengineering:breaker_switch"
+    ],
+    "text": {
+      "ja": "手動で電力接続を開閉します\n高圧ワイヤーは接続できません",
+      "en": "This switch manually opens or closes an energy connection\nHV wires cannot connect to it"
+    }
+  },
+  {
+    "id": "redstone_breaker",
+    "items": [
+      "immersiveengineering:redstone_breaker"
+    ],
+    "text": {
+      "ja": "レッドストーン信号で電力接続を切り、制御を反転することもできます\n高圧ワイヤーにも対応します",
+      "en": "A redstone signal breaks the energy connection; control can be inverted\nHV wires are also supported"
+    }
+  },
+  {
+    "id": "transformers",
+    "items": [
+      "immersiveengineering:transformer",
+      "immersiveengineering:transformer_hv"
+    ],
+    "text": {
+      "ja": "通常型は低圧と中圧のワイヤーを接続します\n高圧型は高圧と、それより低い電圧区分を接続します",
+      "en": "Standard transformers join LV and MV wires\nHV transformers join HV to either lower voltage category"
+    }
+  },
+  {
+    "id": "current_transformer",
+    "items": [
+      "immersiveengineering:current_transformer"
+    ],
+    "text": {
+      "ja": "電力線へ挟むと、平均の送電量を測定します\nコンパレーターはワイヤー容量に対する使用率を出力します",
+      "en": "Placed within a power line, it measures average transfer\nA comparator reports utilization of the wire capacity"
+    }
+  },
+  {
+    "id": "redstone_wires",
+    "items": [
+      "immersiveengineering:connector_redstone",
+      "immersiveengineering:connector_bundled",
+      "immersiveengineering:wirecoil_redstone"
+    ],
+    "text": {
+      "ja": "レッドストーンワイヤーは16色の信号を個別に伝えます\nインターフェース端子は全チャンネルをまとめて扱います",
+      "en": "Redstone wire carries sixteen independent colored signals\nThe interface connector exposes all channels together"
+    }
+  },
+  {
+    "id": "redstone_probe",
+    "items": [
+      "immersiveengineering:connector_probe"
+    ],
+    "text": {
+      "ja": "コンパレーター対応装置の出力を、色付きレッドストーン信号へ変換します\nしきい値と制御用チャンネルを設定できます",
+      "en": "It converts comparator-compatible machine output to colored redstone signals\nThresholds and a separate control channel can be configured"
+    }
+  },
+  {
+    "id": "redstone_timer",
+    "items": [
+      "immersiveengineering:redstone_timer"
+    ],
+    "text": {
+      "ja": "設定した間隔と色でパルス信号を出します\n制御信号で動作を条件付けることもできます",
+      "en": "It emits pulses at the configured interval and color\nAn optional control signal gates operation"
+    }
+  },
+  {
+    "id": "redstone_state_cell",
+    "items": [
+      "immersiveengineering:redstone_state_cell"
+    ],
+    "text": {
+      "ja": "セット用の信号を記憶し、リセット用の信号で解除します\n両方を同じ色にするとトグル動作になります",
+      "en": "A set signal is stored until a reset signal arrives\nUsing the same color for both creates toggle behavior"
+    }
+  },
+  {
+    "id": "redstone_switchboard",
+    "items": [
+      "immersiveengineering:redstone_switchboard"
+    ],
+    "text": {
+      "ja": "分離した回路の間で、左から右へ信号を中継します\nチャンネルの振り替えや出力の反転を設定できます",
+      "en": "Signals relay left to right between separate networks\nChannels can be remapped and connected outputs inverted"
+    }
+  },
+  {
+    "id": "logic_unit",
+    "items": [
+      "immersiveengineering:logic_unit"
+    ],
+    "text": {
+      "ja": "装着した命令を順番に実行し、レジスターを共有します\n色付き信号の入出力にはインターフェース端子を接続します",
+      "en": "Installed instructions execute in order and share registers\nConnect a redstone interface connector for colored inputs and outputs"
+    }
+  },
+  {
+    "id": "circuit_table",
+    "items": [
+      "immersiveengineering:circuit_table"
+    ],
+    "text": {
+      "ja": "電力と回路部品を使い、演算・入力・出力を指定した命令を作ります",
+      "en": "Energy and circuit components produce instructions with chosen operations, inputs and outputs"
+    }
+  },
+  {
+    "id": "machine_interface",
+    "items": [
+      "immersiveengineering:machine_interface"
+    ],
+    "text": {
+      "ja": "対応マルチブロックのレッドストーン制御面へ取り付けます\n設定した機械の状態を、色付き信号で出力します",
+      "en": "Attach it to a supported multiblock redstone control face\nConfigured machine conditions are reported on colored channels"
+    }
+  },
+  {
+    "id": "siren",
+    "items": [
+      "immersiveengineering:siren"
+    ],
+    "text": {
+      "ja": "選んだレッドストーン色の信号で、設定した音を鳴らします\n近くの村人を屋内へ避難させます",
+      "en": "The selected redstone channel triggers the configured sound\nNearby villagers are sent indoors"
+    }
+  },
+  {
+    "id": "turntable",
+    "items": [
+      "immersiveengineering:turntable"
+    ],
+    "text": {
+      "ja": "レッドストーンのパルスで、正面のブロックを回転させます\nハンマーで回転軸と面ごとの回転を設定します",
+      "en": "A redstone pulse rotates the block in front\nUse a hammer to configure the axis and per-side rotation"
+    }
+  },
+  {
+    "id": "strip_curtain",
+    "items": [
+      "immersiveengineering:strip_curtain"
+    ],
+    "text": {
+      "ja": "エンティティやアイテムが通り抜けると信号を出します\nドライバーで強いレッドストーン出力に切り替えられます",
+      "en": "Entities and items pass through it and trigger a redstone signal\nA screwdriver enables strong redstone output"
+    }
+  },
+  {
+    "id": "tesla_coil",
+    "items": [
+      "immersiveengineering:tesla_coil"
+    ],
+    "text": {
+      "ja": "電力を消費し、近くの対象へ放電します\n通常はレッドストーン信号で動き、ドライバーで制御を反転できます\n近くで作業する際は感電に注意してください",
+      "en": "Energy powers electrical discharges at nearby targets\nRedstone enables it by default; a screwdriver can invert this control\nTake care around the coil to avoid electric shocks"
+    }
+  },
+  {
+    "id": "faraday",
+    "items": [
+      "immersiveengineering:armor_faraday_boots",
+      "immersiveengineering:armor_faraday_chestplate",
+      "immersiveengineering:armor_faraday_helmet",
+      "immersiveengineering:armor_faraday_leggings"
+    ],
+    "text": {
+      "ja": "全身装備で、非絶縁ワイヤーや低出力テスラコイルの感電から身を守ります\n高出力のテスラコイルでは、逆に受けるダメージが増えます",
+      "en": "A full set protects against uninsulated wires and low-power Tesla coils\nHigh-power Tesla coils instead increase damage to the wearer"
+    }
+  },
+  {
+    "id": "turrets",
+    "items": [
+      "immersiveengineering:turret_chem",
+      "immersiveengineering:turret_gun"
+    ],
+    "text": {
+      "ja": "電力と対応する弾薬か液体を使い、設定した対象を攻撃します\n通常はレッドストーン信号で動き、ドライバーで制御を反転できます\n攻撃してよい対象はターゲット設定で指定します",
+      "en": "Energy and matching ammunition or fluid power attacks on configured targets\nRedstone enables it by default; a screwdriver can invert this control\nTarget settings determine which targets may be attacked"
+    }
+  },
+  {
+    "id": "survey",
+    "items": [
+      "immersiveengineering:survey_tools",
+      "immersiveengineering:sample_drill",
+      "immersiveengineering:coresample"
+    ],
+    "text": {
+      "ja": "探査道具は鉱脈を探し、電動の試掘機はコアサンプルを採取します\nサンプルには鉱脈の組成・位置・採掘状況が保存されます",
+      "en": "Survey tools locate veins; the powered drill takes core samples\nA sample records vein composition, location and depletion"
+    }
+  },
+  {
+    "id": "windmill",
+    "items": [
+      "immersiveengineering:windmill",
+      "immersiveengineering:windmill_blade",
+      "immersiveengineering:windmill_sail",
+      "immersiveengineering:waterwheel_segment"
+    ],
+    "text": {
+      "ja": "風車や水車の回転を発電機へ伝えて発電します\n回転には空間と、適した風や水の条件が必要です",
+      "en": "Windmill or waterwheel rotation drives a kinetic dynamo\nTurning requires clearance and suitable wind or water conditions"
+    }
+  },
+  {
+    "id": "balloon",
+    "items": [
+      "immersiveengineering:balloon"
+    ],
+    "text": {
+      "ja": "空中で光り、構造用ロープやワイヤーの固定点になります\n配置の高さ・色・縞模様を設定できます",
+      "en": "It provides light and an airborne structural rope or wire anchor\nPlacement height, colors and stripe design can be configured"
+    }
+  },
+  {
+    "id": "structural_wires",
+    "items": [
+      "immersiveengineering:connector_structural",
+      "immersiveengineering:wirecoil_structure_rope",
+      "immersiveengineering:wirecoil_structure_steel"
+    ],
+    "text": {
+      "ja": "構造用のロープやワイヤーを端子の間に張ります\n電力は伝えません",
+      "en": "Structural ropes or wires span between their connectors\nThey do not carry energy"
+    }
+  },
+  {
+    "id": "posts_mounts",
+    "items": [
+      "immersiveengineering:treated_post",
+      "immersiveengineering:steel_post",
+      "immersiveengineering:alu_post",
+      "immersiveengineering:treated_wallmount",
+      "immersiveengineering:steel_wallmount",
+      "immersiveengineering:alu_wallmount"
+    ],
+    "text": {
+      "ja": "柱は高さ4ブロックで、その高さ分の空間が必要です\nハンマーで腕や取付具の向きを調整し、ワイヤーや照明を支えます",
+      "en": "Posts are four blocks tall and need room for their full height\nHammer-adjusted arms and mounts support wires or lighting"
+    }
+  },
+  {
+    "id": "catwalks",
+    "items": [
+      "immersiveengineering:alu_catwalk",
+      "immersiveengineering:alu_catwalk_stairs",
+      "immersiveengineering:steel_catwalk",
+      "immersiveengineering:steel_catwalk_stairs",
+      "immersiveengineering:treated_catwalk",
+      "immersiveengineering:treated_catwalk_stairs"
+    ],
+    "text": {
+      "ja": "ハンマーを持ってスニーク使用すると、通路の手すりを面ごとに切り替えます\n金属の手すりは染料で着色できます",
+      "en": "Sneak-use a hammer to toggle each catwalk railing\nMetal railings also accept dye"
+    }
+  },
+  {
+    "id": "ladders",
+    "items": [
+      "immersiveengineering:metal_ladder_alu",
+      "immersiveengineering:metal_ladder_none",
+      "immersiveengineering:metal_ladder_steel"
+    ],
+    "text": {
+      "ja": "はしごとして登るための建材です\n覆い付きの型は脱落を防ぎ、ハンマーでスニーク使用すると覆いを開閉します",
+      "en": "These construction ladders can be climbed\nCovered types prevent accidental exit; sneak-use a hammer to open or close the cover"
+    }
+  },
+  {
+    "id": "steel_doors",
+    "items": [
+      "immersiveengineering:steel_door",
+      "immersiveengineering:steel_trapdoor"
+    ],
+    "text": {
+      "ja": "手動で開閉できますが、レッドストーン信号を受けると施錠されます",
+      "en": "These open manually, but a redstone signal locks them"
+    }
+  },
+  {
+    "id": "treated_doors",
+    "items": [
+      "immersiveengineering:treated_door",
+      "immersiveengineering:treated_door_framed",
+      "immersiveengineering:treated_trapdoor",
+      "immersiveengineering:treated_trapdoor_framed"
+    ],
+    "text": {
+      "ja": "通常の木製扉と同じように、手動やレッドストーンで開閉します",
+      "en": "These open manually or with redstone like normal wooden doors"
+    }
+  },
+  {
+    "id": "signs",
+    "items": [
+      "immersiveengineering:aluminum_hanging_sign",
+      "immersiveengineering:aluminum_sign",
+      "immersiveengineering:steel_hanging_sign",
+      "immersiveengineering:steel_sign",
+      "immersiveengineering:treated_wood_hanging_sign",
+      "immersiveengineering:treated_wood_sign"
+    ],
+    "text": {
+      "ja": "文字を書き、染料や輝くイカスミで表示を変えられる看板です",
+      "en": "These signs hold text and support dye and glow-ink changes"
+    }
+  },
+  {
+    "id": "warning_signs",
+    "items": [
+      "immersiveengineering:warning_sign_arrow_double_down",
+      "immersiveengineering:warning_sign_arrow_double_left",
+      "immersiveengineering:warning_sign_arrow_double_right",
+      "immersiveengineering:warning_sign_arrow_double_up",
+      "immersiveengineering:warning_sign_arrow_down",
+      "immersiveengineering:warning_sign_arrow_left",
+      "immersiveengineering:warning_sign_arrow_right",
+      "immersiveengineering:warning_sign_arrow_up",
+      "immersiveengineering:warning_sign_attention",
+      "immersiveengineering:warning_sign_cat",
+      "immersiveengineering:warning_sign_cold",
+      "immersiveengineering:warning_sign_creeper",
+      "immersiveengineering:warning_sign_ear_defenders",
+      "immersiveengineering:warning_sign_electric",
+      "immersiveengineering:warning_sign_falling",
+      "immersiveengineering:warning_sign_fire",
+      "immersiveengineering:warning_sign_hot",
+      "immersiveengineering:warning_sign_magnet",
+      "immersiveengineering:warning_sign_shrieker",
+      "immersiveengineering:warning_sign_sound",
+      "immersiveengineering:warning_sign_turret",
+      "immersiveengineering:warning_sign_villager",
+      "immersiveengineering:warning_sign_warden"
+    ],
+    "text": {
+      "ja": "ブロックの垂直面に取り付ける標識です\n輝くイカスミを使うと、置いた標識が弱く発光します",
+      "en": "These signs attach to vertical block faces\nGlow ink makes a placed sign emit a small amount of light"
+    }
+  },
+  {
+    "id": "windows",
+    "items": [
+      "immersiveengineering:treated_window",
+      "immersiveengineering:steel_window",
+      "immersiveengineering:alu_window"
+    ],
+    "text": {
+      "ja": "縦向きにも横向きにも設置できる窓です",
+      "en": "These windows can be placed vertically or horizontally"
+    }
+  },
+  {
+    "id": "reinforced_window",
+    "items": [
+      "immersiveengineering:reinforced_window"
+    ],
+    "text": {
+      "ja": "縦横に設置でき、強い爆発にも耐える補強窓です",
+      "en": "This reinforced window supports vertical or horizontal placement and resists powerful explosions"
+    }
+  },
+  {
+    "id": "razor_wire",
+    "items": [
+      "immersiveengineering:razor_wire"
+    ],
+    "text": {
+      "ja": "触れたエンティティを傷つけ、移動を遅くします\n撤去にはワイヤーカッターを使ってください",
+      "en": "Contact damages and slows entities\nUse wirecutters to remove it"
+    }
+  },
+  {
+    "id": "gunpowder_barrel",
+    "items": [
+      "immersiveengineering:gunpowder_barrel"
+    ],
+    "text": {
+      "ja": "爆発で生じたドロップを保ちながら岩盤を掘り進める火薬です\n岩に埋め込むと採掘に使え、地表では主に草木や周囲へ作用します",
+      "en": "This explosive preserves drops while excavating rock\nEmbed it for excavation; surface blasts mainly affect foliage and entities"
+    }
+  },
+  {
+    "id": "shaders",
+    "items": [
+      "immersiveengineering:shader_acepride",
+      "immersiveengineering:shader_ancient",
+      "immersiveengineering:shader_angelsthesis",
+      "immersiveengineering:shader_argo",
+      "immersiveengineering:shader_astartes",
+      "immersiveengineering:shader_bag_common",
+      "immersiveengineering:shader_bag_epic",
+      "immersiveengineering:shader_bag_immersiveengineering_masterwork",
+      "immersiveengineering:shader_bag_rare",
+      "immersiveengineering:shader_bag_uncommon",
+      "immersiveengineering:shader_bipride",
+      "immersiveengineering:shader_chloris",
+      "immersiveengineering:shader_crescentrose",
+      "immersiveengineering:shader_crimsonlotus",
+      "immersiveengineering:shader_darkfire",
+      "immersiveengineering:shader_dominator",
+      "immersiveengineering:shader_dragonsbreath",
+      "immersiveengineering:shader_enbypride",
+      "immersiveengineering:shader_erruption",
+      "immersiveengineering:shader_exia",
+      "immersiveengineering:shader_eyas",
+      "immersiveengineering:shader_felix",
+      "immersiveengineering:shader_fox",
+      "immersiveengineering:shader_gaypride",
+      "immersiveengineering:shader_glacis",
+      "immersiveengineering:shader_harrowed",
+      "immersiveengineering:shader_hawk",
+      "immersiveengineering:shader_hollow",
+      "immersiveengineering:shader_ikelos",
+      "immersiveengineering:shader_kindled",
+      "immersiveengineering:shader_lesbianpride",
+      "immersiveengineering:shader_locus",
+      "immersiveengineering:shader_lususnaturae",
+      "immersiveengineering:shader_magnum",
+      "immersiveengineering:shader_massfusion",
+      "immersiveengineering:shader_matrix",
+      "immersiveengineering:shader_microshark",
+      "immersiveengineering:shader_milo",
+      "immersiveengineering:shader_n7",
+      "immersiveengineering:shader_netherforged",
+      "immersiveengineering:shader_normandy",
+      "immersiveengineering:shader_omnitool",
+      "immersiveengineering:shader_phoenix",
+      "immersiveengineering:shader_qrow",
+      "immersiveengineering:shader_radiant",
+      "immersiveengineering:shader_regal",
+      "immersiveengineering:shader_rosequartz",
+      "immersiveengineering:shader_sharkface",
+      "immersiveengineering:shader_sponsor",
+      "immersiveengineering:shader_stormflower",
+      "immersiveengineering:shader_sunstrike",
+      "immersiveengineering:shader_sutherland",
+      "immersiveengineering:shader_taken",
+      "immersiveengineering:shader_transpride",
+      "immersiveengineering:shader_trident",
+      "immersiveengineering:shader_twili",
+      "immersiveengineering:shader_usurper",
+      "immersiveengineering:shader_vanguard",
+      "immersiveengineering:shader_vaulttec",
+      "immersiveengineering:shader_waaagh",
+      "immersiveengineering:shader_warbird"
+    ],
+    "text": {
+      "ja": "対応する装備や乗り物などの見た目を変えるシェーダーです\n袋を開くと、そのレア度以上のシェーダーを入手します",
+      "en": "Shaders customize the appearance of supported equipment and vehicles\nOpening a bag grants a shader of at least its rarity"
+    }
+  },
+  {
+    "id": "lanterns",
+    "items": [
+      "immersiveengineering:lantern",
+      "immersiveengineering:cagelamp"
+    ],
+    "text": {
+      "ja": "周囲を照らす照明です\nCage Lamp（訳案：ケージランプ）は通常、レッドストーン信号で点灯します",
+      "en": "These lamps illuminate their surroundings\nA Cage Lamp requires a redstone signal by default"
+    }
+  },
+  {
+    "id": "electric_lantern",
+    "items": [
+      "immersiveengineering:electric_lantern"
+    ],
+    "text": {
+      "ja": "電力で周囲を照らし、近くの敵対的な生物の出現を抑えます",
+      "en": "Energy provides light and suppresses nearby hostile mob spawning"
+    }
+  },
+  {
+    "id": "floodlight",
+    "items": [
+      "immersiveengineering:floodlight"
+    ],
+    "text": {
+      "ja": "電力を使い、向けた方向の広い範囲を照らします\n通常はレッドストーン信号で動き、ドライバーで制御を反転できます",
+      "en": "Energy powers broad illumination in the direction it faces\nRedstone enables it by default; a screwdriver can invert this control"
+    }
+  },
+  {
+    "id": "fluorescent_tube",
+    "items": [
+      "immersiveengineering:fluorescent_tube"
+    ],
+    "text": {
+      "ja": "動作中のテスラコイルの近くに置くと発光する管です",
+      "en": "This tube glows when placed near an active Tesla coil"
+    }
+  },
+  {
+    "id": "molds",
+    "items": [
+      "immersiveengineering:mold_bullet_casing",
+      "immersiveengineering:mold_gear",
+      "immersiveengineering:mold_packing_4",
+      "immersiveengineering:mold_packing_9",
+      "immersiveengineering:mold_plate",
+      "immersiveengineering:mold_rod",
+      "immersiveengineering:mold_unpacking",
+      "immersiveengineering:mold_wire"
+    ],
+    "text": {
+      "ja": "加工機へ装着する型です\n型の種類と材料に合う、金属プレス機や瓶詰機のレシピに使います",
+      "en": "These molds are fitted in processing machines\nUse a metal-press or bottling recipe that matches the mold and material"
+    }
+  },
+  {
+    "id": "ore_materials",
+    "items": [
+      "immersiveengineering:deepslate_ore_aluminum",
+      "immersiveengineering:deepslate_ore_lead",
+      "immersiveengineering:deepslate_ore_nickel",
+      "immersiveengineering:deepslate_ore_silver",
+      "immersiveengineering:deepslate_ore_uranium",
+      "immersiveengineering:ore_aluminum",
+      "immersiveengineering:ore_lead",
+      "immersiveengineering:ore_nickel",
+      "immersiveengineering:ore_silver",
+      "immersiveengineering:ore_uranium",
+      "immersiveengineering:raw_aluminum",
+      "immersiveengineering:raw_block_aluminum",
+      "immersiveengineering:raw_block_lead",
+      "immersiveengineering:raw_block_nickel",
+      "immersiveengineering:raw_block_silver",
+      "immersiveengineering:raw_block_uranium",
+      "immersiveengineering:raw_lead",
+      "immersiveengineering:raw_nickel",
+      "immersiveengineering:raw_silver",
+      "immersiveengineering:raw_uranium"
+    ],
+    "text": {
+      "ja": "対応する金属の原料です\n製錬や対応する加工を経て、金属素材に変わります",
+      "en": "These are sources of the corresponding metals\nSmelting or supported processing turns them into metal materials"
+    }
+  },
+  {
+    "id": "metal_materials",
+    "items": [
+      "immersiveengineering:ingot_aluminum",
+      "immersiveengineering:ingot_constantan",
+      "immersiveengineering:ingot_electrum",
+      "immersiveengineering:ingot_hop_graphite",
+      "immersiveengineering:ingot_lead",
+      "immersiveengineering:ingot_nickel",
+      "immersiveengineering:ingot_silver",
+      "immersiveengineering:ingot_steel",
+      "immersiveengineering:ingot_uranium",
+      "immersiveengineering:nugget_aluminum",
+      "immersiveengineering:nugget_constantan",
+      "immersiveengineering:nugget_copper",
+      "immersiveengineering:nugget_electrum",
+      "immersiveengineering:nugget_lead",
+      "immersiveengineering:nugget_netherite",
+      "immersiveengineering:nugget_nickel",
+      "immersiveengineering:nugget_silver",
+      "immersiveengineering:nugget_steel",
+      "immersiveengineering:nugget_uranium",
+      "immersiveengineering:plate_aluminum",
+      "immersiveengineering:plate_constantan",
+      "immersiveengineering:plate_copper",
+      "immersiveengineering:plate_duroplast",
+      "immersiveengineering:plate_electrum",
+      "immersiveengineering:plate_gold",
+      "immersiveengineering:plate_hop_graphite",
+      "immersiveengineering:plate_iron",
+      "immersiveengineering:plate_lead",
+      "immersiveengineering:plate_nickel",
+      "immersiveengineering:plate_silver",
+      "immersiveengineering:plate_steel",
+      "immersiveengineering:plate_uranium",
+      "immersiveengineering:sheetmetal_aluminum",
+      "immersiveengineering:sheetmetal_colored_black",
+      "immersiveengineering:sheetmetal_colored_blue",
+      "immersiveengineering:sheetmetal_colored_brown",
+      "immersiveengineering:sheetmetal_colored_cyan",
+      "immersiveengineering:sheetmetal_colored_gray",
+      "immersiveengineering:sheetmetal_colored_green",
+      "immersiveengineering:sheetmetal_colored_light_blue",
+      "immersiveengineering:sheetmetal_colored_light_gray",
+      "immersiveengineering:sheetmetal_colored_lime",
+      "immersiveengineering:sheetmetal_colored_magenta",
+      "immersiveengineering:sheetmetal_colored_orange",
+      "immersiveengineering:sheetmetal_colored_pink",
+      "immersiveengineering:sheetmetal_colored_purple",
+      "immersiveengineering:sheetmetal_colored_red",
+      "immersiveengineering:sheetmetal_colored_white",
+      "immersiveengineering:sheetmetal_colored_yellow",
+      "immersiveengineering:sheetmetal_constantan",
+      "immersiveengineering:sheetmetal_copper",
+      "immersiveengineering:sheetmetal_electrum",
+      "immersiveengineering:sheetmetal_gold",
+      "immersiveengineering:sheetmetal_iron",
+      "immersiveengineering:sheetmetal_lead",
+      "immersiveengineering:sheetmetal_nickel",
+      "immersiveengineering:sheetmetal_silver",
+      "immersiveengineering:sheetmetal_steel",
+      "immersiveengineering:sheetmetal_uranium",
+      "immersiveengineering:slab_sheetmetal_aluminum",
+      "immersiveengineering:slab_sheetmetal_colored_black",
+      "immersiveengineering:slab_sheetmetal_colored_blue",
+      "immersiveengineering:slab_sheetmetal_colored_brown",
+      "immersiveengineering:slab_sheetmetal_colored_cyan",
+      "immersiveengineering:slab_sheetmetal_colored_gray",
+      "immersiveengineering:slab_sheetmetal_colored_green",
+      "immersiveengineering:slab_sheetmetal_colored_light_blue",
+      "immersiveengineering:slab_sheetmetal_colored_light_gray",
+      "immersiveengineering:slab_sheetmetal_colored_lime",
+      "immersiveengineering:slab_sheetmetal_colored_magenta",
+      "immersiveengineering:slab_sheetmetal_colored_orange",
+      "immersiveengineering:slab_sheetmetal_colored_pink",
+      "immersiveengineering:slab_sheetmetal_colored_purple",
+      "immersiveengineering:slab_sheetmetal_colored_red",
+      "immersiveengineering:slab_sheetmetal_colored_white",
+      "immersiveengineering:slab_sheetmetal_colored_yellow",
+      "immersiveengineering:slab_sheetmetal_constantan",
+      "immersiveengineering:slab_sheetmetal_copper",
+      "immersiveengineering:slab_sheetmetal_electrum",
+      "immersiveengineering:slab_sheetmetal_gold",
+      "immersiveengineering:slab_sheetmetal_iron",
+      "immersiveengineering:slab_sheetmetal_lead",
+      "immersiveengineering:slab_sheetmetal_nickel",
+      "immersiveengineering:slab_sheetmetal_silver",
+      "immersiveengineering:slab_sheetmetal_steel",
+      "immersiveengineering:slab_sheetmetal_uranium",
+      "immersiveengineering:slab_storage_aluminum",
+      "immersiveengineering:slab_storage_constantan",
+      "immersiveengineering:slab_storage_electrum",
+      "immersiveengineering:slab_storage_lead",
+      "immersiveengineering:slab_storage_nickel",
+      "immersiveengineering:slab_storage_silver",
+      "immersiveengineering:slab_storage_steel",
+      "immersiveengineering:slab_storage_uranium",
+      "immersiveengineering:stick_aluminum",
+      "immersiveengineering:stick_iron",
+      "immersiveengineering:stick_netherite",
+      "immersiveengineering:stick_steel",
+      "immersiveengineering:stick_treated",
+      "immersiveengineering:storage_aluminum",
+      "immersiveengineering:storage_constantan",
+      "immersiveengineering:storage_electrum",
+      "immersiveengineering:storage_lead",
+      "immersiveengineering:storage_nickel",
+      "immersiveengineering:storage_silver",
+      "immersiveengineering:storage_steel",
+      "immersiveengineering:storage_uranium",
+      "immersiveengineering:wire_aluminum",
+      "immersiveengineering:wire_copper",
+      "immersiveengineering:wire_electrum",
+      "immersiveengineering:wire_lead",
+      "immersiveengineering:wire_steel"
+    ],
+    "text": {
+      "ja": "材質と加工形状に応じて、製作や対応する機械の材料に使います\nレシピや組立図で指定された種類が必要です",
+      "en": "Material and form determine crafting or machine-component uses\nUse the type specified by the recipe or assembly layout"
+    }
+  },
+  {
+    "id": "engineering_parts",
+    "items": [
+      "immersiveengineering:basic_engineering",
+      "immersiveengineering:circuit_board",
+      "immersiveengineering:component_electronic",
+      "immersiveengineering:component_electronic_adv",
+      "immersiveengineering:component_iron",
+      "immersiveengineering:component_steel",
+      "immersiveengineering:electron_tube",
+      "immersiveengineering:light_bulb",
+      "immersiveengineering:wooden_grip",
+      "immersiveengineering:gunpart_barrel",
+      "immersiveengineering:gunpart_drum",
+      "immersiveengineering:gunpart_hammer",
+      "immersiveengineering:resonanz_engineering"
+    ],
+    "text": {
+      "ja": "工具・回路・対応するマルチブロックを製作する部品です\nレシピや組立図で指定された部品を使います",
+      "en": "These components craft tools, circuits or supported multiblocks\nUse the component specified by the recipe or assembly layout"
+    }
+  },
+  {
+    "id": "hemp_materials",
+    "items": [
+      "immersiveengineering:hemp_fabric",
+      "immersiveengineering:hemp_fiber"
+    ],
+    "text": {
+      "ja": "麻から得られる繊維素材で、布などの製作に使います",
+      "en": "These hemp-derived fiber materials are used to craft fabric and related products"
+    }
+  },
+  {
+    "id": "cushion",
+    "items": [
+      "immersiveengineering:cushion"
+    ],
+    "text": {
+      "ja": "着地の衝撃を和らげ、落下ダメージを防ぎます",
+      "en": "This cushion prevents fall damage on landing"
+    }
+  },
+  {
+    "id": "ersatz_leather",
+    "items": [
+      "immersiveengineering:ersatz_leather"
+    ],
+    "text": {
+      "ja": "対応する製作レシピで、革の代わりに使える素材です",
+      "en": "This material replaces leather in supported crafting recipes"
+    }
+  },
+  {
+    "id": "clinker",
+    "items": [
+      "immersiveengineering:clinker_brick",
+      "immersiveengineering:clinker_brick_quoin",
+      "immersiveengineering:clinker_brick_sill",
+      "immersiveengineering:slab_clinker_brick",
+      "immersiveengineering:stairs_clinker_brick",
+      "immersiveengineering:wall_clinker_brick"
+    ],
+    "text": {
+      "ja": "燻製器で作れる建築用レンガです\n壁・階段・ハーフブロックなどの形に加工します",
+      "en": "These construction bricks can be made in a smoker\nThey can be shaped into walls, stairs, slabs and facing pieces"
+    }
+  },
+  {
+    "id": "concrete_leaded",
+    "items": [
+      "immersiveengineering:concrete_leaded"
+    ],
+    "text": {
+      "ja": "テレポートを遮る、鉛入りのコンクリートブロックです",
+      "en": "This full leaded concrete block prevents teleportation"
+    }
+  },
+  {
+    "id": "concrete_reinforced",
+    "items": [
+      "immersiveengineering:concrete_reinforced",
+      "immersiveengineering:concrete_reinforced_tile",
+      "immersiveengineering:slab_concrete_reinforced",
+      "immersiveengineering:slab_concrete_reinforced_tile"
+    ],
+    "text": {
+      "ja": "強い爆発に耐える、補強されたコンクリート建材です",
+      "en": "This reinforced concrete construction material resists powerful explosions"
+    }
+  },
+  {
+    "id": "concrete_fluid",
+    "items": [
+      "immersiveengineering:concrete_bucket"
+    ],
+    "text": {
+      "ja": "流し込んだ液体コンクリートは、固まると建材になります",
+      "en": "Poured liquid concrete hardens into a construction block"
+    }
+  },
+  {
+    "id": "concrete",
+    "items": [
+      "immersiveengineering:concrete",
+      "immersiveengineering:concrete_brick",
+      "immersiveengineering:concrete_brick_cracked",
+      "immersiveengineering:concrete_chiseled",
+      "immersiveengineering:concrete_pillar",
+      "immersiveengineering:concrete_quarter",
+      "immersiveengineering:concrete_sheet",
+      "immersiveengineering:concrete_sprayed",
+      "immersiveengineering:concrete_three_quarter",
+      "immersiveengineering:concrete_tile",
+      "immersiveengineering:slab_concrete",
+      "immersiveengineering:slab_concrete_brick",
+      "immersiveengineering:slab_concrete_leaded",
+      "immersiveengineering:slab_concrete_tile",
+      "immersiveengineering:stairs_concrete",
+      "immersiveengineering:stairs_concrete_brick",
+      "immersiveengineering:stairs_concrete_leaded",
+      "immersiveengineering:stairs_concrete_tile",
+      "immersiveengineering:wall_concrete",
+      "immersiveengineering:wall_concrete_brick",
+      "immersiveengineering:wall_concrete_leaded",
+      "immersiveengineering:wall_concrete_tile"
+    ],
+    "text": {
+      "ja": "建築用のコンクリートで、形に応じて配置や加工に使います",
+      "en": "This concrete is used for construction in its different placement shapes"
+    }
+  },
+  {
+    "id": "hempcrete",
+    "items": [
+      "immersiveengineering:hempcrete",
+      "immersiveengineering:hempcrete_brick",
+      "immersiveengineering:hempcrete_brick_cracked",
+      "immersiveengineering:hempcrete_chiseled",
+      "immersiveengineering:hempcrete_pillar",
+      "immersiveengineering:slab_hempcrete",
+      "immersiveengineering:slab_hempcrete_brick",
+      "immersiveengineering:stairs_hempcrete",
+      "immersiveengineering:stairs_hempcrete_brick",
+      "immersiveengineering:wall_hempcrete",
+      "immersiveengineering:wall_hempcrete_brick"
+    ],
+    "text": {
+      "ja": "麻の繊維を使った建材です\nレンガ・柱・階段などの形に加工します",
+      "en": "This construction material uses hemp fiber\nIt can be shaped into bricks, pillars, stairs and other forms"
+    }
+  },
+  {
+    "id": "slag_gravel",
+    "items": [
+      "immersiveengineering:slag_gravel"
+    ],
+    "text": {
+      "ja": "水中の植物の成長を速める砂利です",
+      "en": "This gravel accelerates the growth of waterlogged plants"
+    }
+  },
+  {
+    "id": "slag_glass",
+    "items": [
+      "immersiveengineering:slag_glass"
+    ],
+    "text": {
+      "ja": "通り抜ける光を弱めるガラスです",
+      "en": "This glass attenuates light passing through it"
+    }
+  },
+  {
+    "id": "slag_brick",
+    "items": [
+      "immersiveengineering:slab_slag_brick",
+      "immersiveengineering:slag_brick",
+      "immersiveengineering:stairs_slag_brick",
+      "immersiveengineering:wall_slag_brick"
+    ],
+    "text": {
+      "ja": "爆発に強い、スラグを使った建築用レンガです",
+      "en": "These slag construction bricks resist explosions"
+    }
+  },
+  {
+    "id": "insulating_glass",
+    "items": [
+      "immersiveengineering:insulating_glass"
+    ],
+    "text": {
+      "ja": "対応する装置の材料にもなる、断熱用のガラスです",
+      "en": "This insulating glass is also a component for supported devices"
+    }
+  },
+  {
+    "id": "graphite",
+    "items": [
+      "immersiveengineering:dust_coke",
+      "immersiveengineering:dust_hop_graphite"
+    ],
+    "text": {
+      "ja": "コークス粉を圧縮すると、黒鉛加工用の粉になります\n対応する加工で電極や部品の材料に使います",
+      "en": "Compressed coke dust produces graphite-processing dust\nSupported processing uses it for electrodes or components"
+    }
+  },
+  {
+    "id": "byproducts",
+    "items": [
+      "immersiveengineering:dust_sulfur",
+      "immersiveengineering:dust_wood",
+      "immersiveengineering:sawdust",
+      "immersiveengineering:grit_sand"
+    ],
+    "text": {
+      "ja": "工業加工で得られる副産物で、対応する製作や加工に使います",
+      "en": "This industrial byproduct is used in supported crafting or processing"
+    }
+  },
+  {
+    "id": "material_dusts",
+    "items": [
+      "immersiveengineering:dust_aluminum",
+      "immersiveengineering:dust_constantan",
+      "immersiveengineering:dust_copper",
+      "immersiveengineering:dust_electrum",
+      "immersiveengineering:dust_gold",
+      "immersiveengineering:dust_iron",
+      "immersiveengineering:dust_lead",
+      "immersiveengineering:dust_nickel",
+      "immersiveengineering:dust_silver",
+      "immersiveengineering:dust_steel",
+      "immersiveengineering:dust_uranium"
+    ],
+    "text": {
+      "ja": "金属の粉末で、製錬や合金などの対応レシピに使います",
+      "en": "These metal powders are used in supported smelting or alloy recipes"
+    }
+  },
+  {
+    "id": "ammo_components",
+    "items": [
+      "immersiveengineering:empty_casing",
+      "immersiveengineering:empty_shell"
+    ],
+    "text": {
+      "ja": "対応する弾薬を製作するための、空の薬きょうです",
+      "en": "These empty casings are components for compatible ammunition recipes"
+    }
+  },
+  {
+    "id": "resin_products",
+    "items": [
+      "immersiveengineering:duroplast",
+      "immersiveengineering:fiberboard"
+    ],
+    "text": {
+      "ja": "樹脂を使って製造する、絶縁部品や建材用の素材です",
+      "en": "These resin-based materials are used for insulating components or construction"
+    }
+  },
+  {
+    "id": "metal_fences",
+    "items": [
+      "immersiveengineering:alu_fence",
+      "immersiveengineering:alu_fence_gate",
+      "immersiveengineering:steel_fence_gate"
+    ],
+    "text": {
+      "ja": "金属製の柵や、開閉できるフェンスゲートです",
+      "en": "These are metal fences, with gates that open and close"
+    }
+  },
+  {
+    "id": "redstone_acid",
+    "items": [
+      "immersiveengineering:redstone_acid_bucket"
+    ],
+    "text": {
+      "ja": "レッドストーンワイヤーの製作や、銅の酸化に使う液体です",
+      "en": "This liquid is used to craft redstone wire and oxidize copper"
+    }
+  },
+  {
+    "id": "acetaldehyde",
+    "items": [
+      "immersiveengineering:acetaldehyde_bucket"
+    ],
+    "text": {
+      "ja": "精製機で、銀板を触媒にエタノールを酸化して作ります\n樹脂を製造する原料になります",
+      "en": "The refinery oxidizes ethanol with a silver-plate catalyst\nThe resulting liquid is an ingredient for resin"
+    }
+  },
+  {
+    "id": "phenolic_resin",
+    "items": [
+      "immersiveengineering:phenolic_resin_bucket"
+    ],
+    "text": {
+      "ja": "精製機でアセトアルデヒドとクレオソート油から作ります\n瓶詰機で型に流し、絶縁用の部品を製造します",
+      "en": "The refinery combines acetaldehyde and creosote oil to make this resin\nThe bottling machine fills molds to form insulating components"
+    }
+  },
+  {
+    "id": "high_power_fuel",
+    "items": [
+      "immersiveengineering:high_power_biodiesel_bucket"
+    ],
+    "text": {
+      "ja": "バイオディーゼルと力のポーションを精製した燃料です\n通常のバイオディーゼルより長く燃焼します",
+      "en": "Refining biodiesel with Strength potion fluid produces this fuel\nIt burns longer than ordinary biodiesel"
+    }
+  },
+  {
+    "id": "herbicide",
+    "items": [
+      "immersiveengineering:herbicide_bucket"
+    ],
+    "text": {
+      "ja": "ミキサーでエタノールと銅・硫黄の粉から製造します\nケミカル放射器で散布すると植物を壊し、耕地も荒らします",
+      "en": "The mixer combines ethanol with copper dust and sulfur dust\nSpraying it destroys plants and ruins farmland"
+    }
+  },
+  {
+    "id": "potion_fluid",
+    "items": [
+      "immersiveengineering:potion_bucket"
+    ],
+    "text": {
+      "ja": "ミキサーで作る液体のポーションです\n保存された効果や容器の種類により、用途が変わります",
+      "en": "The mixer produces this bulk potion fluid\nStored effects and container type determine its use"
+    }
+  },
+  {
+    "id": "assembler",
+    "items": [
+      "immersiveengineering:assembler"
+    ],
+    "text": {
+      "ja": "組み立てた装置が、電力と材料を使って製作を自動化します\n記憶したレシピを順番に実行し、前の製品を次に使えます",
+      "en": "The assembled machine automates crafting with energy and ingredients\nStored recipes run in order and can use earlier outputs"
+    }
+  },
+  {
+    "id": "auto_workbench",
+    "items": [
+      "immersiveengineering:auto_workbench"
+    ],
+    "text": {
+      "ja": "組み立てた装置で、設計図から製作する品を選びます\n動作には電力と、その品の材料が必要です",
+      "en": "Select a blueprint product on the assembled machine\nOperation requires energy and the ingredients for that product"
+    }
+  },
+  {
+    "id": "bottling_machine",
+    "items": [
+      "immersiveengineering:bottling_machine"
+    ],
+    "text": {
+      "ja": "組み立てた装置が、容器や型へ液体を充填します\n電力・液体と、対応する容器や加工対象を供給します",
+      "en": "The assembled machine fills containers or molds with fluid\nSupply energy, fluid and a compatible container or workpiece"
+    }
+  },
+  {
+    "id": "silo",
+    "items": [
+      "immersiveengineering:silo"
+    ],
+    "text": {
+      "ja": "組み立てると、同じ種類のアイテムを大量に保管します\n搬出は下部から行い、レッドストーンで自動搬出します",
+      "en": "The assembled silo stores large amounts of one item type\nExtract at the bottom; redstone enables automatic output"
+    }
+  },
+  {
+    "id": "tank",
+    "items": [
+      "immersiveengineering:tank"
+    ],
+    "text": {
+      "ja": "組み立てると、大量の液体を保管します\n搬出は底面中央から行い、レッドストーンで自動搬出します",
+      "en": "The assembled tank stores large amounts of fluid\nExtract at the bottom center; redstone enables automatic output"
+    }
+  },
+  {
+    "id": "storage_shelf",
+    "items": [
+      "immersiveengineering:shelf"
+    ],
+    "text": {
+      "ja": "組み立てた棚へ木箱やシュルカーボックスを載せて管理します\n各段の画面で収納の中身を操作します",
+      "en": "The assembled shelf holds crates or shulker boxes\nEach level has an interface for their stored contents"
+    }
+  },
+  {
+    "id": "mixer",
+    "items": [
+      "immersiveengineering:mixer"
+    ],
+    "text": {
+      "ja": "組み立てた装置が、固体の材料を液体へ混ぜ込みます\n対応するレシピの材料・液体と電力を供給します",
+      "en": "The assembled machine mixes solid ingredients into fluid\nSupply energy and the ingredients and fluid required by the recipe"
+    }
+  },
+  {
+    "id": "sawmill",
+    "items": [
+      "immersiveengineering:sawmill"
+    ],
+    "text": {
+      "ja": "電力で動く製材機は、刃がなくても原木の皮を剥ぎます\n刃を装着すると板材にも切断し、両工程でおがくずが出ます",
+      "en": "The powered, assembled sawmill strips logs even without a blade\nA fitted blade also cuts logs into planks; both stages produce sawdust"
+    }
+  },
+  {
+    "id": "excavator",
+    "items": [
+      "immersiveengineering:excavator",
+      "immersiveengineering:bucket_wheel"
+    ],
+    "text": {
+      "ja": "掘削機とバケットホイールを組み立て、電力で鉱脈を採掘します\n採れた資源は駆動部の後ろから搬出されます",
+      "en": "Assemble the excavator and bucket wheel to mine veins with energy\nResources leave through the rear of the engine assembly"
+    }
+  },
+  {
+    "id": "radio_tower",
+    "items": [
+      "immersiveengineering:radio_tower"
+    ],
+    "text": {
+      "ja": "組み立てた塔は、電力でレッドストーン信号を無線送信します\n相手と周波数を合わせ、通信範囲内に置きます",
+      "en": "Powered, assembled towers transmit redstone signals wirelessly\nThey need matching frequencies and must be within range"
+    }
+  },
+  {
+    "id": "chunk_loader",
+    "items": [
+      "immersiveengineering:chunk_loader"
+    ],
+    "text": {
+      "ja": "組み立てると、周囲の区画を活動状態に保ちます\n動作には電力と紙を供給します",
+      "en": "The assembled observer keeps the surrounding area active\nSupply energy and paper for operation"
+    }
+  },
+  {
+    "id": "lightning_rod",
+    "items": [
+      "immersiveengineering:lightning_rod"
+    ],
+    "text": {
+      "ja": "組み立てた避雷針へ落ちた雷から電力を回収します\n上部の鋼鉄製の柵を伸ばすと、落雷を受けやすくなります",
+      "en": "The assembled lightning rod captures energy from strikes\nExtending the steel-fence rod increases the chance of a strike"
+    }
+  },
+  {
+    "id": "construction_parts",
+    "items": [
+      "immersiveengineering:coil_lv",
+      "immersiveengineering:coil_mv",
+      "immersiveengineering:coil_hv",
+      "immersiveengineering:alu_slope",
+      "immersiveengineering:steel_slope",
+      "immersiveengineering:slab_alloybrick",
+      "immersiveengineering:slab_blastbrick",
+      "immersiveengineering:slab_blastbrick_reinforced",
+      "immersiveengineering:slab_coke",
+      "immersiveengineering:slab_cokebrick",
+      "immersiveengineering:slab_insulating_glass"
+    ],
+    "text": {
+      "ja": "建築に使う、加工されたブロックです\n装置を組み立てる際は、指定のブロックと形状を使います",
+      "en": "These shaped blocks are used for construction\nMachine assembly requires the specified blocks and shapes"
+    }
+  },
+  {
+    "id": "feedthrough",
+    "items": [
+      "immersiveengineering:feedthrough"
+    ],
+    "text": {
+      "ja": "壁を挟んだ2つの端子を、絶縁された導体でつなぎます\n対応する端子と壁を並べ、ハンマーで形成します",
+      "en": "An insulated conductor joins two connectors across a wall\nArrange compatible connectors and the wall, then form it with a hammer"
+    }
+  },
+  {
+    "id": "logic_instructions",
+    "items": [
+      "immersiveengineering:logic_circuit"
+    ],
+    "text": {
+      "ja": "論理ユニットへ装着する、演算・入力・出力を記憶した命令です\n内容はエンジニアの回路台で設定します",
+      "en": "This instruction stores an operation, inputs and output for a Logic Unit\nConfigure its contents in the Engineer's Circuit Workbench"
+    }
+  },
+  {
+    "id": "banner_patterns",
+    "items": [
+      "immersiveengineering:bannerpattern_bevels",
+      "immersiveengineering:bannerpattern_hammer",
+      "immersiveengineering:bannerpattern_ornate",
+      "immersiveengineering:bannerpattern_screwdriver",
+      "immersiveengineering:bannerpattern_treated_wood",
+      "immersiveengineering:bannerpattern_warning",
+      "immersiveengineering:bannerpattern_windmill",
+      "immersiveengineering:bannerpattern_wirecutter",
+      "immersiveengineering:bannerpattern_wolf"
+    ],
+    "text": {
+      "ja": "機織り機で、旗に描く模様を選ぶための型紙です",
+      "en": "Use this pattern in a loom to choose the design applied to a banner"
+    }
+  },
+  {
+    "id": "creative_capacitor",
+    "items": [
+      "immersiveengineering:capacitor_creative"
+    ],
+    "text": {
+      "ja": "電力が尽きない、クリエイティブ用の電源です\n初期は全6面が出力で、ハンマーで無効・入力・出力に切り替えます\n出力に設定した面からだけ、電力を送り出します",
+      "en": "This creative source supplies unlimited energy\nAll six faces output by default; a hammer cycles disabled, input and output\nEnergy leaves only through faces set to output"
+    }
+  }
+]

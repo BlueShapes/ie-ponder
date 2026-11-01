@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.ieponder.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["PonderUIAccessor", "PonderUIContextMixin", "SafeChunkUtilsMixin", "IEVertexBufferMixin", "PonderUIFactoryMixin", "TextWindowElementAccessor"],
+  "injectors": {"defaultRequire": 1}
+}

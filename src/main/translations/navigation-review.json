@@ -1,0 +1,29 @@
+{
+  "source_sha256": "cc05ca2d9e4ff696d321ceb5845aa49dc450afe4e5568eeffc711a79740a8d07",
+  "reviewed_locales": [
+    "ja_jp",
+    "en_us",
+    "hi_in",
+    "zh_hk",
+    "zh_tw",
+    "zh_cn",
+    "ru_ru",
+    "pt_br",
+    "pt_pt",
+    "es_es",
+    "fr_fr",
+    "de_de",
+    "cs_cz",
+    "pl_pl",
+    "ms_my",
+    "ro_ro",
+    "ar_sa",
+    "id_id",
+    "ko_kr",
+    "vi_vn",
+    "tr_tr",
+    "it_it"
+  ],
+  "scope": "0.1.4: All22 chapter descriptions reviewed for natural explanatory narration; native UI labels, command hints, key sets and navigation implementation retained",
+  "reviewed_on": "2026-10-22"
+}

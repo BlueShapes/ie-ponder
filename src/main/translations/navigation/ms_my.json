@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Panduan Immersive Engineering",
+  "ieponder.command.requires_world": "Masuki dunia untuk membuka panduan",
+  "ieponder.command.unknown": "Bab, pelajaran atau item tidak dikenali: %s",
+  "ieponder.tooltip.hold_for_description": "Tekan dan tahan [%s] untuk melihat penerangan",
+  "ieponder.ponder.tag.start": "1. Bermula",
+  "ieponder.ponder.tag.start.description": "Bahan asas dan mesin pertama",
+  "ieponder.ponder.tag.power": "2. Kuasa",
+  "ieponder.ponder.tag.power.description": "Asas penjanaan, penyimpanan tenaga dan pendawaian",
+  "ieponder.ponder.tag.metallurgy": "3. Metalurgi",
+  "ieponder.ponder.tag.metallurgy.description": "Pemprosesan bijih dan kerja logam",
+  "ieponder.ponder.tag.logistics": "4. Logistik",
+  "ieponder.ponder.tag.logistics.description": "Pengangkutan item dan bendalir",
+  "ieponder.ponder.tag.processing": "5. Pemprosesan",
+  "ieponder.ponder.tag.processing.description": "Pemprosesan dengan mesin berbilang blok",
+  "ieponder.ponder.tag.troubleshooting": "6. Penyelesaian masalah",
+  "ieponder.ponder.tag.troubleshooting.description": "Pemeriksaan kuasa, pemasangan, input dan output"
+}

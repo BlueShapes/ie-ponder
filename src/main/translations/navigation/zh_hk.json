@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Immersive Engineering 指南",
+  "ieponder.command.requires_world": "進入世界以開啟指南",
+  "ieponder.command.unknown": "未知的章節、教學或物品：%s",
+  "ieponder.tooltip.hold_for_description": "按住 [%s] 查看說明",
+  "ieponder.ponder.tag.start": "1. 入門",
+  "ieponder.ponder.tag.start.description": "基本材料和入門機器",
+  "ieponder.ponder.tag.power": "2. 電力",
+  "ieponder.ponder.tag.power.description": "發電、儲電和接線基礎",
+  "ieponder.ponder.tag.metallurgy": "3. 冶金",
+  "ieponder.ponder.tag.metallurgy.description": "礦石處理和金屬加工",
+  "ieponder.ponder.tag.logistics": "4. 物流",
+  "ieponder.ponder.tag.logistics.description": "物品和流體運送",
+  "ieponder.ponder.tag.processing": "5. 加工",
+  "ieponder.ponder.tag.processing.description": "多方塊機器加工",
+  "ieponder.ponder.tag.troubleshooting": "6. 疑難排解",
+  "ieponder.ponder.tag.troubleshooting.description": "電力、設置、輸入和輸出檢查"
+}

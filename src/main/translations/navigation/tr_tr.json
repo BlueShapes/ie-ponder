@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Immersive Engineering Rehberi",
+  "ieponder.command.requires_world": "Rehberi açmak için bir dünyaya gir",
+  "ieponder.command.unknown": "Bilinmeyen bölüm, ders veya eşya: %s",
+  "ieponder.tooltip.hold_for_description": "Açıklama için [%s] tuşunu basılı tut",
+  "ieponder.ponder.tag.start": "1. Başlangıç",
+  "ieponder.ponder.tag.start.description": "Temel malzemeler ve ilk makineler",
+  "ieponder.ponder.tag.power": "2. Elektrik",
+  "ieponder.ponder.tag.power.description": "Üretim, depolama ve kablolamanın temelleri",
+  "ieponder.ponder.tag.metallurgy": "3. Metalurji",
+  "ieponder.ponder.tag.metallurgy.description": "Cevher işleme ve metal işçiliği",
+  "ieponder.ponder.tag.logistics": "4. Lojistik",
+  "ieponder.ponder.tag.logistics.description": "Eşya ve sıvı taşıma",
+  "ieponder.ponder.tag.processing": "5. İşleme",
+  "ieponder.ponder.tag.processing.description": "Çok bloklu makinelerle işleme",
+  "ieponder.ponder.tag.troubleshooting": "6. Sorun giderme",
+  "ieponder.ponder.tag.troubleshooting.description": "Güç, kurulum, giriş ve çıkış denetimi"
+}

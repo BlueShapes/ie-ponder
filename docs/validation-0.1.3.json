@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "scope": "presentation-categories-and-tones",
+  "maximumCaptionLines": 3,
+  "captionUnitsWithinTwoLines": 346,
+  "captionWidth": 180,
+  "captionLayoutChecks": 0,
+  "lessons": 20,
+  "compiled": 20,
+  "compiledLessons": [
+    "coke_oven",
+    "alloy_kiln",
+    "basic_wiring",
+    "capacitors",
+    "thermoelectric",
+    "water_wheel",
+    "diesel_generator",
+    "crude_blast_furnace",
+    "improved_blast_furnace",
+    "arc_furnace",
+    "conveyors",
+    "fluid_pipes",
+    "item_router",
+    "garden_cloche",
+    "metal_press",
+    "crusher",
+    "squeezer",
+    "fermenter",
+    "refinery",
+    "power_diagnostics"
+  ],
+  "rendered": 1,
+  "renderedLessons": [
+    "coke_oven"
+  ],
+  "optionsGuideButtons": 0,
+  "nodes": 363,
+  "steps": 140,
+  "flowItems": 7,
+  "entityTypes": 0,
+  "actorReplays": 0,
+  "callouts": 151,
+  "localizedTooltipItems": 0,
+  "locales": [
+    "ja_jp",
+    "en_us",
+    "hi_in",
+    "zh_hk",
+    "zh_tw",
+    "zh_cn",
+    "ru_ru",
+    "pt_br",
+    "pt_pt",
+    "es_es",
+    "fr_fr",
+    "de_de",
+    "cs_cz",
+    "pl_pl",
+    "ms_my",
+    "ro_ro",
+    "ar_sa",
+    "id_id",
+    "ko_kr",
+    "vi_vn",
+    "tr_tr",
+    "it_it"
+  ],
+  "validatedLocales": [],
+  "languageResourcesValidated": 22,
+  "localizedChapterNames": 0,
+  "localizedItemNames": 0,
+  "captionPagesFontChecked": 350,
+  "screenshots": 4,
+  "glyphCodepoints": 0,
+  "maximumTitleLines": 0,
+  "nativeUiLabels": 0,
+  "englishFallbackFromEnGb": false,
+  "coexistingMods": {
+    "ae2ponder": "0.1.0-beta1",
+    "guideme": "21.1.19",
+    "ae2": "19.2.18"
+  },
+  "freshFlatWorld": true,
+  "wFactoryContract": {
+    "nullTagRemainsNative": true,
+    "manualCourseScenes": 20
+  },
+  "fontLocaleReloads": 2,
+  "fontLocalesChecked": [
+    "ar_sa"
+  ],
+  "presentation": {
+    "guideButtonsOnOptions": 0,
+    "vanillaOptionWidgetsPreserved": 15,
+    "unrelatedFixturePreserved": true,
+    "commandCourseAndSubject": true,
+    "courseTagToSameCategoryLesson": true,
+    "nativeBackReturnsToCategoryAndCourse": true,
+    "crossChapterMoves": 2,
+    "wirecoilNativeWFactory": true,
+    "fluidPipeNativeWFactory": true,
+    "fluidPipeLogisticsToProcessingScrolls": 1,
+    "fluidPipeProcessingTagAndReturn": true,
+    "nativeReferredToByTagTick": true,
+    "syntheticForeignSceneRestoresNativeContext": true,
+    "syntheticForeignOverrideSurvivesTickAndExit": true,
+    "nativeAndGuideHistoryEquivalence": true,
+    "guideSceneAndLocaleHistoryEquivalence": true,
+    "guideLocaleEquivalenceFixture": "synthetic compiledLocale identity; rendered locale remains ja_jp",
+    "captionTonePalettes": [
+      "NORMAL",
+      "WARNING",
+      "HINT"
+    ],
+    "tooltipToneColors": [
+      "NORMAL",
+      "WARNING",
+      "HINT"
+    ],
+    "nativePaletteAndTextColors": {
+      "normal": {
+        "palette": "WHITE",
+        "textColor": "#F6F6E5"
+      },
+      "warning": {
+        "palette": "RED",
+        "textColor": "#FFAEA4"
+      },
+      "hint": {
+        "palette": "GREEN",
+        "textColor": "#C5DC97"
+      }
+    },
+    "toneUnitCountsByLocale": {
+      "ja_jp": 313,
+      "en_us": 358,
+      "hi_in": 407,
+      "zh_hk": 352,
+      "zh_tw": 351,
+      "zh_cn": 292,
+      "ru_ru": 368,
+      "pt_br": 366,
+      "pt_pt": 367,
+      "es_es": 368,
+      "fr_fr": 369,
+      "de_de": 372,
+      "cs_cz": 363,
+      "pl_pl": 443,
+      "ms_my": 488,
+      "ro_ro": 448,
+      "ar_sa": 360,
+      "id_id": 366,
+      "ko_kr": 298,
+      "vi_vn": 376,
+      "tr_tr": 351,
+      "it_it": 365
+    },
+    "toneScreenshots": 3,
+    "arabicCaptionFontCheck": {
+      "locale": "ar_sa",
+      "maximumLines": 3,
+      "overflows": [],
+      "checkedUnits": 350,
+      "restoredToJapanese": true
+    },
+    "resourceLocaleReloads": [
+      "ar_sa",
+      "ja_jp"
+    ],
+    "fontLocalesChecked": [
+      "ar_sa"
+    ]
+  },
+  "elapsedMillis": 20394
+}

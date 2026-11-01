@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT; see THIRD_PARTY_NOTICES.md"
+
+[[mods]]
+modId="ieponder"
+version="${version}"
+displayName="Immersive Engineering Ponder Guide"
+authors="aosankaku and contributors"
+description='''Learn Immersive Engineering through animated Ponder scenes in 22 languages.'''
+
+[[mixins]]
+config="ieponder.mixins.json"
+
+[[dependencies.ieponder]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.256,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ieponder]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ieponder]]
+modId="immersiveengineering"
+type="required"
+versionRange="[12.4.2,13)"
+ordering="AFTER"
+side="CLIENT"
+
+[[dependencies.ieponder]]
+modId="ponder"
+type="required"
+versionRange="[1.0.87,)"
+ordering="AFTER"
+side="CLIENT"

@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Immersive Engineering 가이드",
+  "ieponder.command.requires_world": "가이드를 열려면 월드에 들어가세요",
+  "ieponder.command.unknown": "알 수 없는 장, 강의 또는 아이템: %s",
+  "ieponder.tooltip.hold_for_description": "설명을 보려면 [%s] 키를 길게 누르세요",
+  "ieponder.ponder.tag.start": "1. 시작하기",
+  "ieponder.ponder.tag.start.description": "기본 재료와 첫 기계",
+  "ieponder.ponder.tag.power": "2. 전력",
+  "ieponder.ponder.tag.power.description": "발전, 저장과 배선의 기초",
+  "ieponder.ponder.tag.metallurgy": "3. 야금",
+  "ieponder.ponder.tag.metallurgy.description": "광석 처리와 금속 가공",
+  "ieponder.ponder.tag.logistics": "4. 물류",
+  "ieponder.ponder.tag.logistics.description": "아이템과 유체 운송",
+  "ieponder.ponder.tag.processing": "5. 가공",
+  "ieponder.ponder.tag.processing.description": "멀티블록 기계 가공",
+  "ieponder.ponder.tag.troubleshooting": "6. 문제 해결",
+  "ieponder.ponder.tag.troubleshooting.description": "전력, 설치 상태, 입력과 출력 점검"
+}

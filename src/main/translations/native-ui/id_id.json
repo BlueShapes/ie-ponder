@@ -1,0 +1,11 @@
+{
+  "ponder.ui.hold_to_ponder": "Tahan [%1$s] untuk melihat Ponder",
+  "ponder.ui.pondering": "Tentang...",
+  "ponder.ui.pondering_tag": "Tentang...",
+  "ponder.ui.welcome": "Selamat datang di Ponder",
+  "ponder.ui.categories": "Kategori yang tersedia untuk %1$s",
+  "ponder.ui.index_description": "Klik salah satu ikon di bawah untuk mempelajari Item dan Blok yang terkait",
+  "ponder.ui.index_title": "Indeks Ponder",
+  "ponder.ponder.shared.sneak_and": "Menyelinap +",
+  "catnip.ui.go_back_button": "Kembali"
+}

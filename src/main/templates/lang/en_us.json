@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Immersive Engineering Guide",
+  "ieponder.command.requires_world": "Enter a world to open the guide",
+  "ieponder.command.unknown": "Unknown chapter, lesson or item: %s",
+  "ieponder.tooltip.hold_for_description": "Hold [%s] for a description",
+  "ieponder.ponder.tag.start": "1. Getting started",
+  "ieponder.ponder.tag.start.description": "Core materials and first machines",
+  "ieponder.ponder.tag.power": "2. Power",
+  "ieponder.ponder.tag.power.description": "Generation, storage and wiring",
+  "ieponder.ponder.tag.metallurgy": "3. Metallurgy",
+  "ieponder.ponder.tag.metallurgy.description": "Ore processing and metalworking",
+  "ieponder.ponder.tag.logistics": "4. Logistics",
+  "ieponder.ponder.tag.logistics.description": "Item and fluid transport",
+  "ieponder.ponder.tag.processing": "5. Processing",
+  "ieponder.ponder.tag.processing.description": "Processing with multiblock machines",
+  "ieponder.ponder.tag.troubleshooting": "6. Troubleshooting",
+  "ieponder.ponder.tag.troubleshooting.description": "Power, setup, input and output checks"
+}

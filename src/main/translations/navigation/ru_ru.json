@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Руководство по Immersive Engineering",
+  "ieponder.command.requires_world": "Войдите в мир, чтобы открыть руководство",
+  "ieponder.command.unknown": "Неизвестная глава, урок или предмет: %s",
+  "ieponder.tooltip.hold_for_description": "Удерживайте [%s], чтобы увидеть описание",
+  "ieponder.ponder.tag.start": "1. Начало работы",
+  "ieponder.ponder.tag.start.description": "Основные материалы и первые машины",
+  "ieponder.ponder.tag.power": "2. Электроэнергия",
+  "ieponder.ponder.tag.power.description": "Выработка и хранение энергии, прокладка проводов",
+  "ieponder.ponder.tag.metallurgy": "3. Металлургия",
+  "ieponder.ponder.tag.metallurgy.description": "Переработка руд и обработка металлов",
+  "ieponder.ponder.tag.logistics": "4. Логистика",
+  "ieponder.ponder.tag.logistics.description": "Перемещение предметов и жидкостей",
+  "ieponder.ponder.tag.processing": "5. Обработка",
+  "ieponder.ponder.tag.processing.description": "Обработка материалов в многоблочных машинах",
+  "ieponder.ponder.tag.troubleshooting": "6. Устранение неполадок",
+  "ieponder.ponder.tag.troubleshooting.description": "Питание, сборка, входы и выходы"
+}

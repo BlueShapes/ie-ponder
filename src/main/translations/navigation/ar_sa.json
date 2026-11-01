@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "دليل Immersive Engineering",
+  "ieponder.command.requires_world": "ادخل إلى عالم لفتح الدليل",
+  "ieponder.command.unknown": "فصل أو درس أو عنصر غير معروف: %s",
+  "ieponder.tooltip.hold_for_description": "اضغط باستمرار على [%s] لعرض الوصف",
+  "ieponder.ponder.tag.start": "1. البداية",
+  "ieponder.ponder.tag.start.description": "المواد الأساسية والآلات الأولى",
+  "ieponder.ponder.tag.power": "2. الطاقة",
+  "ieponder.ponder.tag.power.description": "أساسيات توليد الطاقة وتخزينها وتوصيل الأسلاك",
+  "ieponder.ponder.tag.metallurgy": "3. علم الفلزات",
+  "ieponder.ponder.tag.metallurgy.description": "معالجة الخامات وتشكيل المعادن",
+  "ieponder.ponder.tag.logistics": "4. النقل",
+  "ieponder.ponder.tag.logistics.description": "نقل العناصر والموائع",
+  "ieponder.ponder.tag.processing": "5. المعالجة",
+  "ieponder.ponder.tag.processing.description": "المعالجة بآلات متعددة الكتل",
+  "ieponder.ponder.tag.troubleshooting": "6. استكشاف الأخطاء وإصلاحها",
+  "ieponder.ponder.tag.troubleshooting.description": "فحص الطاقة والتجميع والمداخل والمخارج"
+}

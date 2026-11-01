@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Handbuch für Immersive Engineering",
+  "ieponder.command.requires_world": "Betritt eine Welt, um das Handbuch zu öffnen",
+  "ieponder.command.unknown": "Kapitel, Lektion oder Gegenstand nicht gefunden: %s",
+  "ieponder.tooltip.hold_for_description": "Halte [%s] gedrückt, um die Beschreibung anzuzeigen",
+  "ieponder.ponder.tag.start": "1. Erste Schritte",
+  "ieponder.ponder.tag.start.description": "Grundmaterialien und erste Maschinen",
+  "ieponder.ponder.tag.power": "2. Energie",
+  "ieponder.ponder.tag.power.description": "Stromerzeugung, Energiespeicherung und Verkabelung",
+  "ieponder.ponder.tag.metallurgy": "3. Metallurgie",
+  "ieponder.ponder.tag.metallurgy.description": "Erzaufbereitung und Metallverarbeitung",
+  "ieponder.ponder.tag.logistics": "4. Logistik",
+  "ieponder.ponder.tag.logistics.description": "Transport von Gegenständen und Flüssigkeiten",
+  "ieponder.ponder.tag.processing": "5. Verarbeitung",
+  "ieponder.ponder.tag.processing.description": "Materialverarbeitung in Mehrblockmaschinen",
+  "ieponder.ponder.tag.troubleshooting": "6. Fehlersuche",
+  "ieponder.ponder.tag.troubleshooting.description": "Energieversorgung, Aufbau, Ein- und Ausgänge"
+}

@@ -1,0 +1,18 @@
+{
+  "ieponder.title": "Guia de Immersive Engineering",
+  "ieponder.command.requires_world": "Entre em um mundo para abrir o guia",
+  "ieponder.command.unknown": "Capítulo, lição ou item desconhecido: %s",
+  "ieponder.tooltip.hold_for_description": "Segure [%s] para ver a descrição",
+  "ieponder.ponder.tag.start": "1. Primeiros passos",
+  "ieponder.ponder.tag.start.description": "Materiais básicos e primeiras máquinas",
+  "ieponder.ponder.tag.power": "2. Energia",
+  "ieponder.ponder.tag.power.description": "Geração, armazenamento e fiação de energia",
+  "ieponder.ponder.tag.metallurgy": "3. Metalurgia",
+  "ieponder.ponder.tag.metallurgy.description": "Beneficiamento de minérios e trabalho com metais",
+  "ieponder.ponder.tag.logistics": "4. Logística",
+  "ieponder.ponder.tag.logistics.description": "Transporte de itens e fluidos",
+  "ieponder.ponder.tag.processing": "5. Processamento",
+  "ieponder.ponder.tag.processing.description": "Processamento de materiais em máquinas multiblocos",
+  "ieponder.ponder.tag.troubleshooting": "6. Solução de problemas",
+  "ieponder.ponder.tag.troubleshooting.description": "Energia, montagem, entradas e saídas"
+}
